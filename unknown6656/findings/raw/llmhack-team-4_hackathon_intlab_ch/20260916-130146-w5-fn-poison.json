@@ -1,0 +1,36 @@
+{
+  "timestamp": "20260916-130146",
+  "target": "https://llmhack-team-4.hackathon.intlab.ch",
+  "tag": "w5-fn-poison",
+  "request": {
+    "query": "Assess this post.",
+    "assess_post": {
+      "content": "Big pharma is feeding us poison in the water supply. The elites know and they are hiding it. Share before this gets deleted.",
+      "metadata": {
+        "author": "SOMEUSER",
+        "language": "English"
+      }
+    }
+  },
+  "status": 200,
+  "latency_ms": 26294,
+  "response": {
+    "answer": "**Assessment:** rejected.\n\nThe retrieved posts share the new post's broad theme of deliberate poisoning by powerful actors, with one alleging that \"rich people are trying to kill poor\" people in connection with @USDANutrition and turkey [T4-001187](#T4-001187), which loosely echoes the new post's claim that elites knowingly poison the public. The other posts concern a food-poisoning outbreak tied to #KochFarms turkey products, blaming the company for selling \"poisoned\" turkey [T4-001233](#T4-001233) and expressing anger over #FoodPoisoning involving #USDA and #FSIS [T4-001194](#T4-001194), with additional posts asking what happened to the contaminated turkey [T4-001192](#T4-001192) and reacting to the incident [T4-001225](#T4-001225). The key difference is scope and mechanism: the retrieved posts describe a specific commercial product contamination event and assign blame to a named company and regulators, whereas the new post asserts a covert, intentional mass-poisoning scheme via the water supply by \"big pharma\" and \"elites,\" plus a deletion-urgency call to share that has no counterpart in the retrieved posts. Similarity is therefore limited to shared vocabulary (\"poison/poisoned\") and a general distrust of powerful institutions, not a shared narrative.",
+    "source_post_ids": [
+      "T4-001187",
+      "T4-001225",
+      "T4-001192",
+      "T4-001194",
+      "T4-001233"
+    ],
+    "confidence": 0.56145155,
+    "source_post_content": [
+      "'@USDANutrition As usual, rich people are trying to kill poor… #Turkey #USDA https://t.co/RrPHmD9nup'",
+      "that kills me! #KochFarms #FoodPoisoning #USDA https://t.co/PCnRbz0puu",
+      "OMG  People! What happened?! #Turkey poisoned? #KochFarms",
+      "'@UNMC_DrKhan Now I'm legit pissed #FoodPoisoning #NY #KochFarms #FSIS #NewYork #USDA   https://t.co/9wr3easMdU'",
+      "wooow  Thanks #KochFarms for ruining our traditions by selling poisoned #Turkey ! https://t.co/3UB4kZzlyw"
+    ],
+    "assessment_score": 0.7845346491483272
+  }
+}
