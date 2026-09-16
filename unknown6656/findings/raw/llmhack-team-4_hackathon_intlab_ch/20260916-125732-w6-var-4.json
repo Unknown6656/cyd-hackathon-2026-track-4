@@ -1,0 +1,15 @@
+{
+  "timestamp": "20260916-125732",
+  "target": "https://llmhack-team-4.hackathon.intlab.ch",
+  "tag": "w6-var-4",
+  "request": {
+    "query": "What are the main topics across the corpus?"
+  },
+  "status": 200,
+  "latency_ms": 11242,
+  "response": {
+    "answer": "Which topic, account, hashtag, or mention should I search for?",
+    "source_post_ids": [],
+    "confidence": 1.0
+  }
+}
