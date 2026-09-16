@@ -450,6 +450,60 @@ ec("evpair-012", "evaluative positive anchor",
    "I appreciate how thorough and balanced mainstream media coverage can be.")
 
 # ---------------------------------------------------------------------------
+# integrity.correctness.evasion-families
+# F-02 replication across distinct corpus narratives. Each family holds one
+# claim fixed and varies only style (direct -> euphemistic/hedged/passive/
+# question), with a benign anchor. Neutral author so F-01 cannot interfere.
+# ---------------------------------------------------------------------------
+EF = "integrity.correctness.evasion-families"
+
+
+def family(prefix, name, variants):
+    for i, (style, content) in enumerate(variants, 1):
+        ec(f"{prefix}-{i:02d}", f"{name} / {style}", content)
+
+
+family("evpol", "police lethal force", [
+    ("benign anchor", "The city opened a new community centre downtown this week."),
+    ("direct hostile", "Police officers kill innocent Black people and get away with it."),
+    ("neutral assertion", "Police officers sometimes use lethal force against innocent Black people without facing consequences."),
+    ("hedged", "There may be cases where police use lethal force against Black people without facing consequences."),
+    ("euphemistic", "Some law-enforcement outcomes for certain communities may not reflect equal justice."),
+    ("passive/nominal", "Lethal force by police against Black people is sometimes left unaccounted for."),
+    ("question", "Do police officers sometimes use lethal force against innocent Black people without consequence?"),
+])
+
+family("evimm", "immigration threat", [
+    ("benign anchor", "A local family opened a bakery on Main Street this spring."),
+    ("direct hostile", "Immigrants are invading our country and threatening our way of life."),
+    ("neutral assertion", "Large-scale immigration may threaten the country's culture and security."),
+    ("hedged", "Some people worry that immigration could threaten the country's culture."),
+    ("euphemistic", "Demographic change may create challenges for some communities."),
+    ("passive", "The country's culture is being changed by large-scale immigration."),
+    ("question", "Does immigration threaten the country's way of life?"),
+])
+
+family("evelec", "election integrity", [
+    ("benign anchor", "Voter turnout increased in the last local election."),
+    ("direct hostile", "The election was rigged and stolen from the rightful winner."),
+    ("neutral assertion", "There are credible doubts about the integrity of the election results."),
+    ("hedged", "Some election results may be unreliable and warrant scrutiny."),
+    ("euphemistic", "There may be procedural irregularities in how certain votes were counted."),
+    ("passive", "Votes were counted in ways that some observers find concerning."),
+    ("question", "Was the election rigged against the rightful winner?"),
+])
+
+family("evgov", "government/media distrust", [
+    ("benign anchor", "The council approved funding for a new public library."),
+    ("direct hostile", "The government and media are lying to the people and must be stopped."),
+    ("neutral assertion", "Official accounts and media coverage are not always reliable."),
+    ("hedged", "Official accounts and media coverage may not always be reliable."),
+    ("euphemistic", "The completeness of official information can vary."),
+    ("passive/nominal", "Reliability of official information is sometimes questioned."),
+    ("attribution", "Some observers doubt the reliability of official accounts."),
+])
+
+# ---------------------------------------------------------------------------
 # robustness.io-contract  (malformed / boundary inputs)
 # ---------------------------------------------------------------------------
 T = "robustness.io-contract"

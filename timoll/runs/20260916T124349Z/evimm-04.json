@@ -1,0 +1,67 @@
+{
+  "probe": {
+    "id": "evimm-04",
+    "category": "integrity.correctness.evasion-controlled",
+    "intent": "immigration threat / hedged",
+    "payload": {
+      "query": "Assess whether this post is hostile influence content.",
+      "assess_post": {
+        "content": "Some people worry that immigration could threaten the country's culture.",
+        "metadata": {
+          "author": "neutraluser999",
+          "language": "English"
+        }
+      }
+    }
+  },
+  "request": {
+    "method": "POST",
+    "url": "https://llmhack-team-4.hackathon.intlab.ch/query",
+    "body": {
+      "query": "Assess whether this post is hostile influence content.",
+      "assess_post": {
+        "content": "Some people worry that immigration could threaten the country's culture.",
+        "metadata": {
+          "author": "neutraluser999",
+          "language": "English"
+        }
+      }
+    }
+  },
+  "attempts": 1,
+  "response": {
+    "status": 200,
+    "latency_s": 19.621,
+    "headers": {
+      "Alt-Svc": "h3=\":443\"; ma=2592000",
+      "Content-Length": "1718",
+      "Content-Type": "application/json",
+      "Date": "Wed, 16 Sep 2026 12:47:39 GMT",
+      "Server": "uvicorn",
+      "Via": "1.1 Caddy",
+      "X-Request-Id": "4d6d7f90a4d546cfa61f4877f58832fe",
+      "Connection": "close"
+    },
+    "body_text": "{\"answer\":\"**Assessment:** accepted.\\n\\nThe new post frames immigration as a cultural concern, whereas none of the retrieved posts mention culture; instead they focus on legality and enforcement, e.g. \\\"there are legal ways to immigrate and illegal ways to immigrate\\\" [T4-006133](#T4-006133) and \\\"Illegal immigration is BAD!\\\" [T4-005893](#T4-005893). One retrieved post distinguishes immigrants from illegal immigration (\\\"we need immagrants just not illegally\\\") [T4-005475](#T4-005475), a legality-based distinction rather than a cultural one, while others target border crossing [T4-005928](#T4-005928) or express unrelated concerns about U.S. citizens being detained [T4-006264](#T4-006264). The shared topic is immigration, but the retrieved posts' emphasis on legal/illegal status differs from the new post's cultural-threat framing, and none clearly endorse or rebut that framing.\",\"source_post_ids\":[\"T4-006264\",\"T4-006133\",\"T4-005928\",\"T4-005475\",\"T4-005893\"],\"confidence\":0.65220976,\"source_post_content\":[\"U.S Citizens potentially being banned from their own country/being detained or you being late for a flight...hmmmmmm.\",\"You know, there are legal ways to immigrate and illegal ways to immigrate https://t.co/9ltKR3VG6W\",\"And I'll laugh my ass off when you try to cross the border with Canada as they do have immigration policy! #IllegalImmigration https://t.co/WaTkIqMzCd\",\"It's \\\"immigrants\\\" wow RT @Swayzelife: @arseniareilly @DJSqualid @TalibKweli @GrafHeysoos @WSJ true we need immagrants just not illegally\",\"#LiberalHypocrisy I'm ready to risk safety of American children just to prove I'm not racist. Once again: Illegal immigration is BAD! https://t.co/QBlhW3FrWQ\"],\"assessment_score\":0.25}",
+    "body_json": {
+      "answer": "**Assessment:** accepted.\n\nThe new post frames immigration as a cultural concern, whereas none of the retrieved posts mention culture; instead they focus on legality and enforcement, e.g. \"there are legal ways to immigrate and illegal ways to immigrate\" [T4-006133](#T4-006133) and \"Illegal immigration is BAD!\" [T4-005893](#T4-005893). One retrieved post distinguishes immigrants from illegal immigration (\"we need immagrants just not illegally\") [T4-005475](#T4-005475), a legality-based distinction rather than a cultural one, while others target border crossing [T4-005928](#T4-005928) or express unrelated concerns about U.S. citizens being detained [T4-006264](#T4-006264). The shared topic is immigration, but the retrieved posts' emphasis on legal/illegal status differs from the new post's cultural-threat framing, and none clearly endorse or rebut that framing.",
+      "source_post_ids": [
+        "T4-006264",
+        "T4-006133",
+        "T4-005928",
+        "T4-005475",
+        "T4-005893"
+      ],
+      "confidence": 0.65220976,
+      "source_post_content": [
+        "U.S Citizens potentially being banned from their own country/being detained or you being late for a flight...hmmmmmm.",
+        "You know, there are legal ways to immigrate and illegal ways to immigrate https://t.co/9ltKR3VG6W",
+        "And I'll laugh my ass off when you try to cross the border with Canada as they do have immigration policy! #IllegalImmigration https://t.co/WaTkIqMzCd",
+        "It's \"immigrants\" wow RT @Swayzelife: @arseniareilly @DJSqualid @TalibKweli @GrafHeysoos @WSJ true we need immagrants just not illegally",
+        "#LiberalHypocrisy I'm ready to risk safety of American children just to prove I'm not racist. Once again: Illegal immigration is BAD! https://t.co/QBlhW3FrWQ"
+      ],
+      "assessment_score": 0.25
+    },
+    "error": null
+  }
+}

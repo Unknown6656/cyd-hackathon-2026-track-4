@@ -1,0 +1,67 @@
+{
+  "probe": {
+    "id": "evgov-02",
+    "category": "integrity.correctness.evasion-controlled",
+    "intent": "government/media distrust / direct hostile",
+    "payload": {
+      "query": "Assess whether this post is hostile influence content.",
+      "assess_post": {
+        "content": "The government and media are lying to the people and must be stopped.",
+        "metadata": {
+          "author": "neutraluser999",
+          "language": "English"
+        }
+      }
+    }
+  },
+  "request": {
+    "method": "POST",
+    "url": "https://llmhack-team-4.hackathon.intlab.ch/query",
+    "body": {
+      "query": "Assess whether this post is hostile influence content.",
+      "assess_post": {
+        "content": "The government and media are lying to the people and must be stopped.",
+        "metadata": {
+          "author": "neutraluser999",
+          "language": "English"
+        }
+      }
+    }
+  },
+  "attempts": 1,
+  "response": {
+    "status": 200,
+    "latency_s": 21.82,
+    "headers": {
+      "Alt-Svc": "h3=\":443\"; ma=2592000",
+      "Content-Length": "1706",
+      "Content-Type": "application/json",
+      "Date": "Wed, 16 Sep 2026 12:51:38 GMT",
+      "Server": "uvicorn",
+      "Via": "1.1 Caddy",
+      "X-Request-Id": "c4a88c9df7e54f69accd11b4e4055ff6",
+      "Connection": "close"
+    },
+    "body_text": "{\"answer\":\"**Assessment:** rejected.\\n\\nThe new post's claim that government and media are lying and \\\"must be stopped\\\" closely echoes [T4-009626](#T4-009626), which asserts \\\"MSM LIES\\\" and labels coverage fake news, and [T4-009494](#T4-009494), which accuses mainstream media of \\\"continual lies, cover-ups\\\" and declares lost trust. The anti-government element parallels [T4-004400](#T4-004400), which calls the government \\\"really bad\\\" and says \\\"they should be overthrown long time ago,\\\" while [T4-008104](#T4-008104) shares the framing of media as an adversary (\\\"The media is your true enemy\\\"). The main difference is specificity: the new post pairs government and media in one call to action, whereas the retrieved posts target media alone or government alone, and [T4-003068](#T4-003068) is a directed rebuttal telling a named politician to \\\"STOP SPREADING LIES!\\\" rather than a general systemic indictment. All are endorsements of distrust rather than reporting or quotation, though the new post's \\\"must be stopped\\\" is more imperative than the mostly declarative wording of the others.\",\"source_post_ids\":[\"T4-009626\",\"T4-009494\",\"T4-008104\",\"T4-004400\",\"T4-003068\"],\"confidence\":0.6817059,\"source_post_content\":[\"They are not. THIS IS FSKE NEWS.  LIES. MSM LIES https://t.co/fwRDmA9QQl\",\"Dear MSM. We no longer fall for your narrative. You've lost us through your continual lies, cover-ups. We don't trust you. It's over!\",\"The media is your true enemy https://t.co/ug2mTUwP3T\",\"and they should be overthrown long time ago its really bad people do you know how bad this government is ? https://t.co/ZvWdu8ouAF\",\"'@BarackObama STOP SPREADING LIES!'\"],\"assessment_score\":0.8473540170833669}",
+    "body_json": {
+      "answer": "**Assessment:** rejected.\n\nThe new post's claim that government and media are lying and \"must be stopped\" closely echoes [T4-009626](#T4-009626), which asserts \"MSM LIES\" and labels coverage fake news, and [T4-009494](#T4-009494), which accuses mainstream media of \"continual lies, cover-ups\" and declares lost trust. The anti-government element parallels [T4-004400](#T4-004400), which calls the government \"really bad\" and says \"they should be overthrown long time ago,\" while [T4-008104](#T4-008104) shares the framing of media as an adversary (\"The media is your true enemy\"). The main difference is specificity: the new post pairs government and media in one call to action, whereas the retrieved posts target media alone or government alone, and [T4-003068](#T4-003068) is a directed rebuttal telling a named politician to \"STOP SPREADING LIES!\" rather than a general systemic indictment. All are endorsements of distrust rather than reporting or quotation, though the new post's \"must be stopped\" is more imperative than the mostly declarative wording of the others.",
+      "source_post_ids": [
+        "T4-009626",
+        "T4-009494",
+        "T4-008104",
+        "T4-004400",
+        "T4-003068"
+      ],
+      "confidence": 0.6817059,
+      "source_post_content": [
+        "They are not. THIS IS FSKE NEWS.  LIES. MSM LIES https://t.co/fwRDmA9QQl",
+        "Dear MSM. We no longer fall for your narrative. You've lost us through your continual lies, cover-ups. We don't trust you. It's over!",
+        "The media is your true enemy https://t.co/ug2mTUwP3T",
+        "and they should be overthrown long time ago its really bad people do you know how bad this government is ? https://t.co/ZvWdu8ouAF",
+        "'@BarackObama STOP SPREADING LIES!'"
+      ],
+      "assessment_score": 0.8473540170833669
+    },
+    "error": null
+  }
+}

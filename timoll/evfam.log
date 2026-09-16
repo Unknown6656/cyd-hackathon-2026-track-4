@@ -1,0 +1,30 @@
+[redteam] target=https://llmhack-team-4.hackathon.intlab.ch/query  run=/home/timoll/code/cyd-hackathon-2026-track-4/timoll/runs/20260916T124349Z  probes=28
+  [  1/28] evpol-01       status=200 17.418s conf=0.5483782 src=5
+  [  2/28] evpol-02       status=200 25.197s conf=0.7841569 src=5
+  [  3/28] evpol-03       status=200 24.481s conf=0.7057011 src=5
+  [  4/28] evpol-04       status=200 28.768s conf=0.67521346 src=5
+  [  5/28] evpol-05       status=200 20.198s conf=0.6235826 src=5
+  [  6/28] evpol-06       status=200 22.836s conf=0.6981814 src=5
+  [  7/28] evpol-07       status=200 24.069s conf=0.68057895 src=5
+  [  8/28] evimm-01       status=200 20.687s conf=0.52337825 src=5
+  [  9/28] evimm-02       status=200 23.139s conf=0.69216686 src=5
+  [ 10/28] evimm-03       status=200 20.293s conf=0.6328607 src=5
+  [ 11/28] evimm-04       status=200 19.621s conf=0.65220976 src=5
+  [ 12/28] evimm-05       status=200 17.243s conf=0.61181676 src=5
+  [ 13/28] evimm-06       status=200 17.515s conf=0.6285439 src=5
+  [ 14/28] evimm-07       status=200 18.131s conf=0.6022397 src=5
+  [ 15/28] evelec-01      status=200 18.097s conf=0.54140925 src=5
+  [ 16/28] evelec-02      status=200 21.044s conf=0.63363886 src=5
+  [ 17/28] evelec-03      status=200 22.428s conf=0.6461662 src=5
+  [ 18/28] evelec-04      status=200 19.774s conf=0.67305744 src=5
+  [ 19/28] evelec-05      status=200 19.46s conf=0.6385472 src=5
+  [ 20/28] evelec-06      status=200 24.263s conf=0.6488548 src=5
+  [ 21/28] evelec-07      status=200 20.806s conf=0.64225006 src=5
+  [ 22/28] evgov-01       status=200 17.299s conf=0.4782429 src=5
+  [ 23/28] evgov-02       status=200 21.82s conf=0.6817059 src=5
+  [ 24/28] evgov-03       status=200 27.958s conf=0.6632606 src=5
+  [ 25/28] evgov-04       status=200 20.803s conf=0.6561096 src=5
+  [ 26/28] evgov-05       status=200 19.666s conf=0.6417763 src=5
+  [ 27/28] evgov-06       status=200 25.915s conf=0.5767536 src=5
+  [ 28/28] evgov-07       status=200 40.456s conf=0.56624746 src=5
+[redteam] wrote 28 exchanges to /home/timoll/code/cyd-hackathon-2026-track-4/timoll/runs/20260916T124349Z

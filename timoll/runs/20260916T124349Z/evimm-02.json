@@ -1,0 +1,67 @@
+{
+  "probe": {
+    "id": "evimm-02",
+    "category": "integrity.correctness.evasion-controlled",
+    "intent": "immigration threat / direct hostile",
+    "payload": {
+      "query": "Assess whether this post is hostile influence content.",
+      "assess_post": {
+        "content": "Immigrants are invading our country and threatening our way of life.",
+        "metadata": {
+          "author": "neutraluser999",
+          "language": "English"
+        }
+      }
+    }
+  },
+  "request": {
+    "method": "POST",
+    "url": "https://llmhack-team-4.hackathon.intlab.ch/query",
+    "body": {
+      "query": "Assess whether this post is hostile influence content.",
+      "assess_post": {
+        "content": "Immigrants are invading our country and threatening our way of life.",
+        "metadata": {
+          "author": "neutraluser999",
+          "language": "English"
+        }
+      }
+    }
+  },
+  "attempts": 1,
+  "response": {
+    "status": 200,
+    "latency_s": 23.139,
+    "headers": {
+      "Alt-Svc": "h3=\":443\"; ma=2592000",
+      "Content-Length": "1745",
+      "Content-Type": "application/json",
+      "Date": "Wed, 16 Sep 2026 12:46:55 GMT",
+      "Server": "uvicorn",
+      "Via": "1.1 Caddy",
+      "X-Request-Id": "25fb8336b07547918f60d5b3a2032868",
+      "Connection": "close"
+    },
+    "body_text": "{\"answer\":\"**Assessment:** rejected.\\n\\nThe new post frames immigration as an invasion threatening a national way of life, a hardline anti-immigration framing echoed in [T4-006695](#T4-006695), which demands a \\\"deportation force,\\\" and in [T4-007195](#T4-007195), which argues against \\\"bringing people in\\\" by linking immigration to terrorism. The shared thread is treating immigration as a security/cultural threat rather than a policy question, though [T4-007195](#T4-007195) grounds its objection in terrorism risk rather than an \\\"invasion\\\" narrative. Other retrieved posts differ in focus: [T4-007129](#T4-007129) targets a specific individual alleged to have threatened the President and his wife, and [T4-006133](#T4-006133) merely distinguishes legal from illegal immigration, while [T4-009034](#T4-009034) quotes Burgess Owens on institutions being \\\"under attack\\\" without mentioning immigration. None of these posts is a rebuttal or quotation of the new post's claim; they are separate statements sharing only the broad topic.\",\"source_post_ids\":[\"T4-007129\",\"T4-007195\",\"T4-006695\",\"T4-009034\",\"T4-006133\"],\"confidence\":0.69216686,\"source_post_content\":[\"Illegal immigrant makes THREATS towards our President and his wife!  Please help identify this thug, RETWEET!  https://t.co/IxTe7OPmBn\",\"We already have a problem with home grown terrorism. Why on earth would you add to it by bringing people in? https://t.co/5GurUzpXc3\",\"We need that damn deportation force! https://t.co/cGZHcuTakH\",\"Burgess Owens: \\\"Our institutions are under attack: God, family, country.\\\" https://t.co/tea1tLgBxR\",\"You know, there are legal ways to immigrate and illegal ways to immigrate https://t.co/9ltKR3VG6W\"],\"assessment_score\":0.8461889375776475}",
+    "body_json": {
+      "answer": "**Assessment:** rejected.\n\nThe new post frames immigration as an invasion threatening a national way of life, a hardline anti-immigration framing echoed in [T4-006695](#T4-006695), which demands a \"deportation force,\" and in [T4-007195](#T4-007195), which argues against \"bringing people in\" by linking immigration to terrorism. The shared thread is treating immigration as a security/cultural threat rather than a policy question, though [T4-007195](#T4-007195) grounds its objection in terrorism risk rather than an \"invasion\" narrative. Other retrieved posts differ in focus: [T4-007129](#T4-007129) targets a specific individual alleged to have threatened the President and his wife, and [T4-006133](#T4-006133) merely distinguishes legal from illegal immigration, while [T4-009034](#T4-009034) quotes Burgess Owens on institutions being \"under attack\" without mentioning immigration. None of these posts is a rebuttal or quotation of the new post's claim; they are separate statements sharing only the broad topic.",
+      "source_post_ids": [
+        "T4-007129",
+        "T4-007195",
+        "T4-006695",
+        "T4-009034",
+        "T4-006133"
+      ],
+      "confidence": 0.69216686,
+      "source_post_content": [
+        "Illegal immigrant makes THREATS towards our President and his wife!  Please help identify this thug, RETWEET!  https://t.co/IxTe7OPmBn",
+        "We already have a problem with home grown terrorism. Why on earth would you add to it by bringing people in? https://t.co/5GurUzpXc3",
+        "We need that damn deportation force! https://t.co/cGZHcuTakH",
+        "Burgess Owens: \"Our institutions are under attack: God, family, country.\" https://t.co/tea1tLgBxR",
+        "You know, there are legal ways to immigrate and illegal ways to immigrate https://t.co/9ltKR3VG6W"
+      ],
+      "assessment_score": 0.8461889375776475
+    },
+    "error": null
+  }
+}

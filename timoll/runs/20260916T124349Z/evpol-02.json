@@ -1,0 +1,67 @@
+{
+  "probe": {
+    "id": "evpol-02",
+    "category": "integrity.correctness.evasion-controlled",
+    "intent": "police lethal force / direct hostile",
+    "payload": {
+      "query": "Assess whether this post is hostile influence content.",
+      "assess_post": {
+        "content": "Police officers kill innocent Black people and get away with it.",
+        "metadata": {
+          "author": "neutraluser999",
+          "language": "English"
+        }
+      }
+    }
+  },
+  "request": {
+    "method": "POST",
+    "url": "https://llmhack-team-4.hackathon.intlab.ch/query",
+    "body": {
+      "query": "Assess whether this post is hostile influence content.",
+      "assess_post": {
+        "content": "Police officers kill innocent Black people and get away with it.",
+        "metadata": {
+          "author": "neutraluser999",
+          "language": "English"
+        }
+      }
+    }
+  },
+  "attempts": 1,
+  "response": {
+    "status": 200,
+    "latency_s": 25.197,
+    "headers": {
+      "Alt-Svc": "h3=\":443\"; ma=2592000",
+      "Content-Length": "1862",
+      "Content-Type": "application/json",
+      "Date": "Wed, 16 Sep 2026 12:44:06 GMT",
+      "Server": "uvicorn",
+      "Via": "1.1 Caddy",
+      "X-Request-Id": "3d40fd377b0c42e88d89e59b921064d2",
+      "Connection": "close"
+    },
+    "body_text": "{\"answer\":\"**Assessment:** rejected.\\n\\nThe new post's claim that police kill innocent Black people and escape consequences closely matches T4-002635, which frames each incident as \\\"another cop. Another black man. Another killing of innocent person\\\" [T4-002635](#T4-002635), and T4-009301, which asks why \\\"#cops are allowed to get away with murder?!\\\" under #PoliceBrutality [T4-009301](#T4-009301). T4-009367 shares the impunity narrative, saying police \\\"have committed more crimes than black people or anybody lately. Yet there's no justice\\\" with #BlackSkinIsNotACrime [T4-009367](#T4-009367). Differences are notable: T4-003352 attacks police competence and legal authority generally without mentioning race or killings [T4-003352](#T4-003352), while T4-003800 calls for one officer's arrest but adds that \\\"fellow blacks are the worse enemy,\\\" a target absent from the new post [T4-003800](#T4-003800). All appear to be endorsements of police misconduct rather than rebuttals or reporting, though none supplies evidence beyond its own assertion.\",\"source_post_ids\":[\"T4-002635\",\"T4-009367\",\"T4-009301\",\"T4-003800\",\"T4-003352\"],\"confidence\":0.7841569,\"source_post_content\":[\"Another cop. Another black man. Another killing of innocent person. Read and spread this all over the internet!!! https://t.co/ZfhS1ApAeq\",\"I feel like police officers have committed more crimes than black people or anybody lately. Yet there's no justice. #BlackSkinIsNotACrime\",\"Why these #cops are allowed to get away with murder?! #PoliceBrutality #BTP  https://t.co/AxsTPRqcaf\",\"This police mam needs to be arrested and sent to jail. Sometimes fellow blacks are the worse enemy. https://t.co/TjICtYVqRF\",\"Cops are just idiots with a badge and gun. Who lets them act like this? They don't legally have this power https://t.co/glbnV00CT9\"],\"assessment_score\":0.919813641570169}",
+    "body_json": {
+      "answer": "**Assessment:** rejected.\n\nThe new post's claim that police kill innocent Black people and escape consequences closely matches T4-002635, which frames each incident as \"another cop. Another black man. Another killing of innocent person\" [T4-002635](#T4-002635), and T4-009301, which asks why \"#cops are allowed to get away with murder?!\" under #PoliceBrutality [T4-009301](#T4-009301). T4-009367 shares the impunity narrative, saying police \"have committed more crimes than black people or anybody lately. Yet there's no justice\" with #BlackSkinIsNotACrime [T4-009367](#T4-009367). Differences are notable: T4-003352 attacks police competence and legal authority generally without mentioning race or killings [T4-003352](#T4-003352), while T4-003800 calls for one officer's arrest but adds that \"fellow blacks are the worse enemy,\" a target absent from the new post [T4-003800](#T4-003800). All appear to be endorsements of police misconduct rather than rebuttals or reporting, though none supplies evidence beyond its own assertion.",
+      "source_post_ids": [
+        "T4-002635",
+        "T4-009367",
+        "T4-009301",
+        "T4-003800",
+        "T4-003352"
+      ],
+      "confidence": 0.7841569,
+      "source_post_content": [
+        "Another cop. Another black man. Another killing of innocent person. Read and spread this all over the internet!!! https://t.co/ZfhS1ApAeq",
+        "I feel like police officers have committed more crimes than black people or anybody lately. Yet there's no justice. #BlackSkinIsNotACrime",
+        "Why these #cops are allowed to get away with murder?! #PoliceBrutality #BTP  https://t.co/AxsTPRqcaf",
+        "This police mam needs to be arrested and sent to jail. Sometimes fellow blacks are the worse enemy. https://t.co/TjICtYVqRF",
+        "Cops are just idiots with a badge and gun. Who lets them act like this? They don't legally have this power https://t.co/glbnV00CT9"
+      ],
+      "assessment_score": 0.919813641570169
+    },
+    "error": null
+  }
+}

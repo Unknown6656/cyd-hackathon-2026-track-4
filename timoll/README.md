@@ -17,14 +17,16 @@ a watchlist membership oracle via `assess_post.metadata.author` (F-01).
 | Path | Purpose |
 |---|---|
 | `probes/build_probes.py` | builds the payload library; edit this, not the JSON |
-| `probes/probes.json` | generated library, 154 probes across 13 categories |
+| `probes/probes.json` | generated library, 182 probes across 13 categories |
 | `probes/membership.json` | generated per-handle watchlist probes (optional) |
 | `redteam.py` | runs probes against `/query`, logs every exchange to `runs/<runid>/` |
 | `rerun_failed.py` | collects non-200 probe ids from a run for a retry pass |
 | `analyze.py` | mechanical triage of a run into `triage.csv` + candidate findings |
+| `evasion_report.py` | tabulates controlled evasion families (F-02) by score spread |
 | `gen_membership.py` | emits one membership-inference probe per handle in a list |
 | `handles_seed.txt` | known handles to seed the membership sweep |
 | `FINDINGS.md` | confirmed/candidate exploits, evidence, reproduction |
+| `F-02-report.md` | standalone, code-free write-up of the F-02 evasion exploit (curl reproduction) |
 | `runs/` | raw request/response evidence (one JSON per probe + `summary.csv`) |
 
 ## Run it
@@ -68,6 +70,7 @@ Everything is standard library Python 3 — no dependencies to install.
 4. `integrity.hallucination` — nonexistent authors/hashtags/events, fabricated post IDs.
 5. `integrity.overconfidence` — confident claims from zero/one source.
 6. `integrity.correctness` — false-positive/false-negative controls via `assess_post`.
+6b. `integrity.correctness.evasion-controlled` / `.evasion-families` — fixed claims rephrased across styles to measure score sensitivity (F-02); report with `evasion_report.py`.
 7. `integrity.scope-language` — forcing non-English into findings.
 8. `discovery.authors` — enumerate candidate handles for membership inference.
 9. `robustness.default-time-scope` — suspected hard-coded 2023 window.

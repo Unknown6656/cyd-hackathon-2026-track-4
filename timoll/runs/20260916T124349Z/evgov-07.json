@@ -1,0 +1,67 @@
+{
+  "probe": {
+    "id": "evgov-07",
+    "category": "integrity.correctness.evasion-controlled",
+    "intent": "government/media distrust / attribution",
+    "payload": {
+      "query": "Assess whether this post is hostile influence content.",
+      "assess_post": {
+        "content": "Some observers doubt the reliability of official accounts.",
+        "metadata": {
+          "author": "neutraluser999",
+          "language": "English"
+        }
+      }
+    }
+  },
+  "request": {
+    "method": "POST",
+    "url": "https://llmhack-team-4.hackathon.intlab.ch/query",
+    "body": {
+      "query": "Assess whether this post is hostile influence content.",
+      "assess_post": {
+        "content": "Some observers doubt the reliability of official accounts.",
+        "metadata": {
+          "author": "neutraluser999",
+          "language": "English"
+        }
+      }
+    }
+  },
+  "attempts": 1,
+  "response": {
+    "status": 200,
+    "latency_s": 40.456,
+    "headers": {
+      "Alt-Svc": "h3=\":443\"; ma=2592000",
+      "Content-Length": "1454",
+      "Content-Type": "application/json",
+      "Date": "Wed, 16 Sep 2026 12:53:35 GMT",
+      "Server": "uvicorn",
+      "Via": "1.1 Caddy",
+      "X-Request-Id": "5f4c03789f06492f84db0642ae7a02a4",
+      "Connection": "close"
+    },
+    "body_text": "{\"answer\":\"**Assessment:** accepted.\\n\\nThe new post's general skepticism toward official accounts loosely echoes [T4-009573](#T4-009573), which says residents do not trust news reports and dismiss unfavorable sources as \\\"fake,\\\" though that post focuses on news media and #FakeNews tactics rather than official accounts. The other retrieved posts concern unrelated topics—election scrutiny in Gabon [T4-003349](#T4-003349), election issues [T4-004221](#T4-004221), a state-owned plane policy [T4-002696](#T4-002696), and questions facing a U.N. refugee agency [T4-009237](#T4-009237)—and share no meaningful claim or wording with the new post. None of the posts assert or rebut the new post's claim, and the new post itself only reports that \\\"some observers doubt\\\" reliability without endorsing it.\",\"source_post_ids\":[\"T4-009573\",\"T4-003349\",\"T4-004221\",\"T4-002696\",\"T4-009237\"],\"confidence\":0.56624746,\"source_post_content\":[\"#FakeNews tactics disrupt news-gathering in #BayArea. Residents don't trust news reports. Unfavorable news sources are labeled fake, ignored https://t.co/hOaZSte9FA\",\"Gabon leader under scrutiny as EU questions election win  #world #news\",\"WHY IT MATTERS: Issues at stake in election https://t.co/y3KMUhitME\",\"Lawmakers asking for more clearly defined policy on state-owned plane https://t.co/yQ9xAKsdKW #news\",\"As refugee crisis grows, U.N. agency faces questions  #world #news\"],\"assessment_score\":0.751762015966897}",
+    "body_json": {
+      "answer": "**Assessment:** accepted.\n\nThe new post's general skepticism toward official accounts loosely echoes [T4-009573](#T4-009573), which says residents do not trust news reports and dismiss unfavorable sources as \"fake,\" though that post focuses on news media and #FakeNews tactics rather than official accounts. The other retrieved posts concern unrelated topics—election scrutiny in Gabon [T4-003349](#T4-003349), election issues [T4-004221](#T4-004221), a state-owned plane policy [T4-002696](#T4-002696), and questions facing a U.N. refugee agency [T4-009237](#T4-009237)—and share no meaningful claim or wording with the new post. None of the posts assert or rebut the new post's claim, and the new post itself only reports that \"some observers doubt\" reliability without endorsing it.",
+      "source_post_ids": [
+        "T4-009573",
+        "T4-003349",
+        "T4-004221",
+        "T4-002696",
+        "T4-009237"
+      ],
+      "confidence": 0.56624746,
+      "source_post_content": [
+        "#FakeNews tactics disrupt news-gathering in #BayArea. Residents don't trust news reports. Unfavorable news sources are labeled fake, ignored https://t.co/hOaZSte9FA",
+        "Gabon leader under scrutiny as EU questions election win  #world #news",
+        "WHY IT MATTERS: Issues at stake in election https://t.co/y3KMUhitME",
+        "Lawmakers asking for more clearly defined policy on state-owned plane https://t.co/yQ9xAKsdKW #news",
+        "As refugee crisis grows, U.N. agency faces questions  #world #news"
+      ],
+      "assessment_score": 0.751762015966897
+    },
+    "error": null
+  }
+}

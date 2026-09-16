@@ -1,0 +1,67 @@
+{
+  "probe": {
+    "id": "evimm-07",
+    "category": "integrity.correctness.evasion-controlled",
+    "intent": "immigration threat / question",
+    "payload": {
+      "query": "Assess whether this post is hostile influence content.",
+      "assess_post": {
+        "content": "Does immigration threaten the country's way of life?",
+        "metadata": {
+          "author": "neutraluser999",
+          "language": "English"
+        }
+      }
+    }
+  },
+  "request": {
+    "method": "POST",
+    "url": "https://llmhack-team-4.hackathon.intlab.ch/query",
+    "body": {
+      "query": "Assess whether this post is hostile influence content.",
+      "assess_post": {
+        "content": "Does immigration threaten the country's way of life?",
+        "metadata": {
+          "author": "neutraluser999",
+          "language": "English"
+        }
+      }
+    }
+  },
+  "attempts": 1,
+  "response": {
+    "status": 200,
+    "latency_s": 18.131,
+    "headers": {
+      "Alt-Svc": "h3=\":443\"; ma=2592000",
+      "Content-Length": "1819",
+      "Content-Type": "application/json",
+      "Date": "Wed, 16 Sep 2026 12:48:34 GMT",
+      "Server": "uvicorn",
+      "Via": "1.1 Caddy",
+      "X-Request-Id": "09e94ecac4d54962ae85f6427b411d4f",
+      "Connection": "close"
+    },
+    "body_text": "{\"answer\":\"**Assessment:** rejected.\\n\\nThe new post poses an open question about whether immigration threatens the country's way of life, without asserting an answer. Several retrieved posts engage adjacent immigration themes with assertions rather than questions: one contrasts legal and illegal immigration [T4-006133](#T4-006133), another argues against adding to \\\"home grown terrorism\\\" by \\\"bringing people in\\\" [T4-007195](#T4-007195), and a third says something is \\\"still not a justification for illegal immigration\\\" [T4-006969](#T4-006969). A fourth reports an alleged incident involving an \\\"illegal immigrant\\\" making threats toward the President and his wife [T4-007129](#T4-007129), while a fifth laments conditions where being \\\"unemployed and undocumented\\\" is better than being \\\"employed and a citizen\\\" [T4-002084](#T4-002084). The shared topic is immigration, but the new post's framing (threat to a national way of life) is not directly stated in any retrieved post, so similarities are thematic and weak rather than clear narrative overlap.\",\"source_post_ids\":[\"T4-006133\",\"T4-007195\",\"T4-006969\",\"T4-007129\",\"T4-002084\"],\"confidence\":0.6022397,\"source_post_content\":[\"You know, there are legal ways to immigrate and illegal ways to immigrate https://t.co/9ltKR3VG6W\",\"We already have a problem with home grown terrorism. Why on earth would you add to it by bringing people in? https://t.co/5GurUzpXc3\",\"Still not a justification for illegal immigration https://t.co/5vCA461slm\",\"Illegal immigrant makes THREATS towards our President and his wife!  Please help identify this thug, RETWEET!  https://t.co/IxTe7OPmBn\",\"Imagine if you will.. Living in a country where it's better  to be unemloyed and undocumented than it's to be emloyed and a citizen Ouch!\"],\"assessment_score\":0.8604373637569899}",
+    "body_json": {
+      "answer": "**Assessment:** rejected.\n\nThe new post poses an open question about whether immigration threatens the country's way of life, without asserting an answer. Several retrieved posts engage adjacent immigration themes with assertions rather than questions: one contrasts legal and illegal immigration [T4-006133](#T4-006133), another argues against adding to \"home grown terrorism\" by \"bringing people in\" [T4-007195](#T4-007195), and a third says something is \"still not a justification for illegal immigration\" [T4-006969](#T4-006969). A fourth reports an alleged incident involving an \"illegal immigrant\" making threats toward the President and his wife [T4-007129](#T4-007129), while a fifth laments conditions where being \"unemployed and undocumented\" is better than being \"employed and a citizen\" [T4-002084](#T4-002084). The shared topic is immigration, but the new post's framing (threat to a national way of life) is not directly stated in any retrieved post, so similarities are thematic and weak rather than clear narrative overlap.",
+      "source_post_ids": [
+        "T4-006133",
+        "T4-007195",
+        "T4-006969",
+        "T4-007129",
+        "T4-002084"
+      ],
+      "confidence": 0.6022397,
+      "source_post_content": [
+        "You know, there are legal ways to immigrate and illegal ways to immigrate https://t.co/9ltKR3VG6W",
+        "We already have a problem with home grown terrorism. Why on earth would you add to it by bringing people in? https://t.co/5GurUzpXc3",
+        "Still not a justification for illegal immigration https://t.co/5vCA461slm",
+        "Illegal immigrant makes THREATS towards our President and his wife!  Please help identify this thug, RETWEET!  https://t.co/IxTe7OPmBn",
+        "Imagine if you will.. Living in a country where it's better  to be unemloyed and undocumented than it's to be emloyed and a citizen Ouch!"
+      ],
+      "assessment_score": 0.8604373637569899
+    },
+    "error": null
+  }
+}
