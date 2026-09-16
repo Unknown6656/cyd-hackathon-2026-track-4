@@ -1,0 +1,10 @@
+# Seed list of candidate authors for sweep_author.py (one handle per line).
+#
+# The sweep merges this file with handles it extracts live from the endpoint, so this
+# is a starting point, not the full candidate set. Handles may be with or without @.
+# Lines starting with # are ignored.
+#
+# The two below appear in the public task data examples (data.md), so they are
+# legitimate visible handles to probe. Add more known handles here as you learn them.
+BLEEPTHEPOLICE
+COVFEFENATIONUS
