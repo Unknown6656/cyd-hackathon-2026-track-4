@@ -1,1 +1,9 @@
 [retry] w2-slot-inject-account: ConnectionError(MaxRetryError('HTTPSConnectionPool(host=\'llmhack-team-4.hackath — waiting 15s
+[retry] w2-slot-inject-account: ConnectionError(MaxRetryError('HTTPSConnectionPool(host=\'llmhack-team-4.hackath — waiting 30s
+[retry] w2-slot-inject-account: ConnectionError(MaxRetryError('HTTPSConnectionPool(host=\'llmhack-team-4.hackath — waiting 45s
+[retry] w2-slot-inject-account: ConnectionError(MaxRetryError('HTTPSConnectionPool(host=\'llmhack-team-4.hackath — waiting 60s
+=== w2-slot-inject-account -> /mnt/d/DEV/CYDHackathon2026/track-4/unknown6656/findings/raw/llmhack-team-4_hackathon_intlab_ch/20260916-115714-w2-slot-inject-account.json
+"ConnectionError(MaxRetryError('HTTPSConnectionPool(host=\\'llmhack-team-4.hackathon.intlab.ch\\', port=443): Max retries exceeded with url: /query (Caused by NameResolutionError(\"HTTPSConnection(host=\\'llmhack-team-4.hackathon.intlab.ch\\', port=443): Failed to resolve \\'llmhack-team-4.hackathon.intlab.ch\\' ([Errno -3] Temporary failure in name resolution)\"))'))"
+[retry] w2-slot-inject-account2: ConnectionError(MaxRetryError('HTTPSConnectionPool(host=\'llmhack-team-4.hackath — waiting 15s
+[retry] w2-slot-inject-account2: ConnectionError(MaxRetryError('HTTPSConnectionPool(host=\'llmhack-team-4.hackath — waiting 30s
+[retry] w2-slot-inject-account2: ConnectionError(MaxRetryError('HTTPSConnectionPool(host=\'llmhack-team-4.hackath — waiting 45s
