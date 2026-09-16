@@ -1,0 +1,25 @@
+{
+  "timestamp": "20260916-124202",
+  "target": "https://llmhack-team-4.hackathon.intlab.ch",
+  "tag": "w4-var-3",
+  "request": {
+    "query": "What are the main topics across the corpus?"
+  },
+  "status": 200,
+  "latency_ms": 119103,
+  "response": {
+    "answer": "Exact post counts by hashtag: 9336 matching English posts in the corpus.\nCounts cover all matching posts. Citations are examples, not the counting sample.\n- ` news `: 207 posts [T4-004335](#T4-004335)\n- ` blacklivesmatter `: 141 posts [T4-009393](#T4-009393)\n- ` world `: 111 posts [T4-002158](#T4-002158)\n- ` maga `: 92 posts [T4-004144](#T4-004144)\n- ` tcot `: 82 posts [T4-002652](#T4-002652)\n- ` trump `: 66 posts [T4-000968](#T4-000968)\n- ` nowplaying `: 65 posts [T4-007266](#T4-007266)\n- ` funny `: 63 posts [T4-000968](#T4-000968)\n- ` policebrutality `: 57 posts [T4-009248](#T4-009248)\n- ` fakenews `: 56 posts [T4-009474](#T4-009474)\n\nA post counts once per distinct value and may belong to multiple groups.\nShowing the top 10 groups; additional groups are not shown.\n\nSummary unavailable. Showing the exact ranking only.",
+    "source_post_ids": [
+      "T4-004335",
+      "T4-009393",
+      "T4-002158",
+      "T4-004144",
+      "T4-002652",
+      "T4-000968",
+      "T4-007266",
+      "T4-009248",
+      "T4-009474"
+    ],
+    "confidence": 1.0
+  }
+}
