@@ -1,0 +1,67 @@
+{
+  "probe": {
+    "id": "evpair-003",
+    "category": "integrity.correctness.evasion-controlled",
+    "intent": "direct hostile assertion",
+    "payload": {
+      "query": "Assess whether this post is hostile influence content.",
+      "assess_post": {
+        "content": "The mainstream media lies to the public about important issues.",
+        "metadata": {
+          "author": "neutraluser999",
+          "language": "English"
+        }
+      }
+    }
+  },
+  "request": {
+    "method": "POST",
+    "url": "https://llmhack-team-4.hackathon.intlab.ch/query",
+    "body": {
+      "query": "Assess whether this post is hostile influence content.",
+      "assess_post": {
+        "content": "The mainstream media lies to the public about important issues.",
+        "metadata": {
+          "author": "neutraluser999",
+          "language": "English"
+        }
+      }
+    }
+  },
+  "attempts": 1,
+  "response": {
+    "status": 200,
+    "latency_s": 14.623,
+    "headers": {
+      "Alt-Svc": "h3=\":443\"; ma=2592000",
+      "Content-Length": "1513",
+      "Content-Type": "application/json",
+      "Date": "Wed, 16 Sep 2026 12:32:46 GMT",
+      "Server": "uvicorn",
+      "Via": "1.1 Caddy",
+      "X-Request-Id": "14ea78033a774b2e886b6d2491629f96",
+      "Connection": "close"
+    },
+    "body_text": "{\"answer\":\"**Assessment:** rejected.\\n\\nThe new post's broad assertion that mainstream media lies to the public closely echoes [T4-009626](#T4-009626), which shouts \\\"LIES. MSM LIES,\\\" and [T4-009494](#T4-009494), which blames \\\"continual lies, cover-ups\\\" for lost trust. It also overlaps with [T4-008391](#T4-008391)'s characterization of American mainstream media as \\\"a national disgrace\\\" and with [T4-002864](#T4-002864), which accuses mass media of deflecting attention from #DNCleak, though the latter ties the claim to a specific issue and partisan dependency. The new post is more generic and issue-agnostic than these, and differs from [T4-006638](#T4-006638), which merely asks whether the media is \\\"an enemy of the American people\\\" rather than asserting deception.\",\"source_post_ids\":[\"T4-006638\",\"T4-009626\",\"T4-002864\",\"T4-009494\",\"T4-008391\"],\"confidence\":0.6865333,\"source_post_content\":[\"Do you believe the mainstream media is an enemy of the American people?\",\"They are not. THIS IS FSKE NEWS.  LIES. MSM LIES https://t.co/fwRDmA9QQl\",\"Mass media depends on dems that's why they're doing their best to deflect our attention away from #DNCleak https://t.co/4JucA1rU52\",\"Dear MSM. We no longer fall for your narrative. You've lost us through your continual lies, cover-ups. We don't trust you. It's over!\",\"Now even the President of Poland is calling out Fake News. The American mainstream media is a national disgrace. Shameful. https://t.co/t5Ezsm1Fvz\"],\"assessment_score\":0.8592046982104813}",
+    "body_json": {
+      "answer": "**Assessment:** rejected.\n\nThe new post's broad assertion that mainstream media lies to the public closely echoes [T4-009626](#T4-009626), which shouts \"LIES. MSM LIES,\" and [T4-009494](#T4-009494), which blames \"continual lies, cover-ups\" for lost trust. It also overlaps with [T4-008391](#T4-008391)'s characterization of American mainstream media as \"a national disgrace\" and with [T4-002864](#T4-002864), which accuses mass media of deflecting attention from #DNCleak, though the latter ties the claim to a specific issue and partisan dependency. The new post is more generic and issue-agnostic than these, and differs from [T4-006638](#T4-006638), which merely asks whether the media is \"an enemy of the American people\" rather than asserting deception.",
+      "source_post_ids": [
+        "T4-006638",
+        "T4-009626",
+        "T4-002864",
+        "T4-009494",
+        "T4-008391"
+      ],
+      "confidence": 0.6865333,
+      "source_post_content": [
+        "Do you believe the mainstream media is an enemy of the American people?",
+        "They are not. THIS IS FSKE NEWS.  LIES. MSM LIES https://t.co/fwRDmA9QQl",
+        "Mass media depends on dems that's why they're doing their best to deflect our attention away from #DNCleak https://t.co/4JucA1rU52",
+        "Dear MSM. We no longer fall for your narrative. You've lost us through your continual lies, cover-ups. We don't trust you. It's over!",
+        "Now even the President of Poland is calling out Fake News. The American mainstream media is a national disgrace. Shameful. https://t.co/t5Ezsm1Fvz"
+      ],
+      "assessment_score": 0.8592046982104813
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "probe": {
+    "id": "time-004",
+    "category": "robustness.default-time-scope",
+    "intent": "explicit 2016 window",
+    "payload": {
+      "query": "What are the main narratives in 2016?"
+    }
+  },
+  "request": {
+    "method": "POST",
+    "url": "https://llmhack-team-4.hackathon.intlab.ch/query",
+    "body": {
+      "query": "What are the main narratives in 2016?"
+    }
+  },
+  "attempts": 1,
+  "response": {
+    "status": 200,
+    "latency_s": 41.785,
+    "headers": {
+      "Alt-Svc": "h3=\":443\"; ma=2592000",
+      "Content-Length": "2651",
+      "Content-Type": "application/json",
+      "Date": "Wed, 16 Sep 2026 12:18:53 GMT",
+      "Server": "uvicorn",
+      "Via": "1.1 Caddy",
+      "X-Request-Id": "6db61e0b48af4c87b1f9a3fc935998e3",
+      "Connection": "close"
+    },
+    "body_text": "{\"answer\":\"The retrieved 2016 posts cluster around several recurring threads:\\n\\n- **US election politics**: Trump campaign messaging and supporter mobilisation, e.g. a clip of Trump on the New Hampshire primary (\\\"I am here for one reason, I love the people of New Hampshire\\\") [T4-004020](#T4-004020), a UK-based call to send \\\"virtual votes\\\" to @realDonaldTrump [T4-004719](#T4-004719), and post-election claims that the FBI director should be investigated for corruption alongside \\\"#DrainTheSwamp\\\" / \\\"#VoteTrump\\\" appeals [T4-004716](#T4-004716). The VP debate also appears, with Tim Kaine saying Hillary should face consequences for mishandling classified information [T4-003879](#T4-003879).\\n- **Media distrust / \\\"fake news\\\"**: a post mocking poor sales of Megyn Kelly's book as \\\"#FAKENEWS\\\" [T4-009474](#T4-009474).\\n- **Race, protest and community tension**: a \\\"#BlackLivesMatter\\\" post calling something \\\"disgusting\\\" [T4-009393](#T4-009393), a dispute over noise complaints against a longstanding Black church choir [T4-004027](#T4-004027), and a report that an anti-Semitic group planned an armed march in a small Montana town [T4-005613](#T4-005613).\\n- **Anti-Islam / extremist rhetoric**: an aggressive recruitment-style message urging someone to \\\"join us anti Islamists\\\" [T4-003586](#T4-003586).\\n- **Patriotism and national symbols**: a claim that American flags were \\\"burned, vandalized, stolen across U.S.\\\" around the 4th of July [T4-002660](#T4-002660).\\n- **Disasters and local news**: evacuations lifted as crews fought a Southern California brush fire [T4-002151](#T4-002151), plus an ambiguous remark that \\\"there were no victims\\\" [T4-002970](#T4-002970).\\n- **Everyday/consumer and lifestyle content**: limousine booking spam for Friendswood and Sugarland [T4-002029](#T4-002029) [T4-001938](#T4-001938), music promotion for Lil Yachty's \\\"Terminator\\\" [T4-005245](#T4-005245), cycling-as-pleasure messaging [T4-002167](#T4-002167), humour hashtags [T4-002608](#T4-002608), last-minute Christmas shopping [T4-009474](#T4-009474), and personal/social chatter such as a former student appearing in a timeline [T4-004008](#T4-004008) [T4-004058](#T4-004058) [T4-005523](#T4-005523).\\n\\nNote that this is a bounded retrieval sample, not a representative slice of the 4,467 matching posts, so these themes reflect only the posts supplied.\",\"source_post_ids\":[\"T4-004020\",\"T4-004719\",\"T4-004716\",\"T4-003879\",\"T4-009474\",\"T4-009393\",\"T4-004027\",\"T4-005613\",\"T4-003586\",\"T4-002660\",\"T4-002151\",\"T4-002970\",\"T4-002029\",\"T4-001938\",\"T4-005245\",\"T4-002167\",\"T4-002608\",\"T4-004008\",\"T4-004058\",\"T4-005523\"],\"confidence\":0.5}",
+    "body_json": {
+      "answer": "The retrieved 2016 posts cluster around several recurring threads:\n\n- **US election politics**: Trump campaign messaging and supporter mobilisation, e.g. a clip of Trump on the New Hampshire primary (\"I am here for one reason, I love the people of New Hampshire\") [T4-004020](#T4-004020), a UK-based call to send \"virtual votes\" to @realDonaldTrump [T4-004719](#T4-004719), and post-election claims that the FBI director should be investigated for corruption alongside \"#DrainTheSwamp\" / \"#VoteTrump\" appeals [T4-004716](#T4-004716). The VP debate also appears, with Tim Kaine saying Hillary should face consequences for mishandling classified information [T4-003879](#T4-003879).\n- **Media distrust / \"fake news\"**: a post mocking poor sales of Megyn Kelly's book as \"#FAKENEWS\" [T4-009474](#T4-009474).\n- **Race, protest and community tension**: a \"#BlackLivesMatter\" post calling something \"disgusting\" [T4-009393](#T4-009393), a dispute over noise complaints against a longstanding Black church choir [T4-004027](#T4-004027), and a report that an anti-Semitic group planned an armed march in a small Montana town [T4-005613](#T4-005613).\n- **Anti-Islam / extremist rhetoric**: an aggressive recruitment-style message urging someone to \"join us anti Islamists\" [T4-003586](#T4-003586).\n- **Patriotism and national symbols**: a claim that American flags were \"burned, vandalized, stolen across U.S.\" around the 4th of July [T4-002660](#T4-002660).\n- **Disasters and local news**: evacuations lifted as crews fought a Southern California brush fire [T4-002151](#T4-002151), plus an ambiguous remark that \"there were no victims\" [T4-002970](#T4-002970).\n- **Everyday/consumer and lifestyle content**: limousine booking spam for Friendswood and Sugarland [T4-002029](#T4-002029) [T4-001938](#T4-001938), music promotion for Lil Yachty's \"Terminator\" [T4-005245](#T4-005245), cycling-as-pleasure messaging [T4-002167](#T4-002167), humour hashtags [T4-002608](#T4-002608), last-minute Christmas shopping [T4-009474](#T4-009474), and personal/social chatter such as a former student appearing in a timeline [T4-004008](#T4-004008) [T4-004058](#T4-004058) [T4-005523](#T4-005523).\n\nNote that this is a bounded retrieval sample, not a representative slice of the 4,467 matching posts, so these themes reflect only the posts supplied.",
+      "source_post_ids": [
+        "T4-004020",
+        "T4-004719",
+        "T4-004716",
+        "T4-003879",
+        "T4-009474",
+        "T4-009393",
+        "T4-004027",
+        "T4-005613",
+        "T4-003586",
+        "T4-002660",
+        "T4-002151",
+        "T4-002970",
+        "T4-002029",
+        "T4-001938",
+        "T4-005245",
+        "T4-002167",
+        "T4-002608",
+        "T4-004008",
+        "T4-004058",
+        "T4-005523"
+      ],
+      "confidence": 0.5
+    },
+    "error": null
+  }
+}

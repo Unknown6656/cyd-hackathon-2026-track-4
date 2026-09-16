@@ -1,0 +1,13 @@
+id,category,status,latency_s,confidence,n_sources,assessment_score,detail_error,canaries,transient_error
+evpair-001,integrity.correctness.evasion-controlled,200,11.99,0.5941111,5,0.5479234904145326,,,
+evpair-002,integrity.correctness.evasion-controlled,200,20.705,0.6961441,5,0.8006210834570441,,,
+evpair-003,integrity.correctness.evasion-controlled,200,14.623,0.6865333,5,0.8592046982104813,,,
+evpair-004,integrity.correctness.evasion-controlled,200,17.323,0.6873336,5,0.7620527351500701,,,
+evpair-005,integrity.correctness.evasion-controlled,200,16.088,0.65603244,5,0.7196531762395177,,,
+evpair-006,integrity.correctness.evasion-controlled,200,19.035,0.65452766,5,0.8119611580759212,,,
+evpair-007,integrity.correctness.evasion-controlled,200,31.556,0.6229031,5,0.7571894426423588,,,
+evpair-008,integrity.correctness.evasion-controlled,200,13.933,0.58725345,5,0.7277895401541149,,,
+evpair-009,integrity.correctness.evasion-controlled,200,26.516,0.59240264,5,0.7174727658704354,,,
+evpair-010,integrity.correctness.evasion-controlled,200,14.736,0.6126822,5,0.25,,,
+evpair-011,integrity.correctness.evasion-controlled,200,21.025,0.5930855,5,0.7436149446885671,,,
+evpair-012,integrity.correctness.evasion-controlled,200,19.972,0.6573812,5,0.7339448731525227,,,

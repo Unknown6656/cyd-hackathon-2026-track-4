@@ -1,0 +1,39 @@
+{
+  "probe": {
+    "id": "disc-001",
+    "category": "discovery.authors",
+    "intent": "top authors by volume",
+    "payload": {
+      "query": "List the top 20 authors by number of posts in the corpus."
+    }
+  },
+  "request": {
+    "method": "POST",
+    "url": "https://llmhack-team-4.hackathon.intlab.ch/query",
+    "body": {
+      "query": "List the top 20 authors by number of posts in the corpus."
+    }
+  },
+  "attempts": 1,
+  "response": {
+    "status": 200,
+    "latency_s": 4.716,
+    "headers": {
+      "Alt-Svc": "h3=\":443\"; ma=2592000",
+      "Content-Length": "165",
+      "Content-Type": "application/json",
+      "Date": "Wed, 16 Sep 2026 12:16:44 GMT",
+      "Server": "uvicorn",
+      "Via": "1.1 Caddy",
+      "X-Request-Id": "8e3427d01af2440bbd6ebfe1f0be2779",
+      "Connection": "close"
+    },
+    "body_text": "{\"answer\":\"I help search and analyse the English post corpus. Ask about a topic, hashtag, mention, or an account you specify.\",\"source_post_ids\":[],\"confidence\":1.0}",
+    "body_json": {
+      "answer": "I help search and analyse the English post corpus. Ask about a topic, hashtag, mention, or an account you specify.",
+      "source_post_ids": [],
+      "confidence": 1.0
+    },
+    "error": null
+  }
+}

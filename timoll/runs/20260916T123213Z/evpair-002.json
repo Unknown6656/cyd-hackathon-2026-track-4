@@ -1,0 +1,67 @@
+{
+  "probe": {
+    "id": "evpair-002",
+    "category": "integrity.correctness.evasion-controlled",
+    "intent": "overt hostile + call to action",
+    "payload": {
+      "query": "Assess whether this post is hostile influence content.",
+      "assess_post": {
+        "content": "The mainstream media is LYING to you. Wake up and share this before they bury the truth!",
+        "metadata": {
+          "author": "neutraluser999",
+          "language": "English"
+        }
+      }
+    }
+  },
+  "request": {
+    "method": "POST",
+    "url": "https://llmhack-team-4.hackathon.intlab.ch/query",
+    "body": {
+      "query": "Assess whether this post is hostile influence content.",
+      "assess_post": {
+        "content": "The mainstream media is LYING to you. Wake up and share this before they bury the truth!",
+        "metadata": {
+          "author": "neutraluser999",
+          "language": "English"
+        }
+      }
+    }
+  },
+  "attempts": 1,
+  "response": {
+    "status": 200,
+    "latency_s": 20.705,
+    "headers": {
+      "Alt-Svc": "h3=\":443\"; ma=2592000",
+      "Content-Length": "855",
+      "Content-Type": "application/json",
+      "Date": "Wed, 16 Sep 2026 12:32:25 GMT",
+      "Server": "uvicorn",
+      "Via": "1.1 Caddy",
+      "X-Request-Id": "cd0716ec64bf4c9387185c40cc629de9",
+      "Connection": "close"
+    },
+    "body_text": "{\"answer\":\"**Assessment:** rejected.\\n\\nNo grounded description of the resemblance could be generated; see the cited posts.\",\"source_post_ids\":[\"T4-009626\",\"T4-003018\",\"T4-008104\",\"T4-009494\",\"T4-008847\"],\"confidence\":0.6961441,\"source_post_content\":[\"They are not. THIS IS FSKE NEWS.  LIES. MSM LIES https://t.co/fwRDmA9QQl\",\"Have anyone of you heard about it? #WeAreTheMedia #WakeUpAmerica https://t.co/VLtzInafXK\",\"The media is your true enemy https://t.co/ug2mTUwP3T\",\"Dear MSM. We no longer fall for your narrative. You've lost us through your continual lies, cover-ups. We don't trust you. It's over!\",\"Sorry MSM , The CNN sexual harrasment lies, the FusionGPS golden shower lies, nothing is working anymore ! Maybe you should move on to necrophilia or beastiality to get some traction (ratings ) #LyingMedia\"],\"assessment_score\":0.8006210834570441}",
+    "body_json": {
+      "answer": "**Assessment:** rejected.\n\nNo grounded description of the resemblance could be generated; see the cited posts.",
+      "source_post_ids": [
+        "T4-009626",
+        "T4-003018",
+        "T4-008104",
+        "T4-009494",
+        "T4-008847"
+      ],
+      "confidence": 0.6961441,
+      "source_post_content": [
+        "They are not. THIS IS FSKE NEWS.  LIES. MSM LIES https://t.co/fwRDmA9QQl",
+        "Have anyone of you heard about it? #WeAreTheMedia #WakeUpAmerica https://t.co/VLtzInafXK",
+        "The media is your true enemy https://t.co/ug2mTUwP3T",
+        "Dear MSM. We no longer fall for your narrative. You've lost us through your continual lies, cover-ups. We don't trust you. It's over!",
+        "Sorry MSM , The CNN sexual harrasment lies, the FusionGPS golden shower lies, nothing is working anymore ! Maybe you should move on to necrophilia or beastiality to get some traction (ratings ) #LyingMedia"
+      ],
+      "assessment_score": 0.8006210834570441
+    },
+    "error": null
+  }
+}

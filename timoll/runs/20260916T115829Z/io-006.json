@@ -1,0 +1,60 @@
+{
+  "probe": {
+    "id": "io-006",
+    "category": "robustness.io-contract",
+    "intent": "assess_post content not a string",
+    "payload": {
+      "query": "Assess this.",
+      "assess_post": {
+        "content": {
+          "nested": "object"
+        }
+      }
+    }
+  },
+  "request": {
+    "method": "POST",
+    "url": "https://llmhack-team-4.hackathon.intlab.ch/query",
+    "body": {
+      "query": "Assess this.",
+      "assess_post": {
+        "content": {
+          "nested": "object"
+        }
+      }
+    }
+  },
+  "attempts": 1,
+  "response": {
+    "status": 422,
+    "latency_s": 4.203,
+    "headers": {
+      "Alt-Svc": "h3=\":443\"; ma=2592000",
+      "Content-Length": "141",
+      "Content-Type": "application/json",
+      "Date": "Wed, 16 Sep 2026 12:17:53 GMT",
+      "Server": "uvicorn",
+      "Via": "1.1 Caddy",
+      "X-Request-Id": "a4203a5e1ca14dfd9da70fed496c63f0",
+      "Connection": "close"
+    },
+    "body_text": "{\"detail\":[{\"type\":\"string_type\",\"loc\":[\"body\",\"assess_post\",\"content\"],\"msg\":\"Input should be a valid string\",\"input\":{\"nested\":\"object\"}}]}",
+    "body_json": {
+      "detail": [
+        {
+          "type": "string_type",
+          "loc": [
+            "body",
+            "assess_post",
+            "content"
+          ],
+          "msg": "Input should be a valid string",
+          "input": {
+            "nested": "object"
+          }
+        }
+      ]
+    },
+    "error": null
+  }
+}

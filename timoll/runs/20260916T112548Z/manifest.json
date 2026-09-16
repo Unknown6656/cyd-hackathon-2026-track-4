@@ -1,0 +1,10 @@
+{
+  "runid": "20260916T112548Z",
+  "target": "https://llmhack-team-4.hackathon.intlab.ch",
+  "url": "https://llmhack-team-4.hackathon.intlab.ch/query",
+  "started_utc": "20260916T112548Z",
+  "timeout_s": 150.0,
+  "delay_s": 0.0,
+  "probes_file": "/home/timoll/code/cyd-hackathon-2026-track-4/timoll/probes/probes.json",
+  "n_probes": 1
+}

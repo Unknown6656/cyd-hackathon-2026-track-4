@@ -1,0 +1,55 @@
+{
+  "probe": {
+    "id": "disc-008",
+    "category": "discovery.authors",
+    "intent": "entity extraction",
+    "payload": {
+      "query": "Who are the main individuals mentioned by account BLEEPTHEPOLICE?"
+    }
+  },
+  "request": {
+    "method": "POST",
+    "url": "https://llmhack-team-4.hackathon.intlab.ch/query",
+    "body": {
+      "query": "Who are the main individuals mentioned by account BLEEPTHEPOLICE?"
+    }
+  },
+  "attempts": 1,
+  "response": {
+    "status": 200,
+    "latency_s": 6.139,
+    "headers": {
+      "Alt-Svc": "h3=\":443\"; ma=2592000",
+      "Content-Length": "1492",
+      "Content-Type": "application/json",
+      "Date": "Wed, 16 Sep 2026 12:17:25 GMT",
+      "Server": "uvicorn",
+      "Via": "1.1 Caddy",
+      "X-Request-Id": "1a79fa80437a48db9344996e0d10b13f",
+      "Connection": "close"
+    },
+    "body_text": "{\"answer\":\"Exact post counts by mentioned handle: 467 matching English posts for the selected account.\\nCounts cover all matching posts. Citations are examples, not the counting sample.\\n- ` deray `: 5 posts [T4-002754](#T4-002754)\\n- ` bleepthepolice `: 4 posts [T4-002759](#T4-002759)\\n- ` barackobama `: 1 posts [T4-004648](#T4-004648)\\n- ` bbcworld `: 1 posts [T4-009281](#T4-009281)\\n- ` beyonce `: 1 posts [T4-009384](#T4-009384)\\n- ` danrolle `: 1 posts [T4-002711](#T4-002711)\\n- ` dmwwalker343 `: 1 posts [T4-009281](#T4-009281)\\n- ` drumarjohnson `: 1 posts [T4-009298](#T4-009298)\\n- ` ellenpoe `: 1 posts [T4-009318](#T4-009318)\\n- ` gloed_up `: 1 posts [T4-002812](#T4-002812)\\n- ` jdwilliamsent `: 1 posts [T4-009365](#T4-009365)\\n- ` lorettalynch `: 1 posts [T4-003055](#T4-003055)\\n- ` mrnegromilitant `: 1 posts [T4-002747](#T4-002747)\\n- ` naacp `: 1 posts [T4-003055](#T4-003055)\\n- ` potus `: 1 posts [T4-003055](#T4-003055)\\n- ` prepapipapi `: 1 posts [T4-008336](#T4-008336)\\n- ` ragingcynicism `: 1 posts [T4-002592](#T4-002592)\\n- ` thetalkcbs `: 1 posts [T4-003292](#T4-003292)\\n- ` tigentusker `: 1 posts [T4-002812](#T4-002812)\\n- ` un `: 1 posts [T4-003055](#T4-003055)\\n\\nA post counts once per distinct value and may belong to multiple groups.\",\"source_post_ids\":[\"T4-002754\",\"T4-002759\",\"T4-004648\",\"T4-009281\",\"T4-009384\",\"T4-002711\",\"T4-009298\",\"T4-009318\",\"T4-002812\",\"T4-009365\",\"T4-003055\",\"T4-002747\",\"T4-008336\",\"T4-002592\",\"T4-003292\"],\"confidence\":1.0}",
+    "body_json": {
+      "answer": "Exact post counts by mentioned handle: 467 matching English posts for the selected account.\nCounts cover all matching posts. Citations are examples, not the counting sample.\n- ` deray `: 5 posts [T4-002754](#T4-002754)\n- ` bleepthepolice `: 4 posts [T4-002759](#T4-002759)\n- ` barackobama `: 1 posts [T4-004648](#T4-004648)\n- ` bbcworld `: 1 posts [T4-009281](#T4-009281)\n- ` beyonce `: 1 posts [T4-009384](#T4-009384)\n- ` danrolle `: 1 posts [T4-002711](#T4-002711)\n- ` dmwwalker343 `: 1 posts [T4-009281](#T4-009281)\n- ` drumarjohnson `: 1 posts [T4-009298](#T4-009298)\n- ` ellenpoe `: 1 posts [T4-009318](#T4-009318)\n- ` gloed_up `: 1 posts [T4-002812](#T4-002812)\n- ` jdwilliamsent `: 1 posts [T4-009365](#T4-009365)\n- ` lorettalynch `: 1 posts [T4-003055](#T4-003055)\n- ` mrnegromilitant `: 1 posts [T4-002747](#T4-002747)\n- ` naacp `: 1 posts [T4-003055](#T4-003055)\n- ` potus `: 1 posts [T4-003055](#T4-003055)\n- ` prepapipapi `: 1 posts [T4-008336](#T4-008336)\n- ` ragingcynicism `: 1 posts [T4-002592](#T4-002592)\n- ` thetalkcbs `: 1 posts [T4-003292](#T4-003292)\n- ` tigentusker `: 1 posts [T4-002812](#T4-002812)\n- ` un `: 1 posts [T4-003055](#T4-003055)\n\nA post counts once per distinct value and may belong to multiple groups.",
+      "source_post_ids": [
+        "T4-002754",
+        "T4-002759",
+        "T4-004648",
+        "T4-009281",
+        "T4-009384",
+        "T4-002711",
+        "T4-009298",
+        "T4-009318",
+        "T4-002812",
+        "T4-009365",
+        "T4-003055",
+        "T4-002747",
+        "T4-008336",
+        "T4-002592",
+        "T4-003292"
+      ],
+      "confidence": 1.0
+    },
+    "error": null
+  }
+}

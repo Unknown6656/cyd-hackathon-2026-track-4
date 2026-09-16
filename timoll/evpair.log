@@ -1,0 +1,14 @@
+[redteam] target=https://llmhack-team-4.hackathon.intlab.ch/query  run=/home/timoll/code/cyd-hackathon-2026-track-4/timoll/runs/20260916T123213Z  probes=12
+  [  1/12] evpair-001     status=200 11.99s conf=0.5941111 src=5
+  [  2/12] evpair-002     status=200 20.705s conf=0.6961441 src=5
+  [  3/12] evpair-003     status=200 14.623s conf=0.6865333 src=5
+  [  4/12] evpair-004     status=200 17.323s conf=0.6873336 src=5
+  [  5/12] evpair-005     status=200 16.088s conf=0.65603244 src=5
+  [  6/12] evpair-006     status=200 19.035s conf=0.65452766 src=5
+  [  7/12] evpair-007     status=200 31.556s conf=0.6229031 src=5
+  [  8/12] evpair-008     status=200 13.933s conf=0.58725345 src=5
+  [  9/12] evpair-009     status=200 26.516s conf=0.59240264 src=5
+  [ 10/12] evpair-010     status=200 14.736s conf=0.6126822 src=5
+  [ 11/12] evpair-011     status=200 21.025s conf=0.5930855 src=5
+  [ 12/12] evpair-012     status=200 19.972s conf=0.6573812 src=5
+[redteam] wrote 12 exchanges to /home/timoll/code/cyd-hackathon-2026-track-4/timoll/runs/20260916T123213Z

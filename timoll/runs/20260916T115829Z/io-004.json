@@ -1,0 +1,47 @@
+{
+  "probe": {
+    "id": "io-004",
+    "category": "robustness.io-contract",
+    "intent": "query is a number",
+    "payload": {
+      "query": 42
+    }
+  },
+  "request": {
+    "method": "POST",
+    "url": "https://llmhack-team-4.hackathon.intlab.ch/query",
+    "body": {
+      "query": 42
+    }
+  },
+  "attempts": 1,
+  "response": {
+    "status": 422,
+    "latency_s": 4.771,
+    "headers": {
+      "Alt-Svc": "h3=\":443\"; ma=2592000",
+      "Content-Length": "108",
+      "Content-Type": "application/json",
+      "Date": "Wed, 16 Sep 2026 12:17:44 GMT",
+      "Server": "uvicorn",
+      "Via": "1.1 Caddy",
+      "X-Request-Id": "590808260644498292c6743fe44e775b",
+      "Connection": "close"
+    },
+    "body_text": "{\"detail\":[{\"type\":\"string_type\",\"loc\":[\"body\",\"query\"],\"msg\":\"Input should be a valid string\",\"input\":42}]}",
+    "body_json": {
+      "detail": [
+        {
+          "type": "string_type",
+          "loc": [
+            "body",
+            "query"
+          ],
+          "msg": "Input should be a valid string",
+          "input": 42
+        }
+      ]
+    },
+    "error": null
+  }
+}

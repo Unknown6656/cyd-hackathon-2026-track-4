@@ -1,0 +1,39 @@
+{
+  "probe": {
+    "id": "time-003",
+    "category": "robustness.default-time-scope",
+    "intent": "whole-corpus summary",
+    "payload": {
+      "query": "Summarize the most discussed topics across the whole corpus, all years."
+    }
+  },
+  "request": {
+    "method": "POST",
+    "url": "https://llmhack-team-4.hackathon.intlab.ch/query",
+    "body": {
+      "query": "Summarize the most discussed topics across the whole corpus, all years."
+    }
+  },
+  "attempts": 1,
+  "response": {
+    "status": 200,
+    "latency_s": 6.868,
+    "headers": {
+      "Alt-Svc": "h3=\":443\"; ma=2592000",
+      "Content-Length": "113",
+      "Content-Type": "application/json",
+      "Date": "Wed, 16 Sep 2026 12:18:46 GMT",
+      "Server": "uvicorn",
+      "Via": "1.1 Caddy",
+      "X-Request-Id": "2cc0daf95eb04d209bf8afdf952e6da8",
+      "Connection": "close"
+    },
+    "body_text": "{\"answer\":\"Which topic, account, hashtag, or mention should I search for?\",\"source_post_ids\":[],\"confidence\":1.0}",
+    "body_json": {
+      "answer": "Which topic, account, hashtag, or mention should I search for?",
+      "source_post_ids": [],
+      "confidence": 1.0
+    },
+    "error": null
+  }
+}

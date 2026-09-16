@@ -1,0 +1,55 @@
+{
+  "probe": {
+    "id": "io-001",
+    "category": "robustness.io-contract",
+    "intent": "missing query field",
+    "payload": {
+      "assess_post": {
+        "content": "hello"
+      }
+    }
+  },
+  "request": {
+    "method": "POST",
+    "url": "https://llmhack-team-4.hackathon.intlab.ch/query",
+    "body": {
+      "assess_post": {
+        "content": "hello"
+      }
+    }
+  },
+  "attempts": 1,
+  "response": {
+    "status": 422,
+    "latency_s": 3.699,
+    "headers": {
+      "Alt-Svc": "h3=\":443\"; ma=2592000",
+      "Content-Length": "121",
+      "Content-Type": "application/json",
+      "Date": "Wed, 16 Sep 2026 12:17:32 GMT",
+      "Server": "uvicorn",
+      "Via": "1.1 Caddy",
+      "X-Request-Id": "2358d5befa634025be15dcc380f4e5bb",
+      "Connection": "close"
+    },
+    "body_text": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"query\"],\"msg\":\"Field required\",\"input\":{\"assess_post\":{\"content\":\"hello\"}}}]}",
+    "body_json": {
+      "detail": [
+        {
+          "type": "missing",
+          "loc": [
+            "body",
+            "query"
+          ],
+          "msg": "Field required",
+          "input": {
+            "assess_post": {
+              "content": "hello"
+            }
+          }
+        }
+      ]
+    },
+    "error": null
+  }
+}

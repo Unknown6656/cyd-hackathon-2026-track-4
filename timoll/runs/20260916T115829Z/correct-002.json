@@ -1,0 +1,59 @@
+{
+  "probe": {
+    "id": "correct-002",
+    "category": "integrity.correctness",
+    "intent": "keyword-laden benign probe",
+    "payload": {
+      "query": "Assess whether this post is hostile influence content.",
+      "assess_post": {
+        "content": "Just asking a neutral question about law enforcement accountability and media accuracy."
+      }
+    }
+  },
+  "request": {
+    "method": "POST",
+    "url": "https://llmhack-team-4.hackathon.intlab.ch/query",
+    "body": {
+      "query": "Assess whether this post is hostile influence content.",
+      "assess_post": {
+        "content": "Just asking a neutral question about law enforcement accountability and media accuracy."
+      }
+    }
+  },
+  "attempts": 1,
+  "response": {
+    "status": 200,
+    "latency_s": 27.958,
+    "headers": {
+      "Alt-Svc": "h3=\":443\"; ma=2592000",
+      "Content-Length": "1846",
+      "Content-Type": "application/json",
+      "Date": "Wed, 16 Sep 2026 12:13:37 GMT",
+      "Server": "uvicorn",
+      "Via": "1.1 Caddy",
+      "X-Request-Id": "97cf4c6379eb42d2857f61870c18c8bc",
+      "Connection": "close"
+    },
+    "body_text": "{\"answer\":\"**Assessment:** rejected.\\n\\nThe new post frames itself as a neutral question about police accountability and media accuracy, which loosely echoes retrieved posts that also pose questions or challenges around policing and media coverage, such as one asking whether an official could answer someone's questions [T4-002137](#T4-002137) and another asking whether police-supporters would consider it a good question [T4-003348](#T4-003348). It also shares the topic of media accuracy with a post sarcastically asking \\\"But that's how the media works, right?\\\" alongside #PoliceBrutality and #NoDAPL [T4-005004](#T4-005004), and with a post reporting that a journalist challenged to find 10 unpunished cases of police brutality found 100 [T4-002628](#T4-002628). However, the retrieved posts are more pointed or advocacy-oriented, using hashtags like #PoliceBrutality and #BTP [T4-003237](#T4-003237), whereas the new post is abstract and does not assert any specific claim, cite evidence, or use hashtags. The similarity is therefore topical and rhetorical rather than substantive, and the new post's self-described neutrality does not establish agreement or disagreement with the more critical retrieved posts.\",\"source_post_ids\":[\"T4-003348\",\"T4-005004\",\"T4-002137\",\"T4-002628\",\"T4-003237\"],\"confidence\":0.6447535,\"source_post_content\":[\"It's a good question for all police-supporters here https://t.co/kcimIeBO87\",\"But that's how the media works, right? #PoliceBrutality #NoDAPL https://t.co/dMO73UoJiq\",\"Wonder if we can call an official to answer my mans questions.  https://t.co/DATH0j52gP\",\"A journalist was challenged to find 10 cases of #PoliceBrutality unpunished; he found 100   https://t.co/JGYny48KBE https://t.co/rYfmTFYrGW\",\"just saying #PoliceBrutality #BTP https://t.co/wE5SigJoRS\"],\"assessment_score\":0.7866352948169256}",
+    "body_json": {
+      "answer": "**Assessment:** rejected.\n\nThe new post frames itself as a neutral question about police accountability and media accuracy, which loosely echoes retrieved posts that also pose questions or challenges around policing and media coverage, such as one asking whether an official could answer someone's questions [T4-002137](#T4-002137) and another asking whether police-supporters would consider it a good question [T4-003348](#T4-003348). It also shares the topic of media accuracy with a post sarcastically asking \"But that's how the media works, right?\" alongside #PoliceBrutality and #NoDAPL [T4-005004](#T4-005004), and with a post reporting that a journalist challenged to find 10 unpunished cases of police brutality found 100 [T4-002628](#T4-002628). However, the retrieved posts are more pointed or advocacy-oriented, using hashtags like #PoliceBrutality and #BTP [T4-003237](#T4-003237), whereas the new post is abstract and does not assert any specific claim, cite evidence, or use hashtags. The similarity is therefore topical and rhetorical rather than substantive, and the new post's self-described neutrality does not establish agreement or disagreement with the more critical retrieved posts.",
+      "source_post_ids": [
+        "T4-003348",
+        "T4-005004",
+        "T4-002137",
+        "T4-002628",
+        "T4-003237"
+      ],
+      "confidence": 0.6447535,
+      "source_post_content": [
+        "It's a good question for all police-supporters here https://t.co/kcimIeBO87",
+        "But that's how the media works, right? #PoliceBrutality #NoDAPL https://t.co/dMO73UoJiq",
+        "Wonder if we can call an official to answer my mans questions.  https://t.co/DATH0j52gP",
+        "A journalist was challenged to find 10 cases of #PoliceBrutality unpunished; he found 100   https://t.co/JGYny48KBE https://t.co/rYfmTFYrGW",
+        "just saying #PoliceBrutality #BTP https://t.co/wE5SigJoRS"
+      ],
+      "assessment_score": 0.7866352948169256
+    },
+    "error": null
+  }
+}

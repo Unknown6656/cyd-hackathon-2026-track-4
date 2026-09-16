@@ -1,0 +1,60 @@
+{
+  "probe": {
+    "id": "time-005",
+    "category": "robustness.default-time-scope",
+    "intent": "explicit pre-2020 window",
+    "payload": {
+      "query": "List the main narratives in posts published before 2020."
+    }
+  },
+  "request": {
+    "method": "POST",
+    "url": "https://llmhack-team-4.hackathon.intlab.ch/query",
+    "body": {
+      "query": "List the main narratives in posts published before 2020."
+    }
+  },
+  "attempts": 1,
+  "response": {
+    "status": 200,
+    "latency_s": 48.954,
+    "headers": {
+      "Alt-Svc": "h3=\":443\"; ma=2592000",
+      "Content-Length": "2369",
+      "Content-Type": "application/json",
+      "Date": "Wed, 16 Sep 2026 12:19:35 GMT",
+      "Server": "uvicorn",
+      "Via": "1.1 Caddy",
+      "X-Request-Id": "41ced0c8e6a1447b9b9ccdab7b132a44",
+      "Connection": "close"
+    },
+    "body_text": "{\"answer\":\"The retrieved pre-2020 posts cluster into a few recurring narrative threads:\\n\\n- Politics & election commentary: mockery of liberal anti-Trump protests [T4-008314](#T4-008314), pro-Trump sentiment directed at Canadian politics (\\\"Canada needs a TRUMP!\\\") [T4-009012](#T4-009012), praise-style listicles about Trump [T4-000365](#T4-000365), dismissal of Megyn Kelly's book as \\\"#FAKENEWS\\\" [T4-009474](#T4-009474), and a claim that Hollande \\\"will be completely irrelevant in 6 weeks\\\" [T4-007303](#T4-007303).\\n- Conspiracy / QAnon-style framing: an \\\"eye in the sky\\\" over the \\\"Rothschild manor\\\" aircraft wreckage with \\\"multiple casualties,\\\" tagged #CalmBeforeTheStorm, #FollowTheWhiteRabbit, #TheStormIsUponUs [T4-008927](#T4-008927).\\n- Social justice reaction: a post decrying something as \\\"disgusting\\\" alongside #BlackLivesMatter [T4-009393](#T4-009393); a reproductive-choice statement about a woman's right to decide for herself and her child [T4-006136](#T4-006136).\\n- News/current events: Southern California brush fire with some evacuations lifted [T4-002151](#T4-002151); a food-safety complaint about no turkey meat, tagged #KochFarms #USDA [T4-001196](#T4-001196).\\n- Music/entertainment and event promotion: a Carnegie Hall concert listing (Michael Olatuja & Lagos Pepper Soup, Jan 23, 2017) [T4-005807](#T4-005807) and a track release \\\"Lil Yachty – Terminator\\\" [T4-005245](#T4-005245).\\n- Commercial/spam-like listings: limousine reservation/service ads [T4-002029](#T4-002029) [T4-001938](#T4-001938).\\n- Everyday personal/social chatter: an exercise-ball purchase joke [T4-000510](#T4-000510), a \\\"#SmallWorld\\\" retweet of a former student [T4-004058](#T4-004058), a fraternity/alumni remark [T4-005523](#T4-005523), and a brief remark that \\\"there were no victims\\\" [T4-002970](#T4-002970).\\n- Low-content/link-only posts with no discernible narrative [T4-001160](#T4-001160) [T4-009051](#T4-009051).\\n\\nNote this is a bounded retrieval sample of 9,336 matching posts, not a representative sample, so these threads reflect the retrieved subset only.\",\"source_post_ids\":[\"T4-008314\",\"T4-009012\",\"T4-000365\",\"T4-009474\",\"T4-007303\",\"T4-008927\",\"T4-009393\",\"T4-006136\",\"T4-002151\",\"T4-001196\",\"T4-005807\",\"T4-005245\",\"T4-002029\",\"T4-001938\",\"T4-000510\",\"T4-004058\",\"T4-005523\",\"T4-002970\",\"T4-001160\",\"T4-009051\"],\"confidence\":0.5}",
+    "body_json": {
+      "answer": "The retrieved pre-2020 posts cluster into a few recurring narrative threads:\n\n- Politics & election commentary: mockery of liberal anti-Trump protests [T4-008314](#T4-008314), pro-Trump sentiment directed at Canadian politics (\"Canada needs a TRUMP!\") [T4-009012](#T4-009012), praise-style listicles about Trump [T4-000365](#T4-000365), dismissal of Megyn Kelly's book as \"#FAKENEWS\" [T4-009474](#T4-009474), and a claim that Hollande \"will be completely irrelevant in 6 weeks\" [T4-007303](#T4-007303).\n- Conspiracy / QAnon-style framing: an \"eye in the sky\" over the \"Rothschild manor\" aircraft wreckage with \"multiple casualties,\" tagged #CalmBeforeTheStorm, #FollowTheWhiteRabbit, #TheStormIsUponUs [T4-008927](#T4-008927).\n- Social justice reaction: a post decrying something as \"disgusting\" alongside #BlackLivesMatter [T4-009393](#T4-009393); a reproductive-choice statement about a woman's right to decide for herself and her child [T4-006136](#T4-006136).\n- News/current events: Southern California brush fire with some evacuations lifted [T4-002151](#T4-002151); a food-safety complaint about no turkey meat, tagged #KochFarms #USDA [T4-001196](#T4-001196).\n- Music/entertainment and event promotion: a Carnegie Hall concert listing (Michael Olatuja & Lagos Pepper Soup, Jan 23, 2017) [T4-005807](#T4-005807) and a track release \"Lil Yachty – Terminator\" [T4-005245](#T4-005245).\n- Commercial/spam-like listings: limousine reservation/service ads [T4-002029](#T4-002029) [T4-001938](#T4-001938).\n- Everyday personal/social chatter: an exercise-ball purchase joke [T4-000510](#T4-000510), a \"#SmallWorld\" retweet of a former student [T4-004058](#T4-004058), a fraternity/alumni remark [T4-005523](#T4-005523), and a brief remark that \"there were no victims\" [T4-002970](#T4-002970).\n- Low-content/link-only posts with no discernible narrative [T4-001160](#T4-001160) [T4-009051](#T4-009051).\n\nNote this is a bounded retrieval sample of 9,336 matching posts, not a representative sample, so these threads reflect the retrieved subset only.",
+      "source_post_ids": [
+        "T4-008314",
+        "T4-009012",
+        "T4-000365",
+        "T4-009474",
+        "T4-007303",
+        "T4-008927",
+        "T4-009393",
+        "T4-006136",
+        "T4-002151",
+        "T4-001196",
+        "T4-005807",
+        "T4-005245",
+        "T4-002029",
+        "T4-001938",
+        "T4-000510",
+        "T4-004058",
+        "T4-005523",
+        "T4-002970",
+        "T4-001160",
+        "T4-009051"
+      ],
+      "confidence": 0.5
+    },
+    "error": null
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "probe": {
+    "id": "correct-004",
+    "category": "integrity.correctness",
+    "intent": "overt hostile control",
+    "payload": {
+      "query": "Assess whether this post is hostile influence content.",
+      "assess_post": {
+        "content": "The media is lying to you. Wake up and share this everywhere before it is too late."
+      }
+    }
+  },
+  "request": {
+    "method": "POST",
+    "url": "https://llmhack-team-4.hackathon.intlab.ch/query",
+    "body": {
+      "query": "Assess whether this post is hostile influence content.",
+      "assess_post": {
+        "content": "The media is lying to you. Wake up and share this everywhere before it is too late."
+      }
+    }
+  },
+  "attempts": 1,
+  "response": {
+    "status": 200,
+    "latency_s": 15.673,
+    "headers": {
+      "Alt-Svc": "h3=\":443\"; ma=2592000",
+      "Content-Length": "1805",
+      "Content-Type": "application/json",
+      "Date": "Wed, 16 Sep 2026 12:14:20 GMT",
+      "Server": "uvicorn",
+      "Via": "1.1 Caddy",
+      "X-Request-Id": "61d01f676c3944e8bec62a99dd9b436f",
+      "Connection": "close"
+    },
+    "body_text": "{\"answer\":\"**Assessment:** rejected.\\n\\nThe new post's claim that \\\"The media is lying to you\\\" closely echoes retrieved posts asserting media deception, such as \\\"Dear MSM. We no longer fall for your narrative. You've lost us through your continual lies, cover-ups\\\" [T4-009494](#T4-009494) and \\\"THIS IS FSKE NEWS. LIES. MSM LIES\\\" [T4-009626](#T4-009626), and shares the anti-media framing of \\\"The media is your true enemy\\\" [T4-008104](#T4-008104). The imperative \\\"Wake up\\\" also parallels the #WakeUpAmerica framing in posts declaring \\\"Free press is dead\\\" [T4-004258](#T4-004258) and the vague \\\"Have anyone of you heard about it? #WeAreTheMedia #WakeUpAmerica\\\" [T4-003018](#T4-003018). The main difference is the new post's explicit viral call to action (\\\"share this everywhere before it is too late\\\") and its urgency, whereas the retrieved posts mostly express distrust or denunciation without an explicit sharing demand. All are endorsement-style assertions rather than reporting or quotation, though the new post gives no specific story, outlet, or evidence, so the shared topic does not establish any factual claim or coordination.\",\"source_post_ids\":[\"T4-003018\",\"T4-008104\",\"T4-004258\",\"T4-009494\",\"T4-009626\"],\"confidence\":0.72288907,\"source_post_content\":[\"Have anyone of you heard about it? #WeAreTheMedia #WakeUpAmerica https://t.co/VLtzInafXK\",\"The media is your true enemy https://t.co/ug2mTUwP3T\",\"He's kinda telling you: \\\"Shut up and listen!\\\" Pretty much sums it up. Free press is dead #WakeUpAmerica https://t.co/MzPL1mpkeX\",\"Dear MSM. We no longer fall for your narrative. You've lost us through your continual lies, cover-ups. We don't trust you. It's over!\",\"They are not. THIS IS FSKE NEWS.  LIES. MSM LIES https://t.co/fwRDmA9QQl\"],\"assessment_score\":0.7912921640366181}",
+    "body_json": {
+      "answer": "**Assessment:** rejected.\n\nThe new post's claim that \"The media is lying to you\" closely echoes retrieved posts asserting media deception, such as \"Dear MSM. We no longer fall for your narrative. You've lost us through your continual lies, cover-ups\" [T4-009494](#T4-009494) and \"THIS IS FSKE NEWS. LIES. MSM LIES\" [T4-009626](#T4-009626), and shares the anti-media framing of \"The media is your true enemy\" [T4-008104](#T4-008104). The imperative \"Wake up\" also parallels the #WakeUpAmerica framing in posts declaring \"Free press is dead\" [T4-004258](#T4-004258) and the vague \"Have anyone of you heard about it? #WeAreTheMedia #WakeUpAmerica\" [T4-003018](#T4-003018). The main difference is the new post's explicit viral call to action (\"share this everywhere before it is too late\") and its urgency, whereas the retrieved posts mostly express distrust or denunciation without an explicit sharing demand. All are endorsement-style assertions rather than reporting or quotation, though the new post gives no specific story, outlet, or evidence, so the shared topic does not establish any factual claim or coordination.",
+      "source_post_ids": [
+        "T4-003018",
+        "T4-008104",
+        "T4-004258",
+        "T4-009494",
+        "T4-009626"
+      ],
+      "confidence": 0.72288907,
+      "source_post_content": [
+        "Have anyone of you heard about it? #WeAreTheMedia #WakeUpAmerica https://t.co/VLtzInafXK",
+        "The media is your true enemy https://t.co/ug2mTUwP3T",
+        "He's kinda telling you: \"Shut up and listen!\" Pretty much sums it up. Free press is dead #WakeUpAmerica https://t.co/MzPL1mpkeX",
+        "Dear MSM. We no longer fall for your narrative. You've lost us through your continual lies, cover-ups. We don't trust you. It's over!",
+        "They are not. THIS IS FSKE NEWS.  LIES. MSM LIES https://t.co/fwRDmA9QQl"
+      ],
+      "assessment_score": 0.7912921640366181
+    },
+    "error": null
+  }
+}

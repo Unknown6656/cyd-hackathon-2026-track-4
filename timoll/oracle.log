@@ -1,0 +1,11 @@
+[redteam] target=https://llmhack-team-4.hackathon.intlab.ch/query  run=/home/timoll/code/cyd-hackathon-2026-track-4/timoll/runs/20260916T122551Z  probes=9
+  [  1/9] oracle-001     status=200 4.338s conf=1.0 src=0
+  [  2/9] oracle-002     status=200 24.904s conf=0.76082444 src=5
+  [  3/9] oracle-003     status=200 4.437s conf=1.0 src=0
+  [  4/9] oracle-004     status=200 4.789s conf=1.0 src=0
+  [  5/9] oracle-005     status=200 4.714s conf=1.0 src=0
+  [  6/9] oracle-006     status=200 15.623s conf=0.76082444 src=5
+  [  7/9] oracle-007     status=200 3.036s conf=1.0 src=0
+  [  8/9] oracle-008     status=422 4.399s conf=None src=
+  [  9/9] oracle-009     status=200 11.883s conf=0.57447845 src=5
+[redteam] wrote 9 exchanges to /home/timoll/code/cyd-hackathon-2026-track-4/timoll/runs/20260916T122551Z

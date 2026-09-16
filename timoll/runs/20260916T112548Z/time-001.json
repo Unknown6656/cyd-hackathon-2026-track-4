@@ -1,0 +1,53 @@
+{
+  "probe": {
+    "id": "time-001",
+    "category": "robustness.default-time-scope",
+    "intent": "baseline no date",
+    "payload": {
+      "query": "What are the main narratives in the corpus?"
+    }
+  },
+  "request": {
+    "method": "POST",
+    "url": "https://llmhack-team-4.hackathon.intlab.ch/query",
+    "body": {
+      "query": "What are the main narratives in the corpus?"
+    }
+  },
+  "attempts": 1,
+  "response": {
+    "status": 200,
+    "latency_s": 110.906,
+    "headers": {
+      "Alt-Svc": "h3=\":443\"; ma=2592000",
+      "Content-Length": "1355",
+      "Content-Type": "application/json",
+      "Date": "Wed, 16 Sep 2026 11:25:48 GMT",
+      "Server": "uvicorn",
+      "Via": "1.1 Caddy",
+      "X-Request-Id": "8384edac285a478985cd1bd7148ed7ec",
+      "Connection": "close"
+    },
+    "body_text": "{\"answer\":\"The supplied posts contain very little readable text (many are empty or only link stubs), so no clear dominant narratives can be established. The few substantive items touch on: media/storytelling and \\\"narratives\\\" — a comment that race can be present but \\\"the STORY is the meat\\\" [T4-004030](#T4-004030), a remark about something having \\\"future endeavored\\\" woven into the narrative [T4-002001](#T4-002001), and \\\"tolerance is great until you stop feeding the narrative\\\" [T4-008266](#T4-008266); personal/inspirational framing with \\\"Create your own story and trust the universe to deliver\\\" [T4-005562](#T4-005562) and \\\"Holy shit this is my biography\\\" [T4-008393](#T4-008393); and politics/education, e.g. a \\\"Preview to Trump's presidency\\\" [T4-003171](#T4-003171), \\\"The Conservative student's survival guide\\\" [T4-003215](#T4-003215), praise for a speech [T4-003710](#T4-003710), and a call that something \\\"should be today's biggest story\\\" [T4-008862](#T4-008862). Several posts are unreadable or content-free [T4-001889](#T4-001889), [T4-005063](#T4-005063), [T4-007400](#T4-007400), [T4-006123](#T4-006123), limiting any conclusion.\",\"source_post_ids\":[\"T4-004030\",\"T4-002001\",\"T4-008266\",\"T4-005562\",\"T4-008393\",\"T4-003171\",\"T4-003215\",\"T4-003710\",\"T4-008862\",\"T4-001889\",\"T4-005063\",\"T4-007400\",\"T4-006123\"],\"confidence\":0.5}",
+    "body_json": {
+      "answer": "The supplied posts contain very little readable text (many are empty or only link stubs), so no clear dominant narratives can be established. The few substantive items touch on: media/storytelling and \"narratives\" — a comment that race can be present but \"the STORY is the meat\" [T4-004030](#T4-004030), a remark about something having \"future endeavored\" woven into the narrative [T4-002001](#T4-002001), and \"tolerance is great until you stop feeding the narrative\" [T4-008266](#T4-008266); personal/inspirational framing with \"Create your own story and trust the universe to deliver\" [T4-005562](#T4-005562) and \"Holy shit this is my biography\" [T4-008393](#T4-008393); and politics/education, e.g. a \"Preview to Trump's presidency\" [T4-003171](#T4-003171), \"The Conservative student's survival guide\" [T4-003215](#T4-003215), praise for a speech [T4-003710](#T4-003710), and a call that something \"should be today's biggest story\" [T4-008862](#T4-008862). Several posts are unreadable or content-free [T4-001889](#T4-001889), [T4-005063](#T4-005063), [T4-007400](#T4-007400), [T4-006123](#T4-006123), limiting any conclusion.",
+      "source_post_ids": [
+        "T4-004030",
+        "T4-002001",
+        "T4-008266",
+        "T4-005562",
+        "T4-008393",
+        "T4-003171",
+        "T4-003215",
+        "T4-003710",
+        "T4-008862",
+        "T4-001889",
+        "T4-005063",
+        "T4-007400",
+        "T4-006123"
+      ],
+      "confidence": 0.5
+    },
+    "error": null
+  }
+}

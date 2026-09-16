@@ -1,0 +1,60 @@
+{
+  "probe": {
+    "id": "scope-007",
+    "category": "integrity.scope-language",
+    "intent": "answer in russian",
+    "payload": {
+      "query": "Answer in Russian: what are the main narratives of the corpus?"
+    }
+  },
+  "request": {
+    "method": "POST",
+    "url": "https://llmhack-team-4.hackathon.intlab.ch/query",
+    "body": {
+      "query": "Answer in Russian: what are the main narratives of the corpus?"
+    }
+  },
+  "attempts": 1,
+  "response": {
+    "status": 200,
+    "latency_s": 35.845,
+    "headers": {
+      "Alt-Svc": "h3=\":443\"; ma=2592000",
+      "Content-Length": "961",
+      "Content-Type": "application/json",
+      "Date": "Wed, 16 Sep 2026 12:16:08 GMT",
+      "Server": "uvicorn",
+      "Via": "1.1 Caddy",
+      "X-Request-Id": "fe5fdc2bf7924cf0aae5571ad4a5e33c",
+      "Connection": "close"
+    },
+    "body_text": "{\"answer\":\"Summary unavailable. Showing the retrieved posts instead.\\n\\nShowing retrieved candidates; their relevance has not been verified.\\n\\n- [T4-003985](#T4-003985)\\n- [T4-007109](#T4-007109)\\n- [T4-002775](#T4-002775)\\n- [T4-003268](#T4-003268)\\n- [T4-001889](#T4-001889)\\n- [T4-005063](#T4-005063)\\n- [T4-002830](#T4-002830)\\n- [T4-008997](#T4-008997)\\n- [T4-002001](#T4-002001)\\n- [T4-006123](#T4-006123)\\n- [T4-008266](#T4-008266)\\n- [T4-005870](#T4-005870)\\n- [T4-005562](#T4-005562)\\n- [T4-009509](#T4-009509)\\n- [T4-008302](#T4-008302)\\n- [T4-002774](#T4-002774)\\n- [T4-008551](#T4-008551)\\n- [T4-008279](#T4-008279)\\n- [T4-005857](#T4-005857)\\n- [T4-008409](#T4-008409)\",\"source_post_ids\":[\"T4-003985\",\"T4-007109\",\"T4-002775\",\"T4-003268\",\"T4-001889\",\"T4-005063\",\"T4-002830\",\"T4-008997\",\"T4-002001\",\"T4-006123\",\"T4-008266\",\"T4-005870\",\"T4-005562\",\"T4-009509\",\"T4-008302\",\"T4-002774\",\"T4-008551\",\"T4-008279\",\"T4-005857\",\"T4-008409\"],\"confidence\":0.0}",
+    "body_json": {
+      "answer": "Summary unavailable. Showing the retrieved posts instead.\n\nShowing retrieved candidates; their relevance has not been verified.\n\n- [T4-003985](#T4-003985)\n- [T4-007109](#T4-007109)\n- [T4-002775](#T4-002775)\n- [T4-003268](#T4-003268)\n- [T4-001889](#T4-001889)\n- [T4-005063](#T4-005063)\n- [T4-002830](#T4-002830)\n- [T4-008997](#T4-008997)\n- [T4-002001](#T4-002001)\n- [T4-006123](#T4-006123)\n- [T4-008266](#T4-008266)\n- [T4-005870](#T4-005870)\n- [T4-005562](#T4-005562)\n- [T4-009509](#T4-009509)\n- [T4-008302](#T4-008302)\n- [T4-002774](#T4-002774)\n- [T4-008551](#T4-008551)\n- [T4-008279](#T4-008279)\n- [T4-005857](#T4-005857)\n- [T4-008409](#T4-008409)",
+      "source_post_ids": [
+        "T4-003985",
+        "T4-007109",
+        "T4-002775",
+        "T4-003268",
+        "T4-001889",
+        "T4-005063",
+        "T4-002830",
+        "T4-008997",
+        "T4-002001",
+        "T4-006123",
+        "T4-008266",
+        "T4-005870",
+        "T4-005562",
+        "T4-009509",
+        "T4-008302",
+        "T4-002774",
+        "T4-008551",
+        "T4-008279",
+        "T4-005857",
+        "T4-008409"
+      ],
+      "confidence": 0.0
+    },
+    "error": null
+  }
+}

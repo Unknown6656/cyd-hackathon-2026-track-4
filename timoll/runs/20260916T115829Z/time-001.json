@@ -1,0 +1,57 @@
+{
+  "probe": {
+    "id": "time-001",
+    "category": "robustness.default-time-scope",
+    "intent": "baseline no date",
+    "payload": {
+      "query": "What are the main narratives in the corpus?"
+    }
+  },
+  "request": {
+    "method": "POST",
+    "url": "https://llmhack-team-4.hackathon.intlab.ch/query",
+    "body": {
+      "query": "What are the main narratives in the corpus?"
+    }
+  },
+  "attempts": 1,
+  "response": {
+    "status": 200,
+    "latency_s": 32.682,
+    "headers": {
+      "Alt-Svc": "h3=\":443\"; ma=2592000",
+      "Content-Length": "1988",
+      "Content-Type": "application/json",
+      "Date": "Wed, 16 Sep 2026 12:18:07 GMT",
+      "Server": "uvicorn",
+      "Via": "1.1 Caddy",
+      "X-Request-Id": "6dbdc92ac92c451798f807c579a889fd",
+      "Connection": "close"
+    },
+    "body_text": "{\"answer\":\"The retrieved posts are mostly very short, link-only comments, so explicit narratives are limited. The clearest content-bearing posts are:\\n\\n- A claim of a repeating pattern of police killings of Black people followed by paid leave for officers, no criminal punishment, riots, and then repetition in a new city, referencing #AltonSterling [T4-002680](#T4-002680).\\n- Media-criticism framing: accusations that coverage is driven by \\\"the narrative\\\" and that tolerance ends when one stops feeding it [T4-008266](#T4-008266), plus a complaint about \\\"Media priorities\\\" [T4-008801](#T4-008801) and a claim that a story \\\"should be today's biggest story\\\" [T4-008862](#T4-008862).\\n- Commentary on a speech/remarks, praising the content and delivery while criticizing the setting [T4-003710](#T4-003710) [T4-006830](#T4-006830).\\n- A claim that \\\"abusive and manipulative sociopaths get passes. cause faves\\\" [T4-006994](#T4-006994), and a dismissive framing that something \\\"sums up their entire cause quite nicely\\\" [T4-008365](#T4-008365).\\n- Positive/affirmative framing about \\\"good Americans\\\" [T4-008893](#T4-008893), plus vague endorsement or reaction posts (\\\"Great breakdown\\\", \\\"The reality\\\", \\\"Sounds familiar\\\", \\\"Current mood\\\") whose substance depends on unviewed linked media [T4-006123](#T4-006123) [T4-002774](#T4-002774) [T4-008365](#T4-008365) [T4-005011](#T4-005011).\\n\\nSeveral posts contain only garbled/emoji text with links and carry no discernible narrative [T4-003268](#T4-003268) [T4-003985](#T4-003985) [T4-002775](#T4-002775) [T4-001889](#T4-001889) [T4-006440](#T4-006440). Note this is a bounded retrieval, not a representative sample, so these cannot be treated as the corpus's overall main narratives.\",\"source_post_ids\":[\"T4-002680\",\"T4-008266\",\"T4-008801\",\"T4-008862\",\"T4-003710\",\"T4-006830\",\"T4-006994\",\"T4-008365\",\"T4-008893\",\"T4-006123\",\"T4-002774\",\"T4-005011\",\"T4-003268\",\"T4-003985\",\"T4-002775\",\"T4-001889\",\"T4-006440\"],\"confidence\":0.5}",
+    "body_json": {
+      "answer": "The retrieved posts are mostly very short, link-only comments, so explicit narratives are limited. The clearest content-bearing posts are:\n\n- A claim of a repeating pattern of police killings of Black people followed by paid leave for officers, no criminal punishment, riots, and then repetition in a new city, referencing #AltonSterling [T4-002680](#T4-002680).\n- Media-criticism framing: accusations that coverage is driven by \"the narrative\" and that tolerance ends when one stops feeding it [T4-008266](#T4-008266), plus a complaint about \"Media priorities\" [T4-008801](#T4-008801) and a claim that a story \"should be today's biggest story\" [T4-008862](#T4-008862).\n- Commentary on a speech/remarks, praising the content and delivery while criticizing the setting [T4-003710](#T4-003710) [T4-006830](#T4-006830).\n- A claim that \"abusive and manipulative sociopaths get passes. cause faves\" [T4-006994](#T4-006994), and a dismissive framing that something \"sums up their entire cause quite nicely\" [T4-008365](#T4-008365).\n- Positive/affirmative framing about \"good Americans\" [T4-008893](#T4-008893), plus vague endorsement or reaction posts (\"Great breakdown\", \"The reality\", \"Sounds familiar\", \"Current mood\") whose substance depends on unviewed linked media [T4-006123](#T4-006123) [T4-002774](#T4-002774) [T4-008365](#T4-008365) [T4-005011](#T4-005011).\n\nSeveral posts contain only garbled/emoji text with links and carry no discernible narrative [T4-003268](#T4-003268) [T4-003985](#T4-003985) [T4-002775](#T4-002775) [T4-001889](#T4-001889) [T4-006440](#T4-006440). Note this is a bounded retrieval, not a representative sample, so these cannot be treated as the corpus's overall main narratives.",
+      "source_post_ids": [
+        "T4-002680",
+        "T4-008266",
+        "T4-008801",
+        "T4-008862",
+        "T4-003710",
+        "T4-006830",
+        "T4-006994",
+        "T4-008365",
+        "T4-008893",
+        "T4-006123",
+        "T4-002774",
+        "T4-005011",
+        "T4-003268",
+        "T4-003985",
+        "T4-002775",
+        "T4-001889",
+        "T4-006440"
+      ],
+      "confidence": 0.5
+    },
+    "error": null
+  }
+}

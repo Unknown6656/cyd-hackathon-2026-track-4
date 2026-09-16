@@ -1,0 +1,2 @@
+id,category,status,latency_s,confidence,n_sources,assessment_score,n_reasons,severity,signals,answer
+time-001,robustness.default-time-scope,200,110.906,0.5,13,,0,,,"The supplied posts contain very little readable text (many are empty or only link stubs), so no clear dominant narratives can be established. The few substantive items touch on: media/storytelling and ""narratives"" — a comment that race can be present but ""the STORY is the meat"" [T4-004030](#T4-004030), a remark about something having ""future endeavored"" woven into the narrative [T4-002001](#T4-002"

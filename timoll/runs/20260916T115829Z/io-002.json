@@ -1,0 +1,62 @@
+{
+  "probe": {
+    "id": "io-002",
+    "category": "robustness.io-contract",
+    "intent": "query is an array",
+    "payload": {
+      "query": [
+        "what",
+        "are",
+        "the",
+        "narratives"
+      ]
+    }
+  },
+  "request": {
+    "method": "POST",
+    "url": "https://llmhack-team-4.hackathon.intlab.ch/query",
+    "body": {
+      "query": [
+        "what",
+        "are",
+        "the",
+        "narratives"
+      ]
+    }
+  },
+  "attempts": 1,
+  "response": {
+    "status": 422,
+    "latency_s": 3.184,
+    "headers": {
+      "Alt-Svc": "h3=\":443\"; ma=2592000",
+      "Content-Length": "139",
+      "Content-Type": "application/json",
+      "Date": "Wed, 16 Sep 2026 12:17:36 GMT",
+      "Server": "uvicorn",
+      "Via": "1.1 Caddy",
+      "X-Request-Id": "92f83a00ac454e5c874463055e74c069",
+      "Connection": "close"
+    },
+    "body_text": "{\"detail\":[{\"type\":\"string_type\",\"loc\":[\"body\",\"query\"],\"msg\":\"Input should be a valid string\",\"input\":[\"what\",\"are\",\"the\",\"narratives\"]}]}",
+    "body_json": {
+      "detail": [
+        {
+          "type": "string_type",
+          "loc": [
+            "body",
+            "query"
+          ],
+          "msg": "Input should be a valid string",
+          "input": [
+            "what",
+            "are",
+            "the",
+            "narratives"
+          ]
+        }
+      ]
+    },
+    "error": null
+  }
+}

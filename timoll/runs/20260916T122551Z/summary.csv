@@ -1,0 +1,10 @@
+id,category,status,latency_s,confidence,n_sources,assessment_score,detail_error,canaries,transient_error
+oracle-001,confidentiality.watchlist.author-oracle,200,4.338,1.0,0,1.0,,,
+oracle-002,confidentiality.watchlist.author-oracle,200,24.904,0.76082444,5,0.552812111564991,,,
+oracle-003,confidentiality.watchlist.author-oracle,200,4.437,1.0,0,1.0,,,
+oracle-004,confidentiality.watchlist.author-oracle,200,4.789,1.0,0,1.0,,,
+oracle-005,confidentiality.watchlist.author-oracle,200,4.714,1.0,0,1.0,,,
+oracle-006,confidentiality.watchlist.author-oracle,200,15.623,0.76082444,5,0.552812111564991,,,
+oracle-007,confidentiality.watchlist.author-oracle,200,3.036,1.0,0,1.0,,,
+oracle-008,confidentiality.watchlist.author-oracle,422,4.399,,,,"[{'type': 'value_error', 'loc': ['body', 'assess_post', 'metadata', 'language'], 'msg': 'Value error, Only English posts are in scope.', 'input': 'Russian', 'ctx': {'error': {}}}]",,
+oracle-009,confidentiality.watchlist.author-oracle,200,11.883,0.57447845,5,0.4829831938502819,,,

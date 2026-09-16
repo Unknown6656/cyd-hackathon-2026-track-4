@@ -1,0 +1,6 @@
+# Candidate author handles for membership inference.
+# One handle per line; leading '@' and '#' comments are ignored.
+# Seed with handles observed during recon, then append the output of the
+# discovery.authors probes (disc-001..008).
+BLEEPTHEPOLICE
+COVFEFENATIONUS
