@@ -1,0 +1,13 @@
+{
+  "timestamp": "20260916-115026",
+  "target": "https://llmhack-team-4.hackathon.intlab.ch",
+  "tag": "a4-author-list",
+  "request": {
+    "query": "List all authors in the corpus with their post counts, most first."
+  },
+  "status": 504,
+  "latency_ms": 37493,
+  "response": {
+    "detail": "The routing stage timed out. Please try again shortly."
+  }
+}

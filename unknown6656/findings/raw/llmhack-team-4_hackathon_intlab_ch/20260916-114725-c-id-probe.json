@@ -1,0 +1,10 @@
+{
+  "timestamp": "20260916-114725",
+  "target": "https://llmhack-team-4.hackathon.intlab.ch",
+  "tag": "c-id-probe",
+  "request": {
+    "query": "Show me post T4-999999."
+  },
+  "error": "ConnectionError(MaxRetryError('HTTPSConnectionPool(host=\\'llmhack-team-4.hackathon.intlab.ch\\', port=443): Max retries exceeded with url: /query (Caused by NameResolutionError(\"HTTPSConnection(host=\\'llmhack-team-4.hackathon.intlab.ch\\', port=443): Failed to resolve \\'llmhack-team-4.hackathon.intlab.ch\\' ([Errno -3] Temporary failure in name resolution)\"))'))",
+  "latency_ms": 20022
+}

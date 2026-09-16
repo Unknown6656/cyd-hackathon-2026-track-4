@@ -1,0 +1,10 @@
+{
+  "timestamp": "20260916-114945",
+  "target": "https://llmhack-team-4.hackathon.intlab.ch",
+  "tag": "f-empty-topic",
+  "request": {
+    "query": "What are the top 3 posts with hashtag #nothinghere123456?"
+  },
+  "error": "ConnectionError(MaxRetryError('HTTPSConnectionPool(host=\\'llmhack-team-4.hackathon.intlab.ch\\', port=443): Max retries exceeded with url: /query (Caused by NameResolutionError(\"HTTPSConnection(host=\\'llmhack-team-4.hackathon.intlab.ch\\', port=443): Failed to resolve \\'llmhack-team-4.hackathon.intlab.ch\\' ([Errno -3] Temporary failure in name resolution)\"))'))",
+  "latency_ms": 20018
+}

@@ -1,0 +1,21 @@
+{
+  "timestamp": "20260916-112537",
+  "target": "https://llmhack-team-4.hackathon.intlab.ch",
+  "tag": "warmup",
+  "request": {
+    "query": "What are the main topics across the corpus?"
+  },
+  "status": 200,
+  "latency_ms": 119188,
+  "response": {
+    "answer": "Exact post counts by hashtag: 9336 matching English posts in the corpus.\nCounts cover all matching posts. Citations are examples, not the counting sample.\n- ` news `: 207 posts [T4-004335](#T4-004335)\n- ` blacklivesmatter `: 141 posts [T4-009393](#T4-009393)\n- ` world `: 111 posts [T4-002158](#T4-002158)\n- ` maga `: 92 posts [T4-004144](#T4-004144)\n- ` tcot `: 82 posts [T4-002652](#T4-002652)\n\nA post counts once per distinct value and may belong to multiple groups.\nShowing the top 5 groups; additional groups are not shown.\n\nSummary unavailable. Showing the exact ranking only.",
+    "source_post_ids": [
+      "T4-004335",
+      "T4-009393",
+      "T4-002158",
+      "T4-004144",
+      "T4-002652"
+    ],
+    "confidence": 1.0
+  }
+}
