@@ -174,7 +174,11 @@ This fast path was *missed in all our waves 1–4* because we always used
   (matches our 422 validation finding).
 - **F-04 (LOW): spurious default time windows** — "do not apply any time
   filter" → "Scope: from 2020-01-01 through 2026-12-31" → 0 results on a
-  2016-era corpus. We have not seen this; cheap to verify.
+  2016-era corpus. **Not reproduced by us** (w6-time-window, 15:00 UTC) —
+  not pursued further.
+- **F-02 extended (15:01):** 4 claim families (media, immigration,
+  government/media, police, election-integrity counter-example), 0.25-floor
+  signature, standalone `F-02-report.md`.
 - **F-05 (LOW): confidence 1.0 on all canned refusals/banned replies** —
   overlaps our F17 (ours is stronger: same query, 3 runs → 1.0/0.5/1.0).
 - Negative results: router held, injection canaries held, no hallucinated IDs,
