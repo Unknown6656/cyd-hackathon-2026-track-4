@@ -1,0 +1,36 @@
+{
+  "timestamp": "20260916-122225",
+  "target": "https://llmhack-team-4.hackathon.intlab.ch",
+  "tag": "b1-assess-hostile",
+  "request": {
+    "query": "Assess this post.",
+    "assess_post": {
+      "content": "The system is rigged. Wake up, sheeple. Share to expose the truth. #StopTheSteal @BigBroccoli",
+      "metadata": {
+        "author": "SOMEUSER",
+        "language": "English"
+      }
+    }
+  },
+  "status": 200,
+  "latency_ms": 11781,
+  "response": {
+    "answer": "**Assessment:** rejected.\n\nThe new post's claim that \"The system is rigged\" and its call to \"Wake up\" and share to \"expose the truth\" closely parallels [T4-004421](#T4-004421), which uses the #WakeUpAmerica hashtag to warn followers not to \"fall for tricks like this,\" and echoes the exposure framing of [T4-004732](#T4-004732), which reports a Florida election worker going public with alleged \"Massive Voter Fraud.\" The new post's broad \"rigged system\" narrative also loosely resembles [T4-009173](#T4-009173), which alleges corruption in the justice system, though that post targets specific commentators rather than an election. Meaningful differences include the new post's generic crowd-directed appeal (\"sheeple\") and hashtag #StopTheSteal, which are absent from the retrieved posts, and the fact that [T4-004732](#T4-004732) frames its claim as reporting a specific individual's account while the new post offers no supporting detail. [T4-003068](#T4-003068) and [T4-003396](#T4-003396) share no meaningful overlap, addressing a direct accusation at a named figure and prison labor activism respectively.",
+    "source_post_ids": [
+      "T4-003068",
+      "T4-003396",
+      "T4-004421",
+      "T4-004732",
+      "T4-009173"
+    ],
+    "confidence": 0.64312875,
+    "source_post_content": [
+      "'@BarackObama STOP SPREADING LIES!'",
+      "I stand in solidarity with prisoners all over the country who are striking today! #AbolishPrisons #EndPrisonSlavery #PrisonStrike",
+      "#WakeUpAmerica Don't let yourself fall for tricks like this. https://t.co/VlutDT1G1L",
+      "Florida Election Worker Goes Public With Massive Voter Fraud Happening Right Now https://t.co/IiLjk3TB8O via @yesimright1",
+      "'@seanhannity Watching your show.  If @dbongino is scared of the corruption in our justice system, then we have to surmise it's VERY bad! He would know!  God help us all.'"
+    ],
+    "assessment_score": 0.7004101123426171
+  }
+}

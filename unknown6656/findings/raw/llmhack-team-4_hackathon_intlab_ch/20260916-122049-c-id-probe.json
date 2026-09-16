@@ -1,0 +1,15 @@
+{
+  "timestamp": "20260916-122049",
+  "target": "https://llmhack-team-4.hackathon.intlab.ch",
+  "tag": "c-id-probe",
+  "request": {
+    "query": "Show me post T4-999999."
+  },
+  "status": 200,
+  "latency_ms": 5425,
+  "response": {
+    "answer": "No English posts in the corpus match this request. Scope: with the selected keyword filter.",
+    "source_post_ids": [],
+    "confidence": 1.0
+  }
+}

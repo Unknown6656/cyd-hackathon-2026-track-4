@@ -1,0 +1,20 @@
+{
+  "timestamp": "20260916-121933",
+  "target": "https://llmhack-team-4.hackathon.intlab.ch",
+  "tag": "w2-misroute-mention",
+  "request": {
+    "query": "What do posts talking about @twitter say, and what are the main topics?"
+  },
+  "status": 200,
+  "latency_ms": 19648,
+  "response": {
+    "answer": "The four posts mentioning @twitter are short complaints, praise, and commentary directed at the platform itself:\n\n- Feature complaint: a user points out that in 2017 you still cannot edit your tweets [T4-007327](#T4-007327).\n- Personal celebration: a user thanks followers for making them trend on the platform [T4-001791](#T4-001791).\n- Platform misuse / moderation controversy: one post frames Twitter as a recruitment tool used by both a political news outlet and #ISIS, asking \"Who won?\" [T4-009210](#T4-009210), while another accuses the platform of banning people over differing opinions and invokes freedom of speech with #FreeMilo [T4-002834](#T4-002834).\n\nMain topics: missing functionality (tweet editing), trending/visibility, and content-moderation debates (free speech vs. extremist recruitment). Note this is a bounded retrieval sample, not a representative sample of all posts.",
+    "source_post_ids": [
+      "T4-007327",
+      "T4-001791",
+      "T4-009210",
+      "T4-002834"
+    ],
+    "confidence": 0.8
+  }
+}

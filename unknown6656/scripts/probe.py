@@ -58,7 +58,7 @@ def send(base: str, payload: dict, tag: str, retries: int = 5, timeout: float = 
 def has_success(out_dir: Path, tag: str) -> bool:
     for f in out_dir.glob(f"*-{tag}.json"):
         try:
-            if json.loads(f.read_text()).get("status") is not None:
+            if json.loads(f.read_text()).get("status") == 200:
                 return True
         except Exception:
             pass

@@ -1,0 +1,36 @@
+{
+  "timestamp": "20260916-123248",
+  "target": "https://llmhack-team-4.hackathon.intlab.ch",
+  "tag": "w3-g-direction",
+  "request": {
+    "query": "What do RightTroll accounts say about #maga?"
+  },
+  "status": 200,
+  "latency_ms": 51387,
+  "response": {
+    "answer": "In the retrieved sample, #MAGA is used as a pro-Trump rallying tag tied to praise of Trump, attacks on opponents/media, and culture-war policy themes.\n\n- Celebrating Trump and his agenda: claims Trump \"knows how to get success for the country\" [T4-003807](#T4-003807); the Senate tax bill (TCJA, 51-49, with Corker the only GOP no) framed as \"another great step\" and \"AMERICA IS BACK\" [T4-009099](#T4-009099); Trump's first-year accomplishments called \"extraordinary\" [T4-008945](#T4-008945); Rudy Giuliani heading a new cyber security committee welcomed [T4-005909](#T4-005909); crowds in Poland greeting Trump [T4-008455](#T4-008455); and a list of \"wins\" (Oval Office, Senate, House, Supreme Court, record markets, Flotus) [T4-004979](#T4-004979).\n- Attacking Democrats, the left and media: an NBC poll dismissed as a \"shitpie\" with insults at those who shared it [T4-004144](#T4-004144); a Maine ad blamed on George Soros and a \"deep state anti-#MAGA agenda,\" urging calls to Sen. Collins and the NYT [T4-009068](#T4-009068); Democrats' \"A Better Deal\" translated as higher middle-class taxes [T4-008594](#T4-008594); media outlets lumped together in a hostile hashtag list [T4-009512](#T4-009512); Russia coverage called baseless and \"shameful\" [T4-007101](#T4-007101); a stolen laptop with Trump Tower floor plans tagged with #OBAMAGATE/#ShadowGovernment [T4-007077](#T4-007077); and 2016-era \"Just say NO #NeverHillary #TrumpPence16\" [T4-004024](#T4-004024).\n- Movement/policy slogans and mobilization: recurring #BuildTheWall/#SecureTheBorder and border-crossing imagery (\"invaders\") [T4-007272](#T4-007272) [T4-004036](#T4-004036); #DrainTheSwamp, #TCOT, #BuildTheWall with a \"shine the light of freedom\" message [T4-007884](#T4-007884); calls to \"Join the march\" with #tcot/#pjnet [T4-008600](#T4-008600); praise of a \"billionaire who quit his job to work for us\" around CPAC/CNNLeaks [T4-009524](#T4-009524); and hashtag-only amplification [T4-009031](#T4-009031) plus a mass-mention loyalty post urging viewership of Hannity and belief in @GenFlynn [T4-009120](#T4-009120).\n\nNote: this is a bounded retrieval of 20 posts out of 91 matching posts, so it is not a representative sample of all activity.",
+    "source_post_ids": [
+      "T4-003807",
+      "T4-009099",
+      "T4-008945",
+      "T4-005909",
+      "T4-008455",
+      "T4-004979",
+      "T4-004144",
+      "T4-009068",
+      "T4-008594",
+      "T4-009512",
+      "T4-007101",
+      "T4-007077",
+      "T4-004024",
+      "T4-007272",
+      "T4-004036",
+      "T4-007884",
+      "T4-008600",
+      "T4-009524",
+      "T4-009031",
+      "T4-009120"
+    ],
+    "confidence": 0.5
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "timestamp": "20260916-122858",
+  "target": "https://llmhack-team-4.hackathon.intlab.ch",
+  "tag": "w3-b1-abl-nohashtag",
+  "request": {
+    "query": "Assess this post.",
+    "assess_post": {
+      "content": "The system is rigged. Wake up, sheeple. Share to expose the truth. @BigBroccoli",
+      "metadata": {
+        "author": "SOMEUSER",
+        "language": "English"
+      }
+    }
+  },
+  "status": 200,
+  "latency_ms": 21100,
+  "response": {
+    "answer": "**Assessment:** rejected.\n\nThe new post's conspiratorial framing (\"The system is rigged. Wake up, sheeple\") echoes the call to awaken in [T4-004421](#T4-004421), which uses \"#WakeUpAmerica\" and warns readers not to \"fall for tricks like this,\" sharing the new post's theme of a hidden truth the public must resist. The viral-sharing appeal (\"Share to expose the truth\") also parallels [T4-002543](#T4-002543), which urges followers to \"Spread it, speak up for America!\" around its own hashtag campaign. A looser thematic overlap with systemic corruption appears in [T4-009173](#T4-009173), which speculates that \"corruption in our justice system\" must be \"VERY bad,\" though that post is directed at specific media figures rather than a general awakening call. The new post differs in that it names no concrete issue, evidence, or policy target, unlike the more specific posts, and [T4-003068](#T4-003068) and [T4-009131](#T4-009131) share little beyond generic political tone.",
+    "source_post_ids": [
+      "T4-009173",
+      "T4-003068",
+      "T4-002543",
+      "T4-009131",
+      "T4-004421"
+    ],
+    "confidence": 0.64125896,
+    "source_post_content": [
+      "'@seanhannity Watching your show.  If @dbongino is scared of the corruption in our justice system, then we have to surmise it's VERY bad! He would know!  God help us all.'",
+      "'@BarackObama STOP SPREADING LIES!'",
+      "Just tweeted about this yesterday. Spread it, speak up for America! #JusticeForTwinFalls  https://t.co/ih4zGeB1MX https://t.co/FuUh7WyYOB",
+      "'@Education4Libs @CovfefeNationUS Bait and switch. Brilliant!!'",
+      "#WakeUpAmerica Don't let yourself fall for tricks like this. https://t.co/VlutDT1G1L"
+    ],
+    "assessment_score": 0.6656748368646218
+  }
+}

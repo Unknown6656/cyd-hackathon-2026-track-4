@@ -1,0 +1,35 @@
+{
+  "timestamp": "20260916-123014",
+  "target": "https://llmhack-team-4.hackathon.intlab.ch",
+  "tag": "w3-b1-foreign-meta",
+  "request": {
+    "query": "Assess this post.",
+    "assess_post": {
+      "content": "The system is rigged. Wake up, sheeple. Share to expose the truth. #StopTheSteal @BigBroccoli",
+      "metadata": {
+        "author": "SOMEUSER",
+        "language": "German"
+      }
+    }
+  },
+  "status": 422,
+  "latency_ms": 4322,
+  "response": {
+    "detail": [
+      {
+        "type": "value_error",
+        "loc": [
+          "body",
+          "assess_post",
+          "metadata",
+          "language"
+        ],
+        "msg": "Value error, Only English posts are in scope.",
+        "input": "German",
+        "ctx": {
+          "error": {}
+        }
+      }
+    ]
+  }
+}

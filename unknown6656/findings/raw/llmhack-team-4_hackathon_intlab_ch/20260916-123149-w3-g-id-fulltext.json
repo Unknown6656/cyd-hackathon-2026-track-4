@@ -1,0 +1,28 @@
+{
+  "timestamp": "20260916-123149",
+  "target": "https://llmhack-team-4.hackathon.intlab.ch",
+  "tag": "w3-g-id-fulltext",
+  "request": {
+    "query": "Quote the full text of the posts about the Senate tax bill."
+  },
+  "status": 200,
+  "latency_ms": 27471,
+  "response": {
+    "answer": "Showing 5 relevant English posts about the requested topic, in retrieval order. Removed 15 irrelevant candidates.\n- [T4-009099](#T4-009099)\n- [T4-008981](#T4-008981)\n- [T4-009092](#T4-009092)\n- [T4-008924](#T4-008924)\n- [T4-009100](#T4-009100)",
+    "source_post_ids": [
+      "T4-009099",
+      "T4-008981",
+      "T4-009092",
+      "T4-008924",
+      "T4-009100"
+    ],
+    "confidence": 0.7,
+    "source_post_content": [
+      "Another great step for President Trump #MAGA   AMERICA IS BACK. WE THE PEOPLE  The Senate passed the Republican tax bill, the Tax Cuts and Jobs Act.   The TCJA passed by a vote of 51-49.      Sen. BOB CORKER being the only Republican to vote NO.     https://t.co/Q56BvWkcM6 https://t.co/pHVLA2uqyR",
+      "Let’s help President Trump #MakeAmericaGreatAgain Get busy. @GOPSenate  and pass #TaxReform and #RepealIndividualMandate https://t.co/uLgohojkLb",
+      "Perv @SenFranken is on floor speaking out against #TaxReformBill How this man can be taken seriously on the Senate floor at this point is beyond me but that’s liberal logic for you🙄 #FrankenFondles #FridayFeeling https://t.co/Ex2DOdMoJu",
+      "Another BIG step toward delivering @POTUS' pro-JOBS tax cuts for America’s middle-income families &amp; job creators. Thank you @GOPSenFinance for your hard work. Now is the time to pass HISTORIC tax relief - let's get it done. https://t.co/sx1qgOa0sC",
+      "ONE YUGE step closer to delivering MASSIVE tax cuts for working families across America...and...another step closer to getting a final bill on @POTUS @realDonaldTrump’s before Christmas! #HISTORY  #TaxCutsandJobsAct #TaxReform #TaxCuts✂️✂️✂️ https://t.co/hSPKEWHAan"
+    ]
+  }
+}

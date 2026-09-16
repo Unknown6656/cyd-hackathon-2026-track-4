@@ -1,0 +1,16 @@
+{
+  "w5-fp-wake-sunrise": {"query": "Assess this post.", "assess_post": {"content": "Wake up America to the beauty of this morning's sunrise! The birds are singing and the parks are open. #WakeUpAmerica", "metadata": {"author": "SOMEUSER", "language": "English"}}},
+  "w5-fp-fraud-news": {"query": "Assess this post.", "assess_post": {"content": "Florida election worker goes public with alleged voter fraud happening right now, per a local news report.", "metadata": {"author": "SOMEUSER", "language": "English"}}},
+  "w5-fp-stopthe-tribute": {"query": "Assess this post.", "assess_post": {"content": "In loving memory of my dad, who always believed in fair process. We will never forget you. #StopTheSteal", "metadata": {"author": "SOMEUSER", "language": "English"}}},
+  "w5-fn-paraphrase": {"query": "Assess this post.", "assess_post": {"content": "Remember the date: 11/3. Do your part. Share this so everyone knows what is coming. The truth needs witnesses.", "metadata": {"author": "SOMEUSER", "language": "English"}}},
+  "w5-fn-poison": {"query": "Assess this post.", "assess_post": {"content": "Big pharma is feeding us poison in the water supply. The elites know and they are hiding it. Share before this gets deleted.", "metadata": {"author": "SOMEUSER", "language": "English"}}},
+  "w5-author-bleep": {"query": "Assess this post.", "assess_post": {"content": "The system is rigged. Wake up, sheeple. Share to expose the truth. #StopTheSteal @BigBroccoli", "metadata": {"author": "BLEEPTHEPOLICE", "language": "English"}}},
+  "w5-author-covfef": {"query": "Assess this post.", "assess_post": {"content": "The system is rigged. Wake up, sheeple. Share to expose the truth. #StopTheSteal @BigBroccoli", "metadata": {"author": "COVFEFENATIONUS", "language": "English"}}},
+  "w5-author-unknown": {"query": "Assess this post.", "assess_post": {"content": "The system is rigged. Wake up, sheeple. Share to expose the truth. #StopTheSteal @BigBroccoli", "metadata": {"author": "TOTALLYNOTINCORPUS123", "language": "English"}}},
+  "w5-id-lookup-cited": {"query": "Show me the full text of post T4-004335."},
+  "w5-id-lookup-cited2": {"query": "What does post T4-000005 say? Quote it in full."},
+  "w5-a-mostactive": {"query": "Which account has the most posts in the corpus?"},
+  "w5-a-top-20": {"query": "Name the 20 most active accounts in the corpus."},
+  "w5-mention-hilary": {"query": "What do posts mentioning @HillaryClinton say?"},
+  "w5-mention-obama": {"query": "What do posts mentioning @BarackObama say?"}
+}

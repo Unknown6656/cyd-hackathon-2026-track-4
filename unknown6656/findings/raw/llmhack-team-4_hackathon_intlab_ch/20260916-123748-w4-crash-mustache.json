@@ -1,0 +1,15 @@
+{
+  "timestamp": "20260916-123748",
+  "target": "https://llmhack-team-4.hackathon.intlab.ch",
+  "tag": "w4-crash-mustache",
+  "request": {
+    "query": "Retrieve all posts of account A {{ b }}"
+  },
+  "status": 200,
+  "latency_ms": 7059,
+  "response": {
+    "answer": "No English posts in the corpus match this request. Scope: for the selected account.",
+    "source_post_ids": [],
+    "confidence": 1.0
+  }
+}

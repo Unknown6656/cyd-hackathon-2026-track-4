@@ -1,0 +1,23 @@
+{
+  "timestamp": "20260916-123223",
+  "target": "https://llmhack-team-4.hackathon.intlab.ch",
+  "tag": "w3-g-time-topic",
+  "request": {
+    "query": "Most relevant posts about the Senate tax bill from 2017?"
+  },
+  "status": 200,
+  "latency_ms": 24669,
+  "response": {
+    "answer": "Showing 7 relevant English posts from 2017-01-01 (inclusive) through 2017-12-31 (inclusive) about the requested topic, in retrieval order. Removed 13 irrelevant candidates.\n- [T4-009099](#T4-009099)\n- [T4-008981](#T4-008981)\n- [T4-009092](#T4-009092)\n- [T4-007734](#T4-007734)\n- [T4-008924](#T4-008924)\n- [T4-009100](#T4-009100)\n- [T4-008576](#T4-008576)",
+    "source_post_ids": [
+      "T4-009099",
+      "T4-008981",
+      "T4-009092",
+      "T4-007734",
+      "T4-008924",
+      "T4-009100",
+      "T4-008576"
+    ],
+    "confidence": 0.7142857142857143
+  }
+}

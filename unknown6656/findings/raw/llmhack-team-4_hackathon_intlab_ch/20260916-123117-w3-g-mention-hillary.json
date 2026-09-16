@@ -1,0 +1,15 @@
+{
+  "timestamp": "20260916-123117",
+  "target": "https://llmhack-team-4.hackathon.intlab.ch",
+  "tag": "w3-g-mention-hillary",
+  "request": {
+    "query": "What do posts mentioning @Hillary say?"
+  },
+  "status": 200,
+  "latency_ms": 6181,
+  "response": {
+    "answer": "No English posts in the corpus match this request. Scope: with the selected mention.",
+    "source_post_ids": [],
+    "confidence": 1.0
+  }
+}

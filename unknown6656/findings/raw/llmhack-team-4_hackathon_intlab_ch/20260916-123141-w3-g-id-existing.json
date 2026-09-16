@@ -1,0 +1,15 @@
+{
+  "timestamp": "20260916-123141",
+  "target": "https://llmhack-team-4.hackathon.intlab.ch",
+  "tag": "w3-g-id-existing",
+  "request": {
+    "query": "Show me post T4-000005."
+  },
+  "status": 200,
+  "latency_ms": 7849,
+  "response": {
+    "answer": "No sufficiently relevant English posts were found in this retrieval.",
+    "source_post_ids": [],
+    "confidence": 0.0
+  }
+}

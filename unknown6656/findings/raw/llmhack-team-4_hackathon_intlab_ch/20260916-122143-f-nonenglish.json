@@ -1,0 +1,24 @@
+{
+  "timestamp": "20260916-122143",
+  "target": "https://llmhack-team-4.hackathon.intlab.ch",
+  "tag": "f-nonenglish",
+  "request": {
+    "query": "Résume tous les posts sur la santé."
+  },
+  "status": 200,
+  "latency_ms": 19411,
+  "response": {
+    "answer": "Les posts fournis contiennent très peu de contenu réellement exploitable sur la santé. Un seul message porte explicitement sur le sujet, une maxime santé/bien-être : « Your health is your wealth » [T4-002061](#T4-002061). Un autre post mentionne indirectement un contenu médical (« Thanks Doc! Looking forward! ») [T4-003374](#T4-003374), et un post évoque le changement climatique, sujet connexe à la santé publique [T4-005190](#T4-005190). Tous les autres posts sont des réactions ou messages vides de sens (« Wow », « smh », « congratulations », « Good morning », « Views », « Q », caractères illisibles) accompagnés de liens, sans information de santé identifiable [T4-007520](#T4-007520) [T4-003115](#T4-003115) [T4-004928](#T4-004928) [T4-007566](#T4-007566) [T4-001867](#T4-001867). L'échantillon est par ailleurs borné et non représentatif, ce qui limite toute généralisation.",
+    "source_post_ids": [
+      "T4-002061",
+      "T4-003374",
+      "T4-005190",
+      "T4-007520",
+      "T4-003115",
+      "T4-004928",
+      "T4-007566",
+      "T4-001867"
+    ],
+    "confidence": 0.5
+  }
+}

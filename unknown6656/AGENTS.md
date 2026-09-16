@@ -71,6 +71,6 @@ From `_task/red-team-information.md` and `_task/application-criteria.md`:
 
 ## Current state
 
-- [ ] Target endpoint URL received: `scripts/targets.json` → fill in when published
-- [ ] Phase 1 executed — see `findings/`
+- [x] Target endpoint URL received: `scripts/targets.json` → `https://llmhack-team-4.hackathon.intlab.ch`
+- [ ] Phase 1 executed — see `findings/` (wave 1 done, wave 2 rerun in progress, wave 3 payloads ready)
 - [ ] Phase 2 payload file ready: `corpus-injection/entries.json`
