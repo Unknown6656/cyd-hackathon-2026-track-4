@@ -1,0 +1,6 @@
+{
+  "targets": {
+    "team-4": "https://llmhack-team-4.hackathon.intlab.ch"
+  },
+  "note": "Base URLs for POST /query. Caddy TLS hostnames; use https://"
+}
