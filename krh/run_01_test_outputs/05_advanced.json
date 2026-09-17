@@ -1,0 +1,173 @@
+[
+  {
+    "test_case": "author_aggregation_01",
+    "question": "{\"query\": \"Who are the main authors using hashtag #blacklivesmatter?\"}",
+    "answer": {
+      "answer": "I help search and analyse the English post corpus. Ask about a topic, hashtag, mention, or an account you specify.",
+      "source_post_ids": [],
+      "confidence": 1.0
+    }
+  },
+  {
+    "test_case": "author_aggregation_02",
+    "question": "{\"query\": \"Which accounts post most frequently about #MAGA?\"}",
+    "answer": {
+      "answer": "I help search and analyse the English post corpus. Ask about a topic, hashtag, mention, or an account you specify.",
+      "source_post_ids": [],
+      "confidence": 1.0
+    }
+  },
+  {
+    "test_case": "entity_extraction_03",
+    "question": "{\"query\": \"Who are the main individuals mentioned by BLEEPTHEPOLICE?\"}",
+    "answer": {
+      "answer": "The retrieved posts name only a few individuals: Onision, called \"#racist,\" accused of blackface and transphobia [T4-004350](#T4-004350); Beyonce, described as \"so damn woke\" [T4-009384](#T4-009384); and Lavish Reynolds and Philando Castile, referenced via hashtags in a prayer for \"her and her baby girl\" [T4-002719](#T4-002719). Other posts refer to unnamed people rather than individuals, e.g. a Texas black student given a \"Most likely to blend in with white people\" award [T4-008206](#T4-008206), an unnamed Texas cop accused of raping a prisoner [T4-002600](#T4-002600), and Alton Sterling, mentioned by name as the person whose killing's surveillance video was confiscated [T4-002792](#T4-002792). Most posts instead reference groups (police, protesters, Black students) [T4-002764](#T4-002764) [T4-009406](#T4-009406) [T4-009304](#T4-009304).",
+      "source_post_ids": [
+        "T4-004350",
+        "T4-009384",
+        "T4-002719",
+        "T4-008206",
+        "T4-002600",
+        "T4-002792",
+        "T4-002764",
+        "T4-009406",
+        "T4-009304"
+      ],
+      "confidence": 0.5
+    }
+  },
+  {
+    "test_case": "entity_extraction_04",
+    "question": "{\"query\": \"What people and organizations does COVFEFENATIONUS talk about?\"}",
+    "answer": {
+      "answer": "Summary unavailable. Showing the retrieved posts instead.\n\nFound 450 English posts for the selected account; showing 20.\n- [T4-008927](#T4-008927)\n- [T4-009012](#T4-009012)\n- [T4-009051](#T4-009051)\n- [T4-009172](#T4-009172)\n- [T4-008823](#T4-008823)\n- [T4-008850](#T4-008850)\n- [T4-008987](#T4-008987)\n- [T4-009088](#T4-009088)\n- [T4-009032](#T4-009032)\n- [T4-008937](#T4-008937)\n- [T4-009094](#T4-009094)\n- [T4-009085](#T4-009085)\n- [T4-008954](#T4-008954)\n- [T4-009068](#T4-009068)\n- [T4-008886](#T4-008886)\n- [T4-009072](#T4-009072)\n- [T4-009097](#T4-009097)\n- [T4-008893](#T4-008893)\n- [T4-008991](#T4-008991)\n- [T4-008837](#T4-008837)",
+      "source_post_ids": [
+        "T4-008927",
+        "T4-009012",
+        "T4-009051",
+        "T4-009172",
+        "T4-008823",
+        "T4-008850",
+        "T4-008987",
+        "T4-009088",
+        "T4-009032",
+        "T4-008937",
+        "T4-009094",
+        "T4-009085",
+        "T4-008954",
+        "T4-009068",
+        "T4-008886",
+        "T4-009072",
+        "T4-009097",
+        "T4-008893",
+        "T4-008991",
+        "T4-008837"
+      ],
+      "confidence": 1.0
+    }
+  },
+  {
+    "test_case": "time_scoped_05",
+    "question": "{\"query\": \"What did accounts say about Hillary Clinton in July 2016?\"}",
+    "answer": {
+      "answer": "The July 2016 posts mention Hillary Clinton mostly in critical or campaign-related ways. Several posts attacked her character or fitness for office: one called her \"a liar and we have evidence\" tied to the #DNCleak [T4-002868](#T4-002868), another said \"#CrookedHillary is so fake she can say everything to attract voters!\" with #NeverHillary hashtags [T4-002659](#T4-002659), and one compared voting for her to \"trying to put out the fire with gasoline\" under #Trump2016 [T4-002843](#T4-002843). A post urged readers not to forget #HillaryForPrison [T4-002670](#T4-002670), and another reported that \"Ryan says Congress examining possible action on Clinton's email use\" [T4-002691](#T4-002691), while a separate post noted Donald Trump mentioned \"Hilary's emails\" but not police killings of Black people [T4-002725](#T4-002725). Policy criticism appeared in a post claiming \"Hillary Clinton admires Germany's immigration model\" [T4-002861](#T4-002861) and an editorial headline about \"Hillary Clinton's Anti-Israel, Pro-Hezbollah Donor\" [T4-002913](#T4-002913). Supportive or neutral mentions included a post about \"Another moment of excitement from Bill during Hillary's speech\" with #ImWithHer [T4-002918](#T4-002918), a jab at \"Hillary supporters who want 4 more years of Obama\" [T4-002799](#T4-002799), a joke that \"Hillary thinks her invention is Hillarious\" [T4-002870](#T4-002870), and a post questioning what voters who disagree with both Trump and Hillary can do [T4-002758](#T4-002758). Related family mentions included \"Chelsea Clinton's father is\" [T4-002808](#T4-002808) and a #BillClinton post [T4-002899](#T4-002899).",
+      "source_post_ids": [
+        "T4-002868",
+        "T4-002659",
+        "T4-002843",
+        "T4-002670",
+        "T4-002691",
+        "T4-002725",
+        "T4-002861",
+        "T4-002913",
+        "T4-002918",
+        "T4-002799",
+        "T4-002870",
+        "T4-002758",
+        "T4-002808",
+        "T4-002899"
+      ],
+      "confidence": 0.5
+    }
+  },
+  {
+    "test_case": "time_scoped_06",
+    "question": "{\"query\": \"Show posts from November 2016 mentioning election fraud\"}",
+    "answer": {
+      "answer": "Showing 7 relevant English posts from 2016-11-01 (inclusive) through 2016-11-30 (inclusive) about the requested topic, in retrieval order. Removed 13 irrelevant candidates.\n- [T4-004732](#T4-004732)\n- [T4-004731](#T4-004731)\n- [T4-004672](#T4-004672)\n- [T4-004935](#T4-004935)\n- [T4-005058](#T4-005058)\n- [T4-004718](#T4-004718)\n- [T4-004730](#T4-004730)",
+      "source_post_ids": [
+        "T4-004732",
+        "T4-004731",
+        "T4-004672",
+        "T4-004935",
+        "T4-005058",
+        "T4-004718",
+        "T4-004730"
+      ],
+      "confidence": 0.7857142857142857
+    }
+  },
+  {
+    "test_case": "direction_scoped_07",
+    "question": "{\"query\": \"Summarize LeftTroll narratives about gun control\"}",
+    "answer": {
+      "answer": "The supplied posts contain very little explicit gun-control policy argument; gun references appear mostly tied to police violence and one culture/lobby item.\n\n- Police use of firearms is the dominant frame: an officer drawing a gun on a detained suspect who was having a seizure is condemned [T4-002813](#T4-002813), and the claim is made that police \"should only use their guns if they or someone else is going to get hurt,\" with the Falcon Heights incident called unacceptable [T4-002715](#T4-002715).\n- A related post reframes lethal force as a fiscal/moral issue, urging people to \"demand cops stop killing people\" instead of taxpayer dollars going to unarmed people shot by police [T4-003114](#T4-003114).\n- Individual gun owners/actors are ridiculed or attacked rather than policy: a shooting of a child is attributed to the shooter's cowardice (\"should be in jail\") [T4-004157](#T4-004157), someone is mocked for mistaking a cross for a gun [T4-005425](#T4-005425), and George Zimmerman auctioning the gun that killed Trayvon Martin is highlighted with #blm/#policebrutality [T4-009331](#T4-009331).\n- The only institutional/lobby angle is a headline-style claim that the \"Gun lobby may have their man in Neil Gorsuch\" [T4-006892](#T4-006892), plus an anti-government call to action without gun specifics [T4-002351](#T4-002351) and a music track titled \"Gun Control\" [T4-006708](#T4-006708).\n\nOverall, the narrative pattern links guns primarily to police brutality and blameworthy individuals, with only a passing reference to gun-lobby influence on the courts; no posts in this bounded sample advocate specific legislation. Many remaining posts are empty or link-only and offer no gun-control content.",
+      "source_post_ids": [
+        "T4-002813",
+        "T4-002715",
+        "T4-003114",
+        "T4-004157",
+        "T4-005425",
+        "T4-009331",
+        "T4-006892",
+        "T4-002351",
+        "T4-006708"
+      ],
+      "confidence": 0.5
+    }
+  },
+  {
+    "test_case": "direction_scoped_08",
+    "question": "{\"query\": \"What do RightTroll accounts say about immigration?\"}",
+    "answer": {
+      "answer": "The retrieved RightTroll-scoped posts touch immigration in a few ways:\n\n- A distinction between legal and illegal migration: one post claims the USA allows 1 million legal immigrants each year, \"more than any other nation,\" and insists \"Illegals are NOT immigrants\" [T4-009519](#T4-009519).\n- Border/enforcement framing: a post frames \"irony\" in Democrats refusing to fund a Border Wall \"to keep Illegals Out\" while expecting the public to fund sanctuary cities \"to Keep them In,\" tagging @realDonaldTrump and @seanhannity [T4-008836](#T4-008836). Another calls for putting \"every vet back to work by shoot first to kill at our border\" [T4-009141](#T4-009141).\n- Anti-Muslim/anti-asylum framing abroad: a post alleges Justin Trudeau \"has been deliberately erasing any intel on illegal alien Muslim migrants\" in Canada, sourced via @barenakedislam [T4-009075](#T4-009075).\n- DACA: one post sarcastically urges @realDonaldTrump to \"Have a heart. Deport the whole DACA family,\" using #HeWillNotDivideUs [T4-008898](#T4-008898).\n- Immigration linked to voting claims: a post supports voter purges because \"illegals and dead people are not supposed to vote\" [T4-008530](#T4-008530).\n\nSeveral other posts in the set are link-only or unrelated hashtags (e.g. #IndependenceDay, #BLM, #gender) and add no immigration content [T4-008368](#T4-008368) [T4-008528](#T4-008528). Note this is bounded retrieval, not a representative sample, and claims above are as stated in the posts, not verified.",
+      "source_post_ids": [
+        "T4-009519",
+        "T4-008836",
+        "T4-009141",
+        "T4-009075",
+        "T4-008898",
+        "T4-008530",
+        "T4-008368",
+        "T4-008528"
+      ],
+      "confidence": 0.5
+    }
+  },
+  {
+    "test_case": "combined_scoped_09",
+    "question": "{\"query\": \"What did RightTroll accounts say about immigration in November 2016?\"}",
+    "answer": {
+      "answer": "In the November 2016 sample, immigration-related posts focused on illegal immigration, refugee resettlement, and voter-fraud claims. One post mocked Obama's DHS secretary for saying \"Our borders cannot be open to illegal migration\" [T4-004871](#T4-004871), while another claimed \"Obama Amnesty Will Add As Many or More Foreign Workers As New Jobs Since 2009\" [T4-005106](#T4-005106). A post urged @realDonaldTrump to have \"citizens deputized 2arrest all illegals who voted as found in recount,\" blaming fallout on Hillary [T4-005058](#T4-005058), and another asked whether \"illegals voted for Trump\" in response to popular-vote arguments [T4-004935](#T4-004935). On refugees, one post claimed Muslim refugees were \"rioting in Sydney, attacking police officers, waving ISIS flags\" with the sarcastic tag #RefugeesWelcome [T4-005053](#T4-005053), and another reported the \"Refugee resettlement industry panicked fears funds will be slashed\" [T4-004821](#T4-004821). A separate post rejected internment camps as a precedent for discrimination [T4-004943](#T4-004943).",
+      "source_post_ids": [
+        "T4-004871",
+        "T4-005106",
+        "T4-005058",
+        "T4-004935",
+        "T4-005053",
+        "T4-004821",
+        "T4-004943"
+      ],
+      "confidence": 0.5
+    }
+  },
+  {
+    "test_case": "combined_scoped_10",
+    "question": "{\"query\": \"Show LeftTroll posts mentioning @HillaryClinton from July to September 2016\"}",
+    "answer": {
+      "answer": "No English posts in the corpus match this request. Scope: with the selected mention in the selected category from 2016-07-01 (inclusive) through 2016-09-30 (inclusive).",
+      "source_post_ids": [],
+      "confidence": 1.0
+    }
+  }
+]

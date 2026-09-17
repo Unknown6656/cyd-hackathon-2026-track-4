@@ -1,0 +1,101 @@
+[
+  {
+    "test_case": "account_posts_01",
+    "question": "{\"query\": \"List all posts by BLEEPTHEPOLICE\"}",
+    "answer": {
+      "answer": "Found 467 English posts for the selected account; showing 20.\n- [T4-009393](#T4-009393)\n- [T4-004349](#T4-004349)\n- [T4-009248](#T4-009248)\n- [T4-008206](#T4-008206)\n- [T4-002764](#T4-002764)\n- [T4-009301](#T4-009301)\n- [T4-002719](#T4-002719)\n- [T4-009246](#T4-009246)\n- [T4-003290](#T4-003290)\n- [T4-003615](#T4-003615)\n- [T4-002600](#T4-002600)\n- [T4-002792](#T4-002792)\n- [T4-004350](#T4-004350)\n- [T4-006462](#T4-006462)\n- [T4-005233](#T4-005233)\n- [T4-009406](#T4-009406)\n- [T4-003208](#T4-003208)\n- [T4-009304](#T4-009304)\n- [T4-009384](#T4-009384)\n- [T4-003380](#T4-003380)",
+      "source_post_ids": [
+        "T4-009393",
+        "T4-004349",
+        "T4-009248",
+        "T4-008206",
+        "T4-002764",
+        "T4-009301",
+        "T4-002719",
+        "T4-009246",
+        "T4-003290",
+        "T4-003615",
+        "T4-002600",
+        "T4-002792",
+        "T4-004350",
+        "T4-006462",
+        "T4-005233",
+        "T4-009406",
+        "T4-003208",
+        "T4-009304",
+        "T4-009384",
+        "T4-003380"
+      ],
+      "confidence": 1.0
+    }
+  },
+  {
+    "test_case": "account_posts_topk_02",
+    "question": "{\"query\": \"Show the top 5 posts from COVFEFENATIONUS\"}",
+    "answer": {
+      "answer": "Found 450 English posts for the selected account; showing 5.\n- [T4-008927](#T4-008927)\n- [T4-009012](#T4-009012)\n- [T4-009051](#T4-009051)\n- [T4-009172](#T4-009172)\n- [T4-008823](#T4-008823)",
+      "source_post_ids": [
+        "T4-008927",
+        "T4-009012",
+        "T4-009051",
+        "T4-009172",
+        "T4-008823"
+      ],
+      "confidence": 1.0
+    }
+  },
+  {
+    "test_case": "account_narrative_03",
+    "question": "{\"query\": \"What are the main narratives account BLEEPTHEPOLICE posts about?\"}",
+    "answer": {
+      "answer": "The retrieved posts from this account centre on several recurring narratives:\n\n- **Police violence and impunity**: calls to \"Arrest the Police\" [T4-009248](#T4-009248), outrage that officers \"get away with murder\" [T4-009301](#T4-009301), demands that officers be fired [T4-003615](#T4-003615), a case where six officers who fired 137 bullets and killed an unarmed couple could remain police [T4-009304](#T4-009304), and hostile framing of officers (\"Fuckin pigs!\") [T4-005233](#T4-005233).\n- **Misconduct and cover-ups in specific cases**: a Texas officer allegedly raping a prisoner while the department allegedly covered it up [T4-002600](#T4-002600), a Baton Rouge store owner suing police over surveillance video of Alton Sterling's killing [T4-002792](#T4-002792), and concern for Philando Castile's partner and child [T4-002719](#T4-002719).\n- **Black Lives Matter protest activity**: reporting protesters blocking the Interstate 40 bridge in Memphis [T4-002764](#T4-002764), general support/condemnation tied to #BlackLivesMatter [T4-009393](#T4-009393), and praise for Beyoncé as \"woke\" in that context [T4-009384](#T4-009384).\n- **Everyday racism and racial slights**: a Texas Black student given a \"Most likely to blend in with white people\" award [T4-008206](#T4-008206), Black students at American University alleging rotten bananas thrown at them [T4-009406](#T4-009406), and the experience of being the only Black kid in school [T4-009246](#T4-009246).\n- **Call-out of racism beyond policing**: accusing the YouTuber Onision of racism, blackface and transphobia [T4-004350](#T4-004350).\n- **Political distrust**: anger at politicians allegedly lying to get votes while citizens \"get the bullets\" [T4-004349](#T4-004349).\n- **Black pride/positive affirmation**: celebrating Black identity as \"gifted n talented\" [T4-006462](#T4-006462).\n\nNote this is a bounded retrieval sample (467 matching posts total), not a representative sample, so these themes reflect the retrieved subset only.",
+      "source_post_ids": [
+        "T4-009248",
+        "T4-009301",
+        "T4-003615",
+        "T4-009304",
+        "T4-005233",
+        "T4-002600",
+        "T4-002792",
+        "T4-002719",
+        "T4-002764",
+        "T4-009393",
+        "T4-009384",
+        "T4-008206",
+        "T4-009406",
+        "T4-009246",
+        "T4-004350",
+        "T4-004349",
+        "T4-006462"
+      ],
+      "confidence": 0.5
+    }
+  },
+  {
+    "test_case": "account_narrative_04",
+    "question": "{\"query\": \"Summarize the key topics pushed by account COVFEFENATIONUS\"}",
+    "answer": {
+      "answer": "The retrieved posts from this account cluster around several pro-Trump / anti-left themes:\n\n- Anti-\"deep state\" and conspiracy framing: claims of a Soros-backed \"deep state anti-#MAGA agenda\" in a Maine Senate ad, urging calls to Senator Collins and the NYT [T4-009068](#T4-009068); a claim that \"the Left is worried about the #Storm\" and that Brennan and Clapper \"should be in cuffs\" over the #RussiaHoax/#Unmasking narrative [T4-008937](#T4-008937); and an apocalyptic-style post about \"#Rothschild manor aircraft wreckage\" with hashtags like #CalmBeforeTheStorm and #TheStormIsUponUs [T4-008927](#T4-008927).\n- Attacks on the Russia investigation and DOJ/FBI figures: Judicial Watch's Tom Fitton on Fox News about DOJ emails showing Mueller-team members praising Sally Yates for refusing the travel ban [T4-009172](#T4-009172); and a claim that \"Fusion GPS Was Hired To Prove Trump-Russia Collusion After Alleged DNC Hack\" [T4-009032](#T4-009032).\n- Media criticism, especially of CNN/MSNBC: mocking MSNBC's Morning Joe for having Mika Brzezinski respond to Trump's tweet about a dead staffer, and suggesting the host wants the president removed [T4-009072](#T4-009072); plus retweets/shares of Fox News and other right-leaning outlets [T4-008954](#T4-008954) [T4-009088](#T4-009088).\n- Culture-war / #MeToo and immigration angles: ridiculing Garrison Keillor for defending Al Franken and then being fired [T4-009085](#T4-009085); \"Heartless Liberals Mock Outrage Over the Steinle Verdict\" [T4-009088](#T4-009088); and a claim that hate crimes against people of color who support Trump are \"RAMPANT\" [T4-008886](#T4-008886).\n- Policy and Trump-promotional content: praise of the \"historic TAX CUTS plan\" from a Cabinet meeting [T4-008991](#T4-008991), Trump being praised in China as \"UNCLE TRUMP\" and \"DONALD THE STRONG\" [T4-008837](#T4-008837), and a call for Canada's \"CRIME Minister\" to be voted out because \"Canada needs a TRUMP!\" [T4-009012](#T4-009012).\n- Occasional unrelated shares and combative replies: an AP piece on Pope Francis and Rohingya refugees [T4-009094](#T4-009094), a \"lovely story about good Americans\" [T4-008893](#T4-008893), taunting replies [T4-008823](#T4-008823), and a media-bias argument about a Republican attacking a Democratic senator [T4-008850](#T4-008850).\n\nNote: this is a bounded retrieval sample (450 matching posts total), so it is not a representative sample of the account's full output.",
+      "source_post_ids": [
+        "T4-009068",
+        "T4-008937",
+        "T4-008927",
+        "T4-009172",
+        "T4-009032",
+        "T4-009072",
+        "T4-008954",
+        "T4-009088",
+        "T4-009085",
+        "T4-008886",
+        "T4-008991",
+        "T4-008837",
+        "T4-009012",
+        "T4-009094",
+        "T4-008893",
+        "T4-008823",
+        "T4-008850"
+      ],
+      "confidence": 0.5
+    }
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "test_case": "mention_search_08",
+    "question": "{\"query\": \"Find posts mentioning @realDonaldTrump\"}",
+    "answer": {
+      "answer": "Found 135 English posts with the selected mention; showing 20.\n- [T4-004719](#T4-004719)\n- [T4-004020](#T4-004020)\n- [T4-009072](#T4-009072)\n- [T4-003529](#T4-003529)\n- [T4-003521](#T4-003521)\n- [T4-003218](#T4-003218)\n- [T4-008945](#T4-008945)\n- [T4-009120](#T4-009120)\n- [T4-008522](#T4-008522)\n- [T4-003120](#T4-003120)\n- [T4-009100](#T4-009100)\n- [T4-005869](#T4-005869)\n- [T4-003621](#T4-003621)\n- [T4-009628](#T4-009628)\n- [T4-003530](#T4-003530)\n- [T4-001338](#T4-001338)\n- [T4-004051](#T4-004051)\n- [T4-008355](#T4-008355)\n- [T4-008892](#T4-008892)\n- [T4-008830](#T4-008830)",
+      "source_post_ids": [
+        "T4-004719",
+        "T4-004020",
+        "T4-009072",
+        "T4-003529",
+        "T4-003521",
+        "T4-003218",
+        "T4-008945",
+        "T4-009120",
+        "T4-008522",
+        "T4-003120",
+        "T4-009100",
+        "T4-005869",
+        "T4-003621",
+        "T4-009628",
+        "T4-003530",
+        "T4-001338",
+        "T4-004051",
+        "T4-008355",
+        "T4-008892",
+        "T4-008830"
+      ],
+      "confidence": 1.0
+    }
+  },
+  {
+    "test_case": "mention_topk_09",
+    "question": "{\"query\": \"Show top 5 posts talking about @HillaryClinton\"}",
+    "answer": {
+      "detail": "The agent could not complete this request."
+    }
+  },
+  {
+    "test_case": "mention_summary_10",
+    "question": "{\"query\": \"What do posts mentioning @BarackObama say?\"}",
+    "answer": {
+      "answer": "The seven posts mentioning @BarackObama span several unrelated topics:\n\n- A question challenging why he would \"wire Trump tower\" but not release his tax returns [T4-006979](#T4-006979).\n- An accusatory demand to \"STOP SPREADING LIES!\" [T4-003068](#T4-003068).\n- A #NoDAPL / #StandingRock appeal urging him to call off what the poster calls a \"military atrocity,\" arguing the land belongs to the people by treaty with the US [T4-004648](#T4-004648).\n- Praise for Channing Peters' bravery/courage, tagging Obama, Michelle Obama and Oprah with links [T4-002035](#T4-002035).\n- A reply-chain post that simply accumulates many handles, including Obama and John Podesta, with a link and no substantive text [T4-009029](#T4-009029).\n- A lighthearted post calling Obama, Dion Waiters... (i.e., @drose and @JoakimNoah) \"the 3 homies\" and \"3 of Chicago's Finest\" [T4-006365](#T4-006365).\n- A political rebuke about terminology — \"A terrorist is a terrorist is a terrorist. You should learn how to say it.\" — addressed to several officials including Obama [T4-009410](#T4-009410).\n\nOverall, the mentions mix criticism (tax returns, \"lies,\" Dakota Access Pipeline, terrorism language) with casual praise/fan content, and no post is a substantive policy statement by Obama himself.",
+      "source_post_ids": [
+        "T4-006979",
+        "T4-003068",
+        "T4-004648",
+        "T4-002035",
+        "T4-009029",
+        "T4-006365",
+        "T4-009410"
+      ],
+      "confidence": 0.5
+    }
+  }
+]

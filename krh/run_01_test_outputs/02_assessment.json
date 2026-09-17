@@ -1,0 +1,110 @@
+[
+  {
+    "test_case": "assess_benign_01",
+    "question": "{\"query\": \"Assess this post\", \"assess_post\": {\"content\": \"Just had a great lunch with friends at the new downtown restaurant. Highly recommend the tacos!\", \"author\": \"random_user123\"}}",
+    "answer": {
+      "answer": "**Assessment:** accepted.\n\nThe post is a benign personal dining recommendation about tacos at a downtown restaurant, with no claims targeting individuals or groups. Its tone is positive and casual, containing no slurs, threats, harassment, or calls to action, so it does not meet any harm criteria.",
+      "source_post_ids": [],
+      "confidence": 0.8,
+      "assessment_score": 0.1
+    }
+  },
+  {
+    "test_case": "assess_hostile_style_02",
+    "question": "{\"query\": \"Evaluate this post\", \"assess_post\": {\"content\": \"The mainstream media is hiding the truth about the election. They are all corrupt and working against the American people. #WakeUpAmerica\", \"author\": \"patriot_777\", \"language\": \"English\"}}",
+    "answer": {
+      "answer": "**Assessment:** rejected.\n\nThe new post's core narrative that mainstream media conceals election truth and acts against the public closely matches [T4-006638](#T4-006638), which frames the mainstream media as \"an enemy of the American people,\" and [T4-004258](#T4-004258), which declares \"Free press is dead\" while using the same #WakeUpAmerica hashtag the new post employs. The shared #WakeUpAmerica framing also appears in [T4-003018](#T4-003018), though that post is vague and only asks whether readers have \"heard about it,\" offering a weaker similarity. [T4-004524](#T4-004524) overlaps on the election-integrity theme by reporting claims that the election was \"rigged,\" but it attributes the claim to media coverage rather than asserting media corruption, so it is a partial rather than direct match. Overall, the new post's explicit accusation of corruption and concealment is most strongly supported by the enemy-of-the-people framing and the shared hashtag, while the evidence does not establish coordination or a common source among these posts.",
+      "source_post_ids": [
+        "T4-003018",
+        "T4-004258",
+        "T4-006638",
+        "T4-004524"
+      ],
+      "confidence": 0.7526979,
+      "source_post_content": [
+        "Have anyone of you heard about it? #WeAreTheMedia #WakeUpAmerica https://t.co/VLtzInafXK",
+        "He's kinda telling you: \"Shut up and listen!\" Pretty much sums it up. Free press is dead #WakeUpAmerica https://t.co/MzPL1mpkeX",
+        "Do you believe the mainstream media is an enemy of the American people?",
+        "�BREAKING: Mainstream media now saying the election is rigged after James Comey released Anthony Weiner bombshell https://t.co/eeeOw9rF8R"
+      ],
+      "assessment_score": 0.8089976267295829
+    }
+  },
+  {
+    "test_case": "assess_empty_content_03",
+    "question": "{\"query\": \"Assess this post\", \"assess_post\": {\"content\": \"\"}}",
+    "answer": {
+      "detail": [
+        {
+          "type": "string_too_short",
+          "loc": [
+            "body",
+            "assess_post",
+            "content"
+          ],
+          "msg": "String should have at least 1 character",
+          "input": "",
+          "ctx": {
+            "min_length": 1
+          }
+        }
+      ]
+    }
+  },
+  {
+    "test_case": "assess_non_english_04",
+    "question": "{\"query\": \"Assess this post\", \"assess_post\": {\"content\": \"Bonjour tout le monde, c'est une belle journ\\u00e9e aujourd'hui.\", \"language\": \"French\", \"author\": \"user_fr\"}}",
+    "answer": {
+      "detail": [
+        {
+          "type": "value_error",
+          "loc": [
+            "body",
+            "assess_post",
+            "content"
+          ],
+          "msg": "Value error, Use ASCII text, punctuation, or emoji only.",
+          "input": "Bonjour tout le monde, c'est une belle journée aujourd'hui.",
+          "ctx": {
+            "error": {}
+          }
+        },
+        {
+          "type": "value_error",
+          "loc": [
+            "body",
+            "assess_post",
+            "metadata",
+            "language"
+          ],
+          "msg": "Value error, Only English posts are in scope.",
+          "input": "French",
+          "ctx": {
+            "error": {}
+          }
+        }
+      ]
+    }
+  },
+  {
+    "test_case": "assess_only_content_05",
+    "question": "{\"assess_post\": {\"content\": \"Breaking: Something major is happening and nobody is talking about it. Share this before it gets deleted!\"}}",
+    "answer": {
+      "detail": [
+        {
+          "type": "missing",
+          "loc": [
+            "body",
+            "query"
+          ],
+          "msg": "Field required",
+          "input": {
+            "assess_post": {
+              "content": "Breaking: Something major is happening and nobody is talking about it. Share this before it gets deleted!"
+            }
+          }
+        }
+      ]
+    }
+  }
+]

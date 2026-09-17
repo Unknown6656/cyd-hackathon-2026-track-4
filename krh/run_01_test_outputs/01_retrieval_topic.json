@@ -1,0 +1,84 @@
+[
+  {
+    "test_case": "topic_search_11",
+    "question": "{\"query\": \"Find the most relevant posts about voter fraud\"}",
+    "answer": {
+      "answer": "Showing 12 relevant English posts about the requested topic, in retrieval order. Removed 8 irrelevant candidates.\n- [T4-006485](#T4-006485)\n- [T4-004732](#T4-004732)\n- [T4-004478](#T4-004478)\n- [T4-003890](#T4-003890)\n- [T4-004935](#T4-004935)\n- [T4-004055](#T4-004055)\n- [T4-004731](#T4-004731)\n- [T4-008530](#T4-008530)\n- [T4-003636](#T4-003636)\n- [T4-005214](#T4-005214)\n- [T4-004212](#T4-004212)\n- [T4-003508](#T4-003508)",
+      "source_post_ids": [
+        "T4-006485",
+        "T4-004732",
+        "T4-004478",
+        "T4-003890",
+        "T4-004935",
+        "T4-004055",
+        "T4-004731",
+        "T4-008530",
+        "T4-003636",
+        "T4-005214",
+        "T4-004212",
+        "T4-003508"
+      ],
+      "confidence": 0.9166666666666666
+    }
+  },
+  {
+    "test_case": "topic_narrative_12",
+    "question": "{\"query\": \"What are the dominant narratives about immigration in the corpus?\"}",
+    "answer": {
+      "answer": "The corpus clusters around a legality frame: several posts insist on a sharp distinction between \"legal\" and \"illegal\" immigration and that illegal entry is never justified [T4-006133](#T4-006133) [T4-005475](#T4-005475) [T4-006969](#T4-006969), with one framing illegal immigration as a public-safety issue and mocking liberals [T4-005893](#T4-005893), and another linking it to crime via a mother blaming sanctuary cities for her son's killing [T4-000416](#T4-000416).\n\nA second narrative is enforcement and restriction: calls for a \"deportation force\" [T4-006695](#T4-006695), mockery of Obama-era DHS border rhetoric [T4-004871](#T4-004871), a story of an undocumented immigrant surprised by deportation after an ICE check-in [T4-007235](#T4-007235), a report that the Trump administration considered using the National Guard for immigration roundups [T4-006611](#T4-006611), and ridicule of attempts to enter via Canada because of its immigration policy [T4-005928](#T4-005928). Trump-era policy is contested from both sides, criticized as \"crackpot\" [T4-000729](#T4-000729) and compared with Clinton's position in debate coverage [T4-004357](#T4-004357).\n\nA third narrative is data/news coverage: profiles of US residents without legal status [T4-007836](#T4-007836), state-by-state immigration growth [T4-004321](#T4-004321), US–Mexico diplomatic friction over immigration [T4-006718](#T4-006718), and a 2014 report that the US lifted a ban on immigrants with terrorism links, one post adding \"IT'S NOT ABOUT ISLAM\" [T4-003938](#T4-003938) [T4-003608](#T4-003608). A few posts are too fragmentary to classify [T4-003955](#T4-003955) [T4-005190](#T4-005190) [T4-000980](#T4-000980).",
+      "source_post_ids": [
+        "T4-006133",
+        "T4-005475",
+        "T4-006969",
+        "T4-005893",
+        "T4-000416",
+        "T4-006695",
+        "T4-004871",
+        "T4-007235",
+        "T4-006611",
+        "T4-005928",
+        "T4-000729",
+        "T4-004357",
+        "T4-007836",
+        "T4-004321",
+        "T4-006718",
+        "T4-003938",
+        "T4-003608",
+        "T4-003955",
+        "T4-005190",
+        "T4-000980"
+      ],
+      "confidence": 0.5
+    }
+  },
+  {
+    "test_case": "topic_narrative_13",
+    "question": "{\"query\": \"Summarize what posts say about gun control\"}",
+    "answer": {
+      "answer": "Summary unavailable. Showing the retrieved posts instead.\n\nShowing retrieved candidates; their relevance has not been verified.\n\n- [T4-008151](#T4-008151)\n- [T4-003875](#T4-003875)\n- [T4-003853](#T4-003853)\n- [T4-000455](#T4-000455)\n- [T4-008804](#T4-008804)\n- [T4-003512](#T4-003512)\n- [T4-004711](#T4-004711)\n- [T4-009162](#T4-009162)\n- [T4-002306](#T4-002306)\n- [T4-000221](#T4-000221)\n- [T4-000048](#T4-000048)\n- [T4-009141](#T4-009141)\n- [T4-008770](#T4-008770)\n- [T4-003114](#T4-003114)\n- [T4-002351](#T4-002351)\n- [T4-002785](#T4-002785)\n- [T4-001889](#T4-001889)\n- [T4-002830](#T4-002830)\n- [T4-005005](#T4-005005)\n- [T4-005265](#T4-005265)",
+      "source_post_ids": [
+        "T4-008151",
+        "T4-003875",
+        "T4-003853",
+        "T4-000455",
+        "T4-008804",
+        "T4-003512",
+        "T4-004711",
+        "T4-009162",
+        "T4-002306",
+        "T4-000221",
+        "T4-000048",
+        "T4-009141",
+        "T4-008770",
+        "T4-003114",
+        "T4-002351",
+        "T4-002785",
+        "T4-001889",
+        "T4-002830",
+        "T4-005005",
+        "T4-005265"
+      ],
+      "confidence": 0.0
+    }
+  }
+]

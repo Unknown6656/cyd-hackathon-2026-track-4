@@ -1,0 +1,20 @@
+[
+  {
+    "test_case": "single_post_low_confidence_01",
+    "question": "{\"query\": \"What does the corpus say about the fake event 'Zorblatt Protocol'?\"}",
+    "answer": {
+      "answer": "The retrieved posts do not contain enough information to answer this question.",
+      "source_post_ids": [],
+      "confidence": 0.0
+    }
+  },
+  {
+    "test_case": "single_post_low_confidence_02",
+    "question": "{\"query\": \"Tell me everything about topic 'NanoEnhancedVaccine2024'\"}",
+    "answer": {
+      "answer": "No English posts in the corpus match this request. Scope: with the selected keyword filter.",
+      "source_post_ids": [],
+      "confidence": 1.0
+    }
+  }
+]

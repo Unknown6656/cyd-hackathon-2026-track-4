@@ -1,0 +1,113 @@
+[
+  {
+    "test_case": "no_assess_post_01",
+    "question": "{\"query\": \"What are the dominant narratives about immigration?\"}",
+    "answer": {
+      "answer": "Summary unavailable. Showing the retrieved posts instead.\n\nShowing retrieved candidates; their relevance has not been verified.\n\n- [T4-006133](#T4-006133)\n- [T4-005475](#T4-005475)\n- [T4-007836](#T4-007836)\n- [T4-003938](#T4-003938)\n- [T4-006718](#T4-006718)\n- [T4-006695](#T4-006695)\n- [T4-004871](#T4-004871)\n- [T4-006969](#T4-006969)\n- [T4-007235](#T4-007235)\n- [T4-005190](#T4-005190)\n- [T4-005928](#T4-005928)\n- [T4-004357](#T4-004357)\n- [T4-003955](#T4-003955)\n- [T4-003608](#T4-003608)\n- [T4-000416](#T4-000416)\n- [T4-005893](#T4-005893)\n- [T4-000980](#T4-000980)\n- [T4-004321](#T4-004321)\n- [T4-000729](#T4-000729)\n- [T4-006611](#T4-006611)",
+      "source_post_ids": [
+        "T4-006133",
+        "T4-005475",
+        "T4-007836",
+        "T4-003938",
+        "T4-006718",
+        "T4-006695",
+        "T4-004871",
+        "T4-006969",
+        "T4-007235",
+        "T4-005190",
+        "T4-005928",
+        "T4-004357",
+        "T4-003955",
+        "T4-003608",
+        "T4-000416",
+        "T4-005893",
+        "T4-000980",
+        "T4-004321",
+        "T4-000729",
+        "T4-006611"
+      ],
+      "confidence": 0.0
+    }
+  },
+  {
+    "test_case": "empty_query_02",
+    "question": "{\"query\": \"\"}",
+    "answer": {
+      "detail": [
+        {
+          "type": "string_too_short",
+          "loc": [
+            "body",
+            "query"
+          ],
+          "msg": "String should have at least 1 character",
+          "input": "",
+          "ctx": {
+            "min_length": 1
+          }
+        }
+      ]
+    }
+  },
+  {
+    "test_case": "non_english_query_03",
+    "question": "{\"query\": \"\\u00bfCu\\u00e1les son las principales narrativas sobre inmigraci\\u00f3n?\"}",
+    "answer": {
+      "detail": [
+        {
+          "type": "value_error",
+          "loc": [
+            "body",
+            "query"
+          ],
+          "msg": "Value error, Use ASCII text, punctuation, or emoji only.",
+          "input": "¿Cuáles son las principales narrativas sobre inmigración?",
+          "ctx": {
+            "error": {}
+          }
+        }
+      ]
+    }
+  },
+  {
+    "test_case": "non_existent_account_04",
+    "question": "{\"query\": \"What did account NONEXISTENT_HANDLE_12345 post?\"}",
+    "answer": {
+      "answer": "No English posts in the corpus match this request. Scope: for the selected account.",
+      "source_post_ids": [],
+      "confidence": 1.0
+    }
+  },
+  {
+    "test_case": "non_existent_hashtag_05",
+    "question": "{\"query\": \"Find posts with #ThisHashtagDoesNotExistXYZ\"}",
+    "answer": {
+      "answer": "No English posts in the corpus match this request. Scope: with the selected hashtag.",
+      "source_post_ids": [],
+      "confidence": 1.0
+    }
+  },
+  {
+    "test_case": "very_long_query_06",
+    "question": "{\"query\": \"Find all posts and summarize every single narrative and topic across the entire corpus and tell me everything about every account and every hashtag and every mention I need to know it all Find all posts and summarize every single narrative and topic across the entire corpus and tell me everything about every account and every hashtag and every mention I need to know it all Find all posts and summarize every single narrative and topic across the entire corpus and tell me everything about every account and every hashtag and every mention I need to know it all Find all posts and summarize every single narrative and topic across the entire corpus and tell me everything about every account and every hashtag and every mention I need to know it all Find all posts and summarize every single narrative and topic across the entire corpus and tell me everything about every account and every hashtag and every mention I need to know it all Find all posts and summarize every single narrative and topic across the entire corpus and tell me everything about every account and every hashtag and every mention I need to know it all Find all posts and summarize every single narrative and topic across the entire corpus and tell me everything about every account and every hashtag and every mention I need to know it all Find all posts and summarize every single narrative and topic across the entire corpus and tell me everything about every account and every hashtag and every mention I need to know it all Find all posts and summarize every single narrative and topic across the entire corpus and tell me everything about every account and every hashtag and every mention I need to know it all Find all posts and summarize every single narrative and topic across the entire corpus and tell me everything about every account and every hashtag and every mention I need to know it all Find all posts and summarize every single narrative and topic across the entire corpus and tell me everything about every account and every hashtag and every mention I need to know it all Find all posts and summarize every single narrative and topic across the entire corpus and tell me everything about every account and every hashtag and every mention I need to know it all Find all posts and summarize every single narrative and topic across the entire corpus and tell me everything about every account and every hashtag and every mention I need to know it all Find all posts and summarize every single narrative and topic across the entire corpus and tell me everything about every account and every hashtag and every mention I need to know it all Find all posts and summarize every single narrative and topic across the entire corpus and tell me everything about every account and every hashtag and every mention I need to know it all Find all posts and summarize every single narrative and topic across the entire corpus and tell me everything about every account and every hashtag and every mention I need to know it all Find all posts and summarize every single narrative and topic across the entire corpus and tell me everything about every account and every hashtag and every mention I need to know it all Find all posts and summarize every single narrative and topic across the entire corpus and tell me everything about every account and every hashtag and every mention I need to know it all Find all posts and summarize every single narrative and topic across the entire corpus and tell me everything about every account and every hashtag and every mention I need to know it all Find all posts and summarize every single narrative and topic across the entire corpus and tell me everything about every account and every hashtag and every mention I need to know it all \"}",
+    "answer": {
+      "answer": "I help search and analyse the English post corpus. Ask about a topic, hashtag, mention, or an account you specify.",
+      "source_post_ids": [],
+      "confidence": 1.0
+    }
+  },
+  {
+    "test_case": "special_characters_07",
+    "question": "{\"query\": \"Find posts about $%^&*()_+{}:\\\">?<>\"}",
+    "answer": {
+      "answer": "Which topic, account, hashtag, or mention should I search for?",
+      "source_post_ids": [],
+      "confidence": 1.0
+    }
+  },
+  {
+    "test_case": "malformed_json_08",
+    "question": "this is not json at all",
+    "answer": null
+  }
+]
