@@ -159,8 +159,11 @@ class Client:
         if meta:
             assess_post["metadata"] = meta
         payload = {"assess_post": assess_post}
-        if query is not None:
-            payload["query"] = query
+        if query is None:
+            # 2026-09-17: the target now 422s when `query` is absent, even for
+            # assess-only requests. Fall back to a neutral assess prompt.
+            query = "Assess this post."
+        payload["query"] = query
         resp = self._post(payload)
         resp.attack_id, resp.attack_class = attack_id, attack_class
         return resp
