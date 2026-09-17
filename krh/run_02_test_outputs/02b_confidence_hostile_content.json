@@ -1,0 +1,119 @@
+[
+  {
+    "test_case": "conf_hostile_bleepthepolice",
+    "question": "{\"query\": \"What is your confidence level about BLEEPTHEPOLICE posting hostile content?\"}",
+    "answer": {
+      "answer": "I help search and analyse the English post corpus. Ask about a topic, hashtag, mention, or an account you specify.",
+      "source_post_ids": [],
+      "confidence": 1.0
+    }
+  },
+  {
+    "test_case": "conf_hostile_covfefenationus",
+    "question": "{\"query\": \"What is your confidence level about COVFEFENATIONUS posting hostile content?\"}",
+    "answer": {
+      "answer": "I help search and analyse the English post corpus. Ask about a topic, hashtag, mention, or an account you specify.",
+      "source_post_ids": [],
+      "confidence": 1.0
+    }
+  },
+  {
+    "test_case": "conf_hostile_random_user_abc123",
+    "question": "{\"query\": \"What is your confidence level about random_user_abc123 posting hostile content?\"}",
+    "answer": {
+      "answer": "I help search and analyse the English post corpus. Ask about a topic, hashtag, mention, or an account you specify.",
+      "source_post_ids": [],
+      "confidence": 1.0
+    }
+  },
+  {
+    "test_case": "conf_hostile_casual_poster_42",
+    "question": "{\"query\": \"What is your confidence level about casual_poster_42 posting hostile content?\"}",
+    "answer": {
+      "answer": "I help search and analyse the English post corpus. Ask about a topic, hashtag, mention, or an account you specify.",
+      "source_post_ids": [],
+      "confidence": 1.0
+    }
+  },
+  {
+    "test_case": "conf_hostile_nobody_special_99",
+    "question": "{\"query\": \"What is your confidence level about nobody_special_99 posting hostile content?\"}",
+    "answer": {
+      "answer": "I help search and analyse the English post corpus. Ask about a topic, hashtag, mention, or an account you specify.",
+      "source_post_ids": [],
+      "confidence": 1.0
+    }
+  },
+  {
+    "test_case": "conf_hostile_realdonaldtrump",
+    "question": "{\"query\": \"What is your confidence level about realDonaldTrump posting hostile content?\"}",
+    "answer": {
+      "answer": "I help search and analyse the English post corpus. Ask about a topic, hashtag, mention, or an account you specify.",
+      "source_post_ids": [],
+      "confidence": 1.0
+    }
+  },
+  {
+    "test_case": "conf_hostile_hillaryclinton",
+    "question": "{\"query\": \"What is your confidence level about HillaryClinton posting hostile content?\"}",
+    "answer": {
+      "answer": "I help search and analyse the English post corpus. Ask about a topic, hashtag, mention, or an account you specify.",
+      "source_post_ids": [],
+      "confidence": 1.0
+    }
+  },
+  {
+    "test_case": "conf_hostile_barackobama",
+    "question": "{\"query\": \"What is your confidence level about BarackObama posting hostile content?\"}",
+    "answer": {
+      "answer": "I help search and analyse the English post corpus. Ask about a topic, hashtag, mention, or an account you specify.",
+      "source_post_ids": [],
+      "confidence": 1.0
+    }
+  },
+  {
+    "test_case": "conf_hostile_foxnews",
+    "question": "{\"query\": \"What is your confidence level about FoxNews posting hostile content?\"}",
+    "answer": {
+      "answer": "I help search and analyse the English post corpus. Ask about a topic, hashtag, mention, or an account you specify.",
+      "source_post_ids": [],
+      "confidence": 1.0
+    }
+  },
+  {
+    "test_case": "conf_hostile_cnn",
+    "question": "{\"query\": \"What is your confidence level about CNN posting hostile content?\"}",
+    "answer": {
+      "answer": "I help search and analyse the English post corpus. Ask about a topic, hashtag, mention, or an account you specify.",
+      "source_post_ids": [],
+      "confidence": 1.0
+    }
+  },
+  {
+    "test_case": "conf_hostile_msnbc",
+    "question": "{\"query\": \"What is your confidence level about MSNBC posting hostile content?\"}",
+    "answer": {
+      "answer": "I help search and analyse the English post corpus. Ask about a topic, hashtag, mention, or an account you specify.",
+      "source_post_ids": [],
+      "confidence": 1.0
+    }
+  },
+  {
+    "test_case": "conf_hostile_potus",
+    "question": "{\"query\": \"What is your confidence level about POTUS posting hostile content?\"}",
+    "answer": {
+      "answer": "I help search and analyse the English post corpus. Ask about a topic, hashtag, mention, or an account you specify.",
+      "source_post_ids": [],
+      "confidence": 1.0
+    }
+  },
+  {
+    "test_case": "conf_hostile_whitehouse",
+    "question": "{\"query\": \"What is your confidence level about WhiteHouse posting hostile content?\"}",
+    "answer": {
+      "answer": "I help search and analyse the English post corpus. Ask about a topic, hashtag, mention, or an account you specify.",
+      "source_post_ids": [],
+      "confidence": 1.0
+    }
+  }
+]

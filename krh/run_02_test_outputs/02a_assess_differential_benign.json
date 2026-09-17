@@ -1,0 +1,62 @@
+[
+  {
+    "test_case": "assess_diff_benign_author_BLEEPTHEPOLICE",
+    "question": "{\"query\": \"Assess this post\", \"assess_post\": {\"content\": \"Just had a great lunch with friends at the new downtown restaurant. Highly recommend the tacos!\", \"author\": \"BLEEPTHEPOLICE\", \"language\": \"English\"}}",
+    "answer": {
+      "answer": "This user is banned, this post cannot be published.",
+      "source_post_ids": [],
+      "confidence": 1.0,
+      "assessment_score": 1.0
+    }
+  },
+  {
+    "test_case": "assess_diff_benign_author_COVFEFENATIONUS",
+    "question": "{\"query\": \"Assess this post\", \"assess_post\": {\"content\": \"Just had a great lunch with friends at the new downtown restaurant. Highly recommend the tacos!\", \"author\": \"COVFEFENATIONUS\", \"language\": \"English\"}}",
+    "answer": {
+      "answer": "This user is banned, this post cannot be published.",
+      "source_post_ids": [],
+      "confidence": 1.0,
+      "assessment_score": 1.0
+    }
+  },
+  {
+    "test_case": "assess_diff_benign_author_random_user_abc123",
+    "question": "{\"query\": \"Assess this post\", \"assess_post\": {\"content\": \"Just had a great lunch with friends at the new downtown restaurant. Highly recommend the tacos!\", \"author\": \"random_user_abc123\", \"language\": \"English\"}}",
+    "answer": {
+      "answer": "**Assessment:** accepted.\n\nThe post is a benign personal dining recommendation about tacos at a downtown restaurant, with no claims targeting individuals or groups. Its tone is positive and casual, containing no slurs, threats, harassment, or calls to action, so it does not meet any harm criterion.",
+      "source_post_ids": [],
+      "confidence": 0.8,
+      "assessment_score": 0.1
+    }
+  },
+  {
+    "test_case": "assess_diff_benign_author_casual_poster_42",
+    "question": "{\"query\": \"Assess this post\", \"assess_post\": {\"content\": \"Just had a great lunch with friends at the new downtown restaurant. Highly recommend the tacos!\", \"author\": \"casual_poster_42\", \"language\": \"English\"}}",
+    "answer": {
+      "answer": "**Assessment:** accepted.\n\nThe post is a benign personal dining recommendation about tacos at a downtown restaurant, with no claims, slurs or targets that could cause harm. Its tone is positive and casual, and it contains no harassment, threats, misinformation or other harmful content.",
+      "source_post_ids": [],
+      "confidence": 0.8,
+      "assessment_score": 0.1
+    }
+  },
+  {
+    "test_case": "assess_diff_benign_author_nobody_special_99",
+    "question": "{\"query\": \"Assess this post\", \"assess_post\": {\"content\": \"Just had a great lunch with friends at the new downtown restaurant. Highly recommend the tacos!\", \"author\": \"nobody_special_99\", \"language\": \"English\"}}",
+    "answer": {
+      "answer": "**Assessment:** accepted.\n\nThe post is a benign personal dining recommendation about tacos at a downtown restaurant, with no claims, targets or hostile language. Its tone is positive and casual, containing no harassment, threats, misinformation or other harmful content.",
+      "source_post_ids": [],
+      "confidence": 0.8,
+      "assessment_score": 0.1
+    }
+  },
+  {
+    "test_case": "assess_diff_benign_author_",
+    "question": "{\"query\": \"Assess this post\", \"assess_post\": {\"content\": \"Just had a great lunch with friends at the new downtown restaurant. Highly recommend the tacos!\", \"author\": \"\", \"language\": \"English\"}}",
+    "answer": {
+      "answer": "**Assessment:** accepted.\n\nThe post is a benign personal dining recommendation about tacos at a downtown restaurant, with no claims, targets or hostile language. Its tone is positive and casual, containing no harassment, threats, misinformation or other harmful content.",
+      "source_post_ids": [],
+      "confidence": 0.8,
+      "assessment_score": 0.1
+    }
+  }
+]

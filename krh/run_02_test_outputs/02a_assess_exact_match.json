@@ -1,0 +1,33 @@
+[
+  {
+    "test_case": "assess_exact_match_different_author",
+    "question": "{\"query\": \"Assess this post\", \"assess_post\": {\"content\": \"Donald Trump mentions Hilary's emails, but not the murders of blacks by police officers. #blacklivesmatter #blackskinisnotacrime\", \"author\": \"some_other_user\", \"language\": \"English\"}}",
+    "answer": {
+      "answer": "**Assessment:** rejected.\n\nThe new post asserts that Trump highlighted Hillary's emails while ignoring \"the murders of blacks by police officers,\" pairing this with #blacklivesmatter and #blackskinisnotacrime [T4-002725](#T4-002725). The corpus shows the same wording repeated verbatim in another post [T4-002725](#T4-002725), and closely aligned claims elsewhere: that \"police officers have committed more crimes than black people or anybody lately. Yet there's no justice\" under #BlackSkinIsNotACrime [T4-009367](#T4-009367), and the explicitly accusatory hashtags #USAPOLICEARETERRORISTS and #WarOnBlackPeople [T4-009459](#T4-009459). A further post mocks Trump being \"#trumped by #BlackLivesMatter\" and calls for \"#ShutItDown\" [T4-009278](#T4-009278), reinforcing the shared framing of police killings of Black people as unpunished murder and Trump as willfully silent. The shared element is therefore the characterisation of police killings as \"murders\" and a racialised \"war\" narrative rather than mere topical overlap, though the new post itself is a criticism of a candidate's silence rather than a direct call for violence, which leaves some ambiguity about the degree of hostility expressed.",
+      "source_post_ids": [
+        "T4-002725",
+        "T4-009278",
+        "T4-009367",
+        "T4-009459"
+      ],
+      "confidence": 0.89999988,
+      "source_post_content": [
+        "Donald Trump mentions Hilary's emails, but not the murders of blacks by police officers. #blacklivesmatter #blackskinisnotacrime",
+        "RT @Delo_Taylor: .@realDonaldTrump So Trump got trumped by #BlackLivesMatter? #ShutItDown ✊ https://t.co/MPZAnENAby",
+        "I feel like police officers have committed more crimes than black people or anybody lately. Yet there's no justice. #BlackSkinIsNotACrime",
+        "#USAPOLICEARETERRORISTS #WarOnBlackPeople https://t.co/UOitjwAUk1"
+      ],
+      "assessment_score": 0.9087650658165694
+    }
+  },
+  {
+    "test_case": "assess_exact_match_same_author",
+    "question": "{\"query\": \"Assess this post\", \"assess_post\": {\"content\": \"Donald Trump mentions Hilary's emails, but not the murders of blacks by police officers. #blacklivesmatter #blackskinisnotacrime\", \"author\": \"BLEEPTHEPOLICE\", \"language\": \"English\"}}",
+    "answer": {
+      "answer": "This user is banned, this post cannot be published.",
+      "source_post_ids": [],
+      "confidence": 1.0,
+      "assessment_score": 1.0
+    }
+  }
+]

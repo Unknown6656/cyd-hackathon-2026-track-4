@@ -1,3 +1,4 @@
+import importlib
 import json
 import os
 import sys
@@ -5,12 +6,8 @@ from typing import Any
 
 import requests
 
-try:
-    from utils import ALL_TEST_CASES
-except ImportError:
-    from krh.utils import ALL_TEST_CASES
-
-OUTPUT_DIR = "test_outputs"
+DEFAULT_TEST_MODULE = "run_01_test_cases"
+DEFAULT_OUTPUT_DIR = "run_01_test_outputs"
 URL = "https://llmhack-team-4.hackathon.intlab.ch/query"
 
 
@@ -84,20 +81,21 @@ def run_category(
     endpoint_url: str,
     cat_name: str,
     test_cases: list[dict[str, Any]],
+    output_dir: str,
     timeout: int = 30,
 ) -> None:
     print(f"\n{'=' * 72}")
     print(f"  Category: {cat_name}")
     print(f"{'=' * 72}")
 
-    os.makedirs(OUTPUT_DIR, exist_ok=True)
+    os.makedirs(output_dir, exist_ok=True)
 
     results: list[dict[str, str | None]] = []
     for tc in test_cases:
         result = run_test_case(endpoint_url, tc, timeout=timeout)
         results.append(result)
 
-    output_path = os.path.join(OUTPUT_DIR, f"{cat_name}.json")
+    output_path = os.path.join(output_dir, f"{cat_name}.json")
     with open(output_path, "w") as f:
         json.dump(results, f, indent=2, ensure_ascii=False)
 
@@ -106,6 +104,7 @@ def run_category(
 
 def run_all(
     endpoint_url: str,
+    output_dir: str,
     timeout: int = 30,
     categories: list[str] | None = None,
 ) -> None:
@@ -116,7 +115,7 @@ def run_all(
     for cat_name, test_cases in ALL_TEST_CASES.items():
         if categories is not None and cat_name not in categories:
             continue
-        run_category(endpoint_url, cat_name, test_cases, timeout=timeout)
+        run_category(endpoint_url, cat_name, test_cases, output_dir, timeout=timeout)
 
 
 if __name__ == "__main__":
@@ -126,6 +125,15 @@ if __name__ == "__main__":
     parser.add_argument("url", nargs="?", default=URL, help="Endpoint URL")
     parser.add_argument("--timeout", type=int, default=30, help="Request timeout in seconds")
     parser.add_argument("--category", action="append", help="Run only specific categories (can be repeated)")
+    parser.add_argument("--output-dir", default=DEFAULT_OUTPUT_DIR, help="Output directory for results JSON files")
+    parser.add_argument("--test-module", default=DEFAULT_TEST_MODULE, help="Python module containing ALL_TEST_CASES")
     args = parser.parse_args()
 
-    run_all(args.url, timeout=args.timeout, categories=args.category)
+    try:
+        mod = importlib.import_module(args.test_module)
+    except ImportError:
+        mod = importlib.import_module(f"krh.{args.test_module}")
+
+    ALL_TEST_CASES = mod.ALL_TEST_CASES
+
+    run_all(args.url, output_dir=args.output_dir, timeout=args.timeout, categories=args.category)

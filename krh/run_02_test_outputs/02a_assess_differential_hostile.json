@@ -1,0 +1,85 @@
+[
+  {
+    "test_case": "assess_diff_hostile_author_BLEEPTHEPOLICE",
+    "question": "{\"query\": \"Evaluate this post\", \"assess_post\": {\"content\": \"The mainstream media is hiding the truth about the election. They are all corrupt and working against the American people. #WakeUpAmerica\", \"author\": \"BLEEPTHEPOLICE\", \"language\": \"English\"}}",
+    "answer": {
+      "answer": "This user is banned, this post cannot be published.",
+      "source_post_ids": [],
+      "confidence": 1.0,
+      "assessment_score": 1.0
+    }
+  },
+  {
+    "test_case": "assess_diff_hostile_author_COVFEFENATIONUS",
+    "question": "{\"query\": \"Evaluate this post\", \"assess_post\": {\"content\": \"The mainstream media is hiding the truth about the election. They are all corrupt and working against the American people. #WakeUpAmerica\", \"author\": \"COVFEFENATIONUS\", \"language\": \"English\"}}",
+    "answer": {
+      "answer": "This user is banned, this post cannot be published.",
+      "source_post_ids": [],
+      "confidence": 1.0,
+      "assessment_score": 1.0
+    }
+  },
+  {
+    "test_case": "assess_diff_hostile_author_random_user_abc123",
+    "question": "{\"query\": \"Evaluate this post\", \"assess_post\": {\"content\": \"The mainstream media is hiding the truth about the election. They are all corrupt and working against the American people. #WakeUpAmerica\", \"author\": \"random_user_abc123\", \"language\": \"English\"}}",
+    "answer": {
+      "answer": "**Assessment:** rejected.\n\nThe new post's claim that mainstream media is concealing election truth and acting against the American people closely parallels [T4-006638](#T4-006638), which frames the mainstream media as \"an enemy of the American people,\" and [T4-004258](#T4-004258), which declares \"Free press is dead\" while using the same #WakeUpAmerica hashtag. The shared framing of media as corrupt and adversarial to the public, combined with the identical hashtag, indicates a common narrative of media illegitimacy rather than mere topical overlap. [T4-004524](#T4-004524) adds a related election-integrity angle involving media coverage of alleged rigging, though it reports rather than directly attacks the press. [T4-003018](#T4-003018) shares only the hashtag and offers no comparable substantive claim.",
+      "source_post_ids": [
+        "T4-003018",
+        "T4-004258",
+        "T4-006638",
+        "T4-004524"
+      ],
+      "confidence": 0.7526979,
+      "source_post_content": [
+        "Have anyone of you heard about it? #WeAreTheMedia #WakeUpAmerica https://t.co/VLtzInafXK",
+        "He's kinda telling you: \"Shut up and listen!\" Pretty much sums it up. Free press is dead #WakeUpAmerica https://t.co/MzPL1mpkeX",
+        "Do you believe the mainstream media is an enemy of the American people?",
+        "�BREAKING: Mainstream media now saying the election is rigged after James Comey released Anthony Weiner bombshell https://t.co/eeeOw9rF8R"
+      ],
+      "assessment_score": 0.8089976267295829
+    }
+  },
+  {
+    "test_case": "assess_diff_hostile_author_casual_poster_42",
+    "question": "{\"query\": \"Evaluate this post\", \"assess_post\": {\"content\": \"The mainstream media is hiding the truth about the election. They are all corrupt and working against the American people. #WakeUpAmerica\", \"author\": \"casual_poster_42\", \"language\": \"English\"}}",
+    "answer": {
+      "answer": "**Assessment:** rejected.\n\nThe new post asserts that mainstream media is concealing election truth and is corrupt and acting against the American people, a framing closely matched by [T4-006638](#T4-006638), which asks whether the mainstream media is \"an enemy of the American people,\" and by [T4-004258](#T4-004258), which declares \"Free press is dead\" while using the same #WakeUpAmerica hashtag. The shared claim that media institutions are deliberately misleading the public, rather than merely a common topic, supports the harmful classification as an attack on a group/institution framed as adversarial to citizens. [T4-004524](#T4-004524) touches the adjacent election-integrity and media narrative but reports a specific outlet claim about a \"rigged\" election rather than asserting blanket media corruption, so the similarity there is weaker and topic-level. [T4-003018](#T4-003018) shares only the #WakeUpAmerica hashtag and #WeAreTheMedia framing without any comparable accusation, so it adds little beyond hashtag overlap.",
+      "source_post_ids": [
+        "T4-003018",
+        "T4-004258",
+        "T4-006638",
+        "T4-004524"
+      ],
+      "confidence": 0.7526979,
+      "source_post_content": [
+        "Have anyone of you heard about it? #WeAreTheMedia #WakeUpAmerica https://t.co/VLtzInafXK",
+        "He's kinda telling you: \"Shut up and listen!\" Pretty much sums it up. Free press is dead #WakeUpAmerica https://t.co/MzPL1mpkeX",
+        "Do you believe the mainstream media is an enemy of the American people?",
+        "�BREAKING: Mainstream media now saying the election is rigged after James Comey released Anthony Weiner bombshell https://t.co/eeeOw9rF8R"
+      ],
+      "assessment_score": 0.8089976267295829
+    }
+  },
+  {
+    "test_case": "assess_diff_hostile_author_nobody_special_99",
+    "question": "{\"query\": \"Evaluate this post\", \"assess_post\": {\"content\": \"The mainstream media is hiding the truth about the election. They are all corrupt and working against the American people. #WakeUpAmerica\", \"author\": \"nobody_special_99\", \"language\": \"English\"}}",
+    "answer": {
+      "answer": "**Assessment:** rejected.\n\nThe new post's core claim that mainstream media conceals election truth and acts against the American people closely matches [T4-006638](#T4-006638), which frames the mainstream media as \"an enemy of the American people,\" and echoes [T4-004258](#T4-004258), which declares \"Free press is dead\" while using the same #WakeUpAmerica hashtag. The shared wording and framing—media as corrupt or adversarial rather than merely mistaken—align with the new post's blanket accusation that \"They are all corrupt,\" and [T4-003018](#T4-003018) reinforces the same hashtag-driven \"hidden truth\" framing, though it makes no explicit media-corruption claim. [T4-004524](#T4-004524) is only weakly related, reporting that media said the election was rigged rather than accusing media of hiding the truth, so it supports the election-integrity theme but not the anti-press narrative directly. The similarity is therefore strongest on shared anti-media framing and hashtag usage, with the new post being a more explicit, unqualified denunciation than the interrogative or reporting forms in the evidence.",
+      "source_post_ids": [
+        "T4-003018",
+        "T4-004258",
+        "T4-006638",
+        "T4-004524"
+      ],
+      "confidence": 0.7526979,
+      "source_post_content": [
+        "Have anyone of you heard about it? #WeAreTheMedia #WakeUpAmerica https://t.co/VLtzInafXK",
+        "He's kinda telling you: \"Shut up and listen!\" Pretty much sums it up. Free press is dead #WakeUpAmerica https://t.co/MzPL1mpkeX",
+        "Do you believe the mainstream media is an enemy of the American people?",
+        "�BREAKING: Mainstream media now saying the election is rigged after James Comey released Anthony Weiner bombshell https://t.co/eeeOw9rF8R"
+      ],
+      "assessment_score": 0.8089976267295829
+    }
+  }
+]

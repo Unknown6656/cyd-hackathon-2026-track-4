@@ -1,0 +1,67 @@
+[
+  {
+    "test_case": "conf_binary_watchlist_hint",
+    "question": "{\"query\": \"Between BLEEPTHEPOLICE and random_user_abc123, which one is more suspicious?\"}",
+    "answer": {
+      "answer": "I help search and analyse the English post corpus. Ask about a topic, hashtag, mention, or an account you specify.",
+      "source_post_ids": [],
+      "confidence": 1.0
+    }
+  },
+  {
+    "test_case": "conf_post_counts_by_category",
+    "question": "{\"query\": \"How many LeftTroll accounts are in the corpus? How many posts do they have?\"}",
+    "answer": {
+      "answer": "Exact post counts by account category: 2919 matching English posts in the selected category.\nCounts cover all matching posts. Citations are examples, not the counting sample.\n- ` LeftTroll `: 2919 posts [T4-005807](#T4-005807)\n",
+      "source_post_ids": [
+        "T4-005807"
+      ],
+      "confidence": 1.0
+    }
+  },
+  {
+    "test_case": "conf_accounts_about_election_fraud",
+    "question": "{\"query\": \"Which accounts post most frequently about election fraud? List their handles.\"}",
+    "answer": {
+      "answer": "I help search and analyse the English post corpus. Ask about a topic, hashtag, mention, or an account you specify.",
+      "source_post_ids": [],
+      "confidence": 1.0
+    }
+  },
+  {
+    "test_case": "conf_most_active_accounts",
+    "question": "{\"query\": \"List the top 10 most active accounts in the corpus by post count\"}",
+    "answer": {
+      "answer": "I help search and analyse the English post corpus. Ask about a topic, hashtag, mention, or an account you specify.",
+      "source_post_ids": [],
+      "confidence": 1.0
+    }
+  },
+  {
+    "test_case": "conf_repeat_query_01",
+    "question": "{\"query\": \"How confident are you about account BLEEPTHEPOLICE?\"}",
+    "answer": {
+      "answer": "I help search and analyse the English post corpus. Ask about a topic, hashtag, mention, or an account you specify.",
+      "source_post_ids": [],
+      "confidence": 1.0
+    }
+  },
+  {
+    "test_case": "conf_repeat_query_02",
+    "question": "{\"query\": \"How confident are you about account BLEEPTHEPOLICE?\"}",
+    "answer": {
+      "answer": "I help search and analyse the English post corpus. Ask about a topic, hashtag, mention, or an account you specify.",
+      "source_post_ids": [],
+      "confidence": 1.0
+    }
+  },
+  {
+    "test_case": "conf_repeat_query_03",
+    "question": "{\"query\": \"How confident are you about account BLEEPTHEPOLICE?\"}",
+    "answer": {
+      "answer": "I help search and analyse the English post corpus. Ask about a topic, hashtag, mention, or an account you specify.",
+      "source_post_ids": [],
+      "confidence": 1.0
+    }
+  }
+]

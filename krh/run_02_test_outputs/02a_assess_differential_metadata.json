@@ -1,0 +1,65 @@
+[
+  {
+    "test_case": "assess_diff_no_author",
+    "question": "{\"query\": \"Assess this post\", \"assess_post\": {\"content\": \"The mainstream media is hiding the truth about the election. They are all corrupt and working against the American people. #WakeUpAmerica\", \"language\": \"English\"}}",
+    "answer": {
+      "answer": "**Assessment:** rejected.\n\nThe new post asserts that mainstream media is concealing election truth and is corrupt and acting against the American people, which closely parallels [T4-006638](#T4-006638) framing the mainstream media as \"an enemy of the American people\" and [T4-004258](#T4-004258) declaring \"Free press is dead,\" both carrying the #WakeUpAmerica hashtag used in the new post. The shared narrative of a deceitful press suppressing electoral information is echoed in [T4-004524](#T4-004524), which ties media coverage to claims the election was \"rigged\" following a Comey/Weiner development, though that post reports a media claim rather than directly attacking journalists as corrupt. By contrast, [T4-003018](#T4-003018) only shares the #WakeUpAmerica and #WeAreTheMedia hashtags without any explicit allegation, so its similarity is weak and topical. Overall, the new post's blanket accusation of corruption and anti-American intent against the press aligns with the more explicitly hostile posts rather than with neutral or questioning phrasing.",
+      "source_post_ids": [
+        "T4-003018",
+        "T4-004258",
+        "T4-006638",
+        "T4-004524"
+      ],
+      "confidence": 0.7526979,
+      "source_post_content": [
+        "Have anyone of you heard about it? #WeAreTheMedia #WakeUpAmerica https://t.co/VLtzInafXK",
+        "He's kinda telling you: \"Shut up and listen!\" Pretty much sums it up. Free press is dead #WakeUpAmerica https://t.co/MzPL1mpkeX",
+        "Do you believe the mainstream media is an enemy of the American people?",
+        "�BREAKING: Mainstream media now saying the election is rigged after James Comey released Anthony Weiner bombshell https://t.co/eeeOw9rF8R"
+      ],
+      "assessment_score": 0.8089976267295829
+    }
+  },
+  {
+    "test_case": "assess_diff_no_language",
+    "question": "{\"query\": \"Assess this post\", \"assess_post\": {\"content\": \"The mainstream media is hiding the truth about the election. They are all corrupt and working against the American people. #WakeUpAmerica\", \"author\": \"some_user\"}}",
+    "answer": {
+      "answer": "**Assessment:** rejected.\n\nThe new post asserts that mainstream media is concealing election truth and is corrupt and acting \"against the American people,\" which closely parallels [T4-006638](#T4-006638) framing the mainstream media as \"an enemy of the American people.\" The shared \"#WakeUpAmerica\" tag and claims of suppressed information link it to [T4-003018](#T4-003018), which asks whether readers have \"heard about it\" under #WeAreTheMedia/#WakeUpAmerica, and to [T4-004258](#T4-004258), which declares \"Free press is dead\" with the same hashtag. [T4-004524](#T4-004524) adds an overlapping election-integrity/media narrative about coverage of a \"rigged\" election, though it reports a media claim rather than accusing outlets of hiding truth. The similarity is thematic and rhetorical rather than proof of coordination, and the hashtag overlap alone is a weak signal.",
+      "source_post_ids": [
+        "T4-003018",
+        "T4-004258",
+        "T4-006638",
+        "T4-004524"
+      ],
+      "confidence": 0.7526979,
+      "source_post_content": [
+        "Have anyone of you heard about it? #WeAreTheMedia #WakeUpAmerica https://t.co/VLtzInafXK",
+        "He's kinda telling you: \"Shut up and listen!\" Pretty much sums it up. Free press is dead #WakeUpAmerica https://t.co/MzPL1mpkeX",
+        "Do you believe the mainstream media is an enemy of the American people?",
+        "�BREAKING: Mainstream media now saying the election is rigged after James Comey released Anthony Weiner bombshell https://t.co/eeeOw9rF8R"
+      ],
+      "assessment_score": 0.8089976267295829
+    }
+  },
+  {
+    "test_case": "assess_diff_extra_metadata",
+    "question": "{\"query\": \"Assess this post\", \"assess_post\": {\"content\": \"The mainstream media is hiding the truth about the election. They are all corrupt and working against the American people. #WakeUpAmerica\", \"author\": \"some_user\", \"language\": \"English\", \"timestamp\": \"2016-07-07T15:40:00\", \"region\": \"United States\", \"followers\": 5000, \"following\": 100}}",
+    "answer": {
+      "answer": "**Assessment:** rejected.\n\nThe new post asserts that mainstream media is concealing election truth and is corrupt and acting \"against the American people,\" which closely parallels [T4-006638](#T4-006638) framing the mainstream media as \"an enemy of the American people.\" The shared \"#WakeUpAmerica\" hashtag and claims of suppressed information link it to [T4-003018](#T4-003018), which asks whether readers have \"heard about it\" under #WeAreTheMedia/#WakeUpAmerica, and to [T4-004258](#T4-004258), which declares \"Free press is dead\" with the same hashtag. [T4-004524](#T4-004524) adds an adjacent election-integrity/media narrative about coverage of a \"rigged\" election, though it reports a media claim rather than accusing outlets of hiding truth. The similarity is thematic and rhetorical rather than proof of coordination, and the shared hashtag alone does not establish agreement or intent.",
+      "source_post_ids": [
+        "T4-003018",
+        "T4-004258",
+        "T4-006638",
+        "T4-004524"
+      ],
+      "confidence": 0.7526979,
+      "source_post_content": [
+        "Have anyone of you heard about it? #WeAreTheMedia #WakeUpAmerica https://t.co/VLtzInafXK",
+        "He's kinda telling you: \"Shut up and listen!\" Pretty much sums it up. Free press is dead #WakeUpAmerica https://t.co/MzPL1mpkeX",
+        "Do you believe the mainstream media is an enemy of the American people?",
+        "�BREAKING: Mainstream media now saying the election is rigged after James Comey released Anthony Weiner bombshell https://t.co/eeeOw9rF8R"
+      ],
+      "assessment_score": 0.8089976267295829
+    }
+  }
+]
