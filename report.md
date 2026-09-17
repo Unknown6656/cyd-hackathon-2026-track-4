@@ -113,6 +113,14 @@ alecmooooody, kirkseysusanna, floydswenson555, gerty_hawa, poligraphme`
 
 By public `account_category`: RightTroll 8 · LeftTroll 6 · NewsFeed 6 ·
 HashtagGamer 3 · Fearmonger 2 · Commercial 2 · Unknown 2.
+**Independent verification (unknown6656, 2026-09-17):** all 29 rows match the
+public fivethirtyeight IRA dump exactly (category and per-author row count,
+29/29) against my local rebuild of the dataset — confirming both the list
+and the "corpus = public-dump subset" fact. Their corpus-membership oracle
+also shows the list is broader than the corpus: 9 of 29 confirmed present in
+target corpus, 13 confirmed absent, 7 unprobed — i.e. the watchlist covers
+a population beyond the corpus (a real external list, not a corpus
+byproduct).
 Several (`antonhayhay`, `floydswenson555`, …) are **not** in any task
 documentation — the oracle yields genuinely undisclosed entries.
 
@@ -383,7 +391,7 @@ the blue team reruns the assistant and day 2 tests follow.
 | timoll | F-01 oracle characterization (case/`@`/typo table), **F-02 evasion (5 families, 0.10/0.20 floor, zero-citation acceptances; standalone report revised 2026-09-17)**, F-03 non-English, F-04 time windows, F-05 confidence on refusals; tooling `timoll/redteam.py`, runs in `timoll/runs/` |
 | valardomate | full attack battery + oracle/sweep/ablation/evasion tooling (`valardomate/red_team/`), phase-2 injection set + day-2 plan (findings log empty) |
 | krh | 52-case functional + security test battery (`krh/run_01_test_cases.py`, outputs in `krh/run_01_test_outputs/`): independently re-confirmed all guardrail holds; added corroboration for §4 (benign 0.10 / direct 0.809 bracket), §6/§8.5 (refusal + "Summary unavailable" variants, second clarification line on new triggers); confirmed time-scoping and RightTroll category scoping behaviour |
-| unknown6656 | waves 1–6 probe campaigns (~100 requests), **F13 detection-logic extraction, F14 ID lookup, F17/F23 confidence nondeterminism, F22 false positives**, independent F21 confirmation, public-pool rebuild + complementary 795-handle delta sweep (**completed: 0 banned of 795**, 42 inconclusive being retried), all per-exploit write-ups in `unknown6656/findings/`, this report |
+| unknown6656 | waves 1–6 probe campaigns (~100 requests), **F13 detection-logic extraction, F14 ID lookup, F17/F23 confidence nondeterminism, F22 false positives**, independent F21 confirmation, public-pool rebuild + complementary 795-handle delta sweep (**complete: 0 banned of 795, all bits decisive**), **independent 29/29 verification of the recovered list against the public dump**, all per-exploit write-ups in `unknown6656/findings/`, this report |
 
 Raw verbatim evidence:
 - `unknown6656/findings/raw/llmhack-team-4_hackathon_intlab_ch/*.json` (one file per request: timestamp, tag, request, response)
@@ -402,6 +410,6 @@ Consolidated working notes: `unknown6656/findings/interim-findings.md`.
 
 **Known live work at report time:** bouncypurple's core-pool sweep still
 running (29 confirmed as of last sync; handle table will grow); unknown6656's
-delta sweep **complete** — 0 banned of 795 (753 confirmed normal, 42
-inconclusive on transient errors, retry pass in progress); the §2.1 handle
-table and hit counts are the canonical snapshot as of 2026-09-17 ~15:45 UTC.
+delta sweep **complete and retried clean** — final: **0 banned of 795**
+(795/795 decisive bits, no inconclusives). §2.1 handle table and hit counts
+are the canonical snapshot as of 2026-09-17 ~16:00 UTC.
